@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlDtp = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
@@ -38,12 +39,11 @@
             this.btnPurchaseOrder = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnFASM = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnRegistration = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLogs = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnVendors = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPurchaseRequest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnDelivery = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDtp.SuspendLayout();
@@ -62,6 +62,17 @@
             this.panel1.Size = new System.Drawing.Size(1226, 56);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(197)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(63, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(509, 37);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "UNITED AGRIMALL CORPORATION";
             // 
             // pictureBox1
             // 
@@ -261,44 +272,44 @@
             this.btnRegistration.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
-            // btnLogs
+            // btnVendors
             // 
-            this.btnLogs.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
-            this.btnLogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnLogs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogs.BorderRadius = 0;
-            this.btnLogs.ButtonText = "Logs";
-            this.btnLogs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogs.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogs.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogs.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogs.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogs.Iconimage")));
-            this.btnLogs.Iconimage_right = null;
-            this.btnLogs.Iconimage_right_Selected = null;
-            this.btnLogs.Iconimage_Selected = null;
-            this.btnLogs.IconMarginLeft = 0;
-            this.btnLogs.IconMarginRight = 0;
-            this.btnLogs.IconRightVisible = true;
-            this.btnLogs.IconRightZoom = 0D;
-            this.btnLogs.IconVisible = true;
-            this.btnLogs.IconZoom = 50D;
-            this.btnLogs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogs.IsTab = false;
-            this.btnLogs.Location = new System.Drawing.Point(0, 289);
-            this.btnLogs.Name = "btnLogs";
-            this.btnLogs.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnLogs.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnLogs.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLogs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnLogs.selected = false;
-            this.btnLogs.Size = new System.Drawing.Size(182, 48);
-            this.btnLogs.TabIndex = 3;
-            this.btnLogs.TabStop = false;
-            this.btnLogs.Text = "Logs";
-            this.btnLogs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogs.Textcolor = System.Drawing.Color.White;
-            this.btnLogs.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogs.Click += new System.EventHandler(this.btnLogs_Click);
+            this.btnVendors.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnVendors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnVendors.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVendors.BorderRadius = 0;
+            this.btnVendors.ButtonText = "Vendors";
+            this.btnVendors.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVendors.DisabledColor = System.Drawing.Color.Gray;
+            this.btnVendors.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendors.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnVendors.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnVendors.Iconimage")));
+            this.btnVendors.Iconimage_right = null;
+            this.btnVendors.Iconimage_right_Selected = null;
+            this.btnVendors.Iconimage_Selected = null;
+            this.btnVendors.IconMarginLeft = 0;
+            this.btnVendors.IconMarginRight = 0;
+            this.btnVendors.IconRightVisible = true;
+            this.btnVendors.IconRightZoom = 0D;
+            this.btnVendors.IconVisible = true;
+            this.btnVendors.IconZoom = 50D;
+            this.btnVendors.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnVendors.IsTab = false;
+            this.btnVendors.Location = new System.Drawing.Point(0, 289);
+            this.btnVendors.Name = "btnVendors";
+            this.btnVendors.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnVendors.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnVendors.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnVendors.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnVendors.selected = false;
+            this.btnVendors.Size = new System.Drawing.Size(182, 48);
+            this.btnVendors.TabIndex = 3;
+            this.btnVendors.TabStop = false;
+            this.btnVendors.Text = "Vendors";
+            this.btnVendors.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVendors.Textcolor = System.Drawing.Color.White;
+            this.btnVendors.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendors.Click += new System.EventHandler(this.btnVendors_Click);
             // 
             // btnLogout
             // 
@@ -384,7 +395,7 @@
             this.pnlButtons.Controls.Add(this.btnDelivery);
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
             this.pnlButtons.Controls.Add(this.btnLogout);
-            this.pnlButtons.Controls.Add(this.btnLogs);
+            this.pnlButtons.Controls.Add(this.btnVendors);
             this.pnlButtons.Controls.Add(this.btnRegistration);
             this.pnlButtons.Controls.Add(this.btnFASM);
             this.pnlButtons.Controls.Add(this.btnPurchaseOrder);
@@ -433,17 +444,6 @@
             this.btnDelivery.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(197)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(63, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(509, 37);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "UNITED AGRIMALL CORPORATION";
-            // 
             // frmAdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,7 +477,7 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnPurchaseOrder;
         public Bunifu.Framework.UI.BunifuFlatButton btnFASM;
         public Bunifu.Framework.UI.BunifuFlatButton btnRegistration;
-        public Bunifu.Framework.UI.BunifuFlatButton btnLogs;
+        public Bunifu.Framework.UI.BunifuFlatButton btnVendors;
         public Bunifu.Framework.UI.BunifuFlatButton btnLogout;
         public Bunifu.Framework.UI.BunifuFlatButton btnPurchaseRequest;
         private System.Windows.Forms.Panel pnlButtons;

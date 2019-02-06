@@ -47,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(300, 61);
+            this.label1.Location = new System.Drawing.Point(302, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 33);
             this.label1.TabIndex = 1;
@@ -86,12 +86,13 @@
             this.txtUsername.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.txtUsername.LineThickness = 3;
-            this.txtUsername.Location = new System.Drawing.Point(308, 138);
+            this.txtUsername.Location = new System.Drawing.Point(310, 125);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(345, 44);
             this.txtUsername.TabIndex = 3;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUsername.OnValueChanged += new System.EventHandler(this.txtUsername_OnValueChanged);
             // 
             // txtPassword
             // 
@@ -105,7 +106,7 @@
             this.txtPassword.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.txtPassword.LineThickness = 3;
-            this.txtPassword.Location = new System.Drawing.Point(308, 190);
+            this.txtPassword.Location = new System.Drawing.Point(310, 177);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(345, 44);
@@ -123,7 +124,7 @@
             this.btnLogin.ButtonText = "LOGIN";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DisabledColor = System.Drawing.Color.OldLace;
-            this.btnLogin.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Montserrat", 8.249999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogin.Iconimage = null;
             this.btnLogin.Iconimage_right = null;
@@ -136,7 +137,7 @@
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(308, 268);
+            this.btnLogin.Location = new System.Drawing.Point(310, 252);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -148,14 +149,14 @@
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Textcolor = System.Drawing.SystemColors.Window;
-            this.btnLogin.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.TextFont = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(303, 92);
+            this.label2.Location = new System.Drawing.Point(305, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(362, 42);
             this.label2.TabIndex = 2;
@@ -171,7 +172,7 @@
             this.btnRegister.ButtonText = "REGISTER";
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegister.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Iconcolor = System.Drawing.Color.Transparent;
             this.btnRegister.Iconimage = null;
             this.btnRegister.Iconimage_right = null;
@@ -184,7 +185,7 @@
             this.btnRegister.IconVisible = true;
             this.btnRegister.IconZoom = 90D;
             this.btnRegister.IsTab = false;
-            this.btnRegister.Location = new System.Drawing.Point(308, 326);
+            this.btnRegister.Location = new System.Drawing.Point(310, 310);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
@@ -195,8 +196,8 @@
             this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRegister.Textcolor = System.Drawing.Color.Black;
-            this.btnRegister.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Textcolor = System.Drawing.Color.Transparent;
+            this.btnRegister.TextFont = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // panel2

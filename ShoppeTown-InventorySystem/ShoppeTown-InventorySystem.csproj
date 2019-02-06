@@ -129,6 +129,12 @@
     <Compile Include="MainControls\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainControls\Vendors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Vendors.Designer.cs">
+      <DependentUpon>Vendors.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Controls\Item_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainControls\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Vendors.resx">
+      <DependentUpon>Vendors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\Item_control.resx">
       <DependentUpon>Item_control.cs</DependentUpon>

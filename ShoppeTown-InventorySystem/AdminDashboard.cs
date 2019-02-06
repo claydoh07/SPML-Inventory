@@ -102,11 +102,7 @@ namespace ShoppeTown_InventorySystem
             pnlAdminBoard.Controls.Add(rg);
         }
 
-        private void btnLogs_Click(object sender, EventArgs e)
-        {
-            button = "7";
-            getBackColor(button);
-        }
+     
 
         public void getBackColor(string click)
         {
@@ -118,7 +114,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "2")
@@ -129,7 +125,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "3")
@@ -140,7 +136,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "4")
@@ -151,7 +147,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(96,169,23);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "5")
@@ -162,7 +158,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(96,169,23);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "6")
@@ -173,7 +169,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(96,169,23);
-                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "7")
@@ -184,7 +180,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(96,169,23);
+                btnVendors.Normalcolor = Color.FromArgb(96,169,23);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
         }
@@ -197,6 +193,16 @@ namespace ShoppeTown_InventorySystem
         private void pnlAdminBoard_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnVendors_Click(object sender, EventArgs e)
+        {
+            button = "7";
+            getBackColor(button);
+
+            pnlAdminBoard.Controls.Clear();
+            MainControls.Vendors v = new MainControls.Vendors();
+            pnlAdminBoard.Controls.Add(v);
         }
     }
 }

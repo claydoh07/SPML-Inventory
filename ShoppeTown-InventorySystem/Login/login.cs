@@ -88,6 +88,11 @@ namespace ShoppeTown_InventorySystem
                 btnLogin_Click(sender, e);
             }
         }
+
+        private void txtUsername_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

@@ -48,6 +48,9 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         }
 
-       
+        private void bunifuFlatButton9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

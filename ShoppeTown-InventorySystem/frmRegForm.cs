@@ -21,5 +21,15 @@ namespace ShoppeTown_InventorySystem
         {
 
         }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
