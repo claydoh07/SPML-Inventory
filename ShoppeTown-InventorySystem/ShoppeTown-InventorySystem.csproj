@@ -135,6 +135,7 @@
     <Compile Include="MainControls\Vendors.Designer.cs">
       <DependentUpon>Vendors.cs</DependentUpon>
     </Compile>
+    <Compile Include="regItemCode.cs" />
     <Compile Include="User_Controls\Item_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
