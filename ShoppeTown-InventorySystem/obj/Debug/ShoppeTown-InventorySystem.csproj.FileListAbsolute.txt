@@ -86,7 +86,6 @@ D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySyste
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Data.Entity.EF6.dll
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Fabric.Plugin.dll
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Web.dll
-D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAdminDashboard.resources
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegForm.resources
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Dashboard.resources
@@ -114,3 +113,4 @@ D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySyste
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.exe
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.pdb
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Vendors.resources
+D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache

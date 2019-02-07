@@ -224,6 +224,104 @@ namespace ShoppeTown_InventorySystem
             }
             return dgv1;
         }
+        //Vendor Codes
+        public string AddVendor(string cat, string subcat, 
+            string compname, string contactperson, string compaddress, 
+            string tel1, string tel2,
+            string mob1, string mob2, 
+            string fax, string emailadd1, string emailadd2, 
+            string website)
+        {
+            try
+            {
+                con.Open();
+                string SqlInsertVendor = "INSERT INTO tbl_vendor(" +
+                    "vendor_category, vendor_subcategory, vendor_name, " +
+                    "vendor_contactperson, vendor_address, vendor_telephone1, " +
+                    "vendor_telephone2, vendor_mobile1, vendor_mobile2, " +
+                    "vendor_fax, vendor_emailadd1, vendor_emailadd2, vendor_website, " +
+                    "created_at, updated_at) " +
+                    "VALUES (@category, @subcat, @vendorname, " +
+                    "        @contactperson, @vendoraddress, @vendortel1, " +
+                    "        @vendortel2, @vendormob1, @vendormob2, " +
+                    "        @vendorfax, @vendoremail1, @vendoremail2, @vendorwebsite, " +
+                    "        @created_at, @updated_at);";
+
+                MySqlCommand com = new MySqlCommand(SqlInsertVendor, con);
+                com.Parameters.AddWithValue("@category", cat);
+                com.Parameters.AddWithValue("@subcat", subcat);
+                com.Parameters.AddWithValue("@vendorname", compname);
+                com.Parameters.AddWithValue("@contactperson", contactperson);
+                com.Parameters.AddWithValue("@vendoraddress", compaddress);
+                com.Parameters.AddWithValue("@vendortel1", tel1);
+                com.Parameters.AddWithValue("@vendortel2", tel2);
+                com.Parameters.AddWithValue("@vendormob1", mob1);
+                com.Parameters.AddWithValue("@vendormob2", mob2);
+                com.Parameters.AddWithValue("@vendorfax", fax);
+                com.Parameters.AddWithValue("@vendoremail1", emailadd1);
+                com.Parameters.AddWithValue("@vendoremail2", emailadd2);
+                com.Parameters.AddWithValue("@vendorwebsite", website);
+                com.Parameters.AddWithValue("@created_at", DateTime.Now.ToString("yyyy'-'MM'-'dd' 'HH':'mm':'ss"));
+                com.Parameters.AddWithValue("@updated_at", DateTime.Now.ToString("yyyy'-'MM'-'dd' 'HH':'mm':'ss"));
+                com.ExecuteNonQuery();
+                //  YYYY-MM-DD HH:MM:SS
+            }
+            catch (MySqlException sql)
+            {
+                MessageBox.Show(sql.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return null;
+        }
+        public DataGridView dgv_VendorTable(string search)
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = "" +
+              "select * from tbl_vendor " +
+              "where vendor_category like '%" + search + "%' or " +
+              "      vendor_subcategory like '%" + search + "%' or " +
+              "      vendor_name like '%" + search + "%' or " +
+              "      vendor_contactperson like '%" + search + "%' or " +
+              "      vendor_address like '%" + search + "%' or " +
+              "      vendor_telephone1 like '%" + search + "%' or " +
+              "      vendor_telephone2 like '%" + search + "%' or " +
+              "      vendor_mobile1 like '%" + search + "%' or " +
+              "      vendor_mobile2 like '%" + search + "%' or " +
+              "      vendor_fax like '%" + search + "%' or " +
+              "      vendor_emailadd1 like '%" + search + "%' or " +
+              "      vendor_emailadd2 like '%" + search + "%' or " +
+              "      vendor_website like '%" + search + "%';";
+
+
+
+
+
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
 
     }
 }
