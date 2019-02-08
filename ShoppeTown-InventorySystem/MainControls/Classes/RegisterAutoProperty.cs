@@ -14,5 +14,7 @@ namespace ShoppeTown_InventorySystem
         public static string position { get; set; }
         public static string department { get; set; }
         public static string usertype { get; set; }
+        public static string vendorID { get; set; }
+
     }
 }

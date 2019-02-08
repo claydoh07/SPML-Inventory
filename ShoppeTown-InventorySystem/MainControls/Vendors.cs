@@ -63,14 +63,13 @@ namespace ShoppeTown_InventorySystem.MainControls
             
 
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            string[] msg = new string[]
+        public string[] msg = new string[]
                 { "", "Category ", "Sub Category ", "Company Name ", "Contact Person ",
                   "Company Address ", "Telephone # 1 ", "Telephone # 2 ", "Mobile # 1 ",
                   "Mobile # 2 ","Fax # ", "Email Address 1 ", "Email Address 2 ", "Website " };
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
             if ((cboCat.Text != "" && cboSubCat.Text != "" && txtVendorName.Text != "" && txtContactPerson.Text != "" &&
                 txtCompAddress.Text != "" && txtTel1.Text != "" && txtTel2.Text != "" && txtMob1.Text != "" &&
                 txtMob2.Text != "" && txtFax.Text != "" && txtEmail1.Text != "" && txtEmail2.Text != "" && txtWebsite.Text != "") == true)
@@ -78,12 +77,24 @@ namespace ShoppeTown_InventorySystem.MainControls
                 DialogResult dg = MessageBox.Show(Review(msg) , "User Confirmation", MessageBoxButtons.OKCancel);
                 if (dg == DialogResult.OK)
                 {
-                    md.AddVendor(cboCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
-                     txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
-                     txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
-                    //Call Database
-                    dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
-                    Clear();
+                    if (RegisterAutoProperty.vendorID == "0")
+                    {
+                        md.AddVendor(cboCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
+                         txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
+                         txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
+                        //Call Database
+                        dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                        Clear();
+                    }
+                    else
+                    {
+                        md.UpdateVendor(cboCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
+                         txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
+                         txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
+                        //Call Database
+                        dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                        Clear();
+                    }
                 }
 
                 else if (dg == DialogResult.Cancel)
@@ -134,6 +145,7 @@ namespace ShoppeTown_InventorySystem.MainControls
         }
         private void btnRegVendor_Click(object sender, EventArgs e)
         {
+            RegisterAutoProperty.vendorID = "0";
             grpRegVendor.Enabled = true;
             btnSave.Visible = true;
             btnClear.Visible = true;
@@ -168,8 +180,8 @@ namespace ShoppeTown_InventorySystem.MainControls
             txtTel2.Text = "";
             txtVendorName.Text = "";
             txtWebsite.Text = "";
+            btnDelete.Visible = false;
 
-           
         }
         public string Review(string[] arr)
         {
@@ -193,12 +205,59 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         private void dgv_Vendors_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
+            foreach (DataGridViewRow row in dgv_Vendors.SelectedRows)
+            {
+                RegisterAutoProperty.vendorID = row.Cells[0].Value.ToString();
+                cboCat.Text =           row.Cells[1].Value.ToString();
+                cboSubCat.Text =        row.Cells[2].Value.ToString();
+                txtVendorName.Text =    row.Cells[3].Value.ToString();
+                txtContactPerson.Text = row.Cells[4].Value.ToString();
+                txtCompAddress.Text =   row.Cells[5].Value.ToString();
+                txtTel1.Text =          row.Cells[6].Value.ToString();
+                txtTel2.Text =          row.Cells[7].Value.ToString();
+                txtMob1.Text =          row.Cells[8].Value.ToString();
+                txtMob2.Text =          row.Cells[9].Value.ToString();
+                txtFax.Text =           row.Cells[10].Value.ToString();
+                txtEmail1.Text =        row.Cells[11].Value.ToString();
+                txtEmail2.Text =        row.Cells[12].Value.ToString();
+                txtWebsite.Text =       row.Cells[13].Value.ToString();
+            }
+            grpRegVendor.Enabled = true;
+            btnDelete.Visible = true;
         }
-
         private void txtSearch_OnValueChanged(object sender, EventArgs e)
         {
             dgv_Vendors.DataSource = md.dgv_VendorTable(txtSearch.Text).DataSource;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (RegisterAutoProperty.vendorID != "0")
+            {
+                DialogResult dg = MessageBox.Show(Review(msg), "Delete these information?", MessageBoxButtons.OKCancel);
+                if (dg == DialogResult.OK)
+                {
+                    md.DeleteVendor(cboCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
+                        txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
+                        txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
+                    //Call Database
+                    dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                    Clear();
+                    RegisterAutoProperty.vendorID = "0";
+                    btnDelete.Visible = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No rows selected", "Delete these information?", MessageBoxButtons.OK);
+                btnDelete.Visible = false;
+            }
+        }
+
+        private void dgv_Vendors_Leave(object sender, EventArgs e)
+        {
+            btnDelete.Visible = false;
         }
     }
 }

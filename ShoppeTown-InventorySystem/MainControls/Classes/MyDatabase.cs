@@ -276,6 +276,100 @@ namespace ShoppeTown_InventorySystem
             }
             return null;
         }
+
+        public string UpdateVendor(string cat, string subcat,
+            string compname, string contactperson, string compaddress,
+            string tel1, string tel2,
+            string mob1, string mob2,
+            string fax, string emailadd1, string emailadd2,
+            string website)
+        {
+            try
+            {
+                con.Open();
+                /*string SqlInsertVendor = "INSERT INTO tbl_vendor(" +
+                    "vendor_category, vendor_subcategory, vendor_name, " +
+                    "vendor_contactperson, vendor_address, vendor_telephone1, " +
+                    "vendor_telephone2, vendor_mobile1, vendor_mobile2, " +
+                    "vendor_fax, vendor_emailadd1, vendor_emailadd2, vendor_website, " +
+                    "created_at, updated_at) " +
+                    "VALUES (@category, @subcat, @vendorname, " +
+                    "        @contactperson, @vendoraddress, @vendortel1, " +
+                    "        @vendortel2, @vendormob1, @vendormob2, " +
+                    "        @vendorfax, @vendoremail1, @vendoremail2, @vendorwebsite, " +
+                    "        @created_at, @updated_at);";*/
+
+                string SqlUpdateVendor = "UPDATE tbl_vendor " +
+                "SET vendor_category = @category, vendor_subcategory = @subcat," +
+                    "vendor_name = @vendorname, vendor_contactperson = @contactperson," +
+                    "vendor_address = @vendoraddress, vendor_telephone1 = @vendortel1," +
+                    "vendor_telephone2 = @vendortel2, vendor_mobile1 = @vendormob1," +
+                    "vendor_mobile2 = @vendormob2, vendor_fax = @vendorfax," +
+                    "vendor_emailadd1 = @vendoremail1, vendor_emailadd2 = @vendoremail2," +
+                    "vendor_website = @vendorwebsite, updated_at = @updated_at" +
+                    " Where vendor_id = @id;";
+
+                MySqlCommand com = new MySqlCommand(SqlUpdateVendor, con);
+                com.Parameters.AddWithValue("@category", cat);
+                com.Parameters.AddWithValue("@subcat", subcat);
+                com.Parameters.AddWithValue("@vendorname", compname);
+                com.Parameters.AddWithValue("@contactperson", contactperson);
+                com.Parameters.AddWithValue("@vendoraddress", compaddress);
+                com.Parameters.AddWithValue("@vendortel1", tel1);
+                com.Parameters.AddWithValue("@vendortel2", tel2);
+                com.Parameters.AddWithValue("@vendormob1", mob1);
+                com.Parameters.AddWithValue("@vendormob2", mob2);
+                com.Parameters.AddWithValue("@vendorfax", fax);
+                com.Parameters.AddWithValue("@vendoremail1", emailadd1);
+                com.Parameters.AddWithValue("@vendoremail2", emailadd2);
+                com.Parameters.AddWithValue("@vendorwebsite", website);
+                com.Parameters.AddWithValue("@updated_at", DateTime.Now.ToString("yyyy'-'MM'-'dd' 'HH':'mm':'ss"));
+                com.Parameters.AddWithValue("@id", RegisterAutoProperty.vendorID);
+                com.ExecuteNonQuery();
+                //  YYYY-MM-DD HH:MM:SS
+            }
+            catch (MySqlException sql)
+            {
+                MessageBox.Show(sql.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return null;
+        }
+
+        public string DeleteVendor(string cat, string subcat,
+            string compname, string contactperson, string compaddress,
+            string tel1, string tel2,
+            string mob1, string mob2,
+            string fax, string emailadd1, string emailadd2,
+            string website)
+        {
+            try
+            {
+                con.Open();
+               
+
+                string SqlDeleteVendor = "DELETE FROM tbl_vendor" +
+                    " Where vendor_id = @id;";
+
+                MySqlCommand com = new MySqlCommand(SqlDeleteVendor, con);
+                com.Parameters.AddWithValue("@id", RegisterAutoProperty.vendorID);
+                com.ExecuteNonQuery();
+                //  YYYY-MM-DD HH:MM:SS
+            }
+            catch (MySqlException sql)
+            {
+                MessageBox.Show(sql.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return null;
+        }
+
         public DataGridView dgv_VendorTable(string search)
         {
             DataGridView dgv1 = new DataGridView();
