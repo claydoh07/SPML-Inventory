@@ -259,5 +259,10 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             btnDelete.Visible = false;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

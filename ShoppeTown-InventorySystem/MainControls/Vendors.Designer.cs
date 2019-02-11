@@ -51,6 +51,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.grpRegVendor = new System.Windows.Forms.GroupBox();
+            this.btnAddCat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnClear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -70,7 +71,6 @@
             this.txtVendorName = new System.Windows.Forms.TextBox();
             this.dgv_Vendors = new System.Windows.Forms.DataGridView();
             this.btnRegVendor = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAddCat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.grpRegVendor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Vendors)).BeginInit();
@@ -155,6 +155,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(520, 40);
             this.panel1.TabIndex = 44;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label8
             // 
@@ -344,6 +345,45 @@
             this.grpRegVendor.TabStop = false;
             this.grpRegVendor.Text = "Register Form";
             this.grpRegVendor.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnAddCat
+            // 
+            this.btnAddCat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnAddCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddCat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddCat.BorderRadius = 0;
+            this.btnAddCat.ButtonText = "Add Category";
+            this.btnAddCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCat.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAddCat.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCat.Iconcolor = System.Drawing.Color.Tomato;
+            this.btnAddCat.Iconimage = null;
+            this.btnAddCat.Iconimage_right = null;
+            this.btnAddCat.Iconimage_right_Selected = null;
+            this.btnAddCat.Iconimage_Selected = null;
+            this.btnAddCat.IconMarginLeft = 0;
+            this.btnAddCat.IconMarginRight = 0;
+            this.btnAddCat.IconRightVisible = false;
+            this.btnAddCat.IconRightZoom = 0D;
+            this.btnAddCat.IconVisible = false;
+            this.btnAddCat.IconZoom = 0D;
+            this.btnAddCat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAddCat.IsTab = false;
+            this.btnAddCat.Location = new System.Drawing.Point(180, 69);
+            this.btnAddCat.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.btnAddCat.Name = "btnAddCat";
+            this.btnAddCat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddCat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnAddCat.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAddCat.selected = false;
+            this.btnAddCat.Size = new System.Drawing.Size(149, 29);
+            this.btnAddCat.TabIndex = 53;
+            this.btnAddCat.TabStop = false;
+            this.btnAddCat.Text = "Add Category";
+            this.btnAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddCat.Textcolor = System.Drawing.Color.White;
+            this.btnAddCat.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCat.Visible = false;
             // 
             // btnDelete
             // 
@@ -721,45 +761,6 @@
             this.btnRegVendor.Textcolor = System.Drawing.Color.White;
             this.btnRegVendor.TextFont = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegVendor.Click += new System.EventHandler(this.btnRegVendor_Click);
-            // 
-            // btnAddCat
-            // 
-            this.btnAddCat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
-            this.btnAddCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddCat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddCat.BorderRadius = 0;
-            this.btnAddCat.ButtonText = "Add Category";
-            this.btnAddCat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddCat.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAddCat.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCat.Iconcolor = System.Drawing.Color.Tomato;
-            this.btnAddCat.Iconimage = null;
-            this.btnAddCat.Iconimage_right = null;
-            this.btnAddCat.Iconimage_right_Selected = null;
-            this.btnAddCat.Iconimage_Selected = null;
-            this.btnAddCat.IconMarginLeft = 0;
-            this.btnAddCat.IconMarginRight = 0;
-            this.btnAddCat.IconRightVisible = false;
-            this.btnAddCat.IconRightZoom = 0D;
-            this.btnAddCat.IconVisible = false;
-            this.btnAddCat.IconZoom = 0D;
-            this.btnAddCat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAddCat.IsTab = false;
-            this.btnAddCat.Location = new System.Drawing.Point(180, 69);
-            this.btnAddCat.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.btnAddCat.Name = "btnAddCat";
-            this.btnAddCat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddCat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnAddCat.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAddCat.selected = false;
-            this.btnAddCat.Size = new System.Drawing.Size(149, 29);
-            this.btnAddCat.TabIndex = 53;
-            this.btnAddCat.TabStop = false;
-            this.btnAddCat.Text = "Add Category";
-            this.btnAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAddCat.Textcolor = System.Drawing.Color.White;
-            this.btnAddCat.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCat.Visible = false;
             // 
             // Vendors
             // 
