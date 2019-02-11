@@ -41,7 +41,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.grpRegVendor = new System.Windows.Forms.GroupBox();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnClear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -70,7 +70,7 @@
             this.txtVendorName = new System.Windows.Forms.TextBox();
             this.dgv_Vendors = new System.Windows.Forms.DataGridView();
             this.btnRegVendor = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAddCat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             this.grpRegVendor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Vendors)).BeginInit();
@@ -151,7 +151,7 @@
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtSearch);
-            this.panel1.Location = new System.Drawing.Point(513, 15);
+            this.panel1.Location = new System.Drawing.Point(12, 335);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(520, 40);
             this.panel1.TabIndex = 44;
@@ -162,7 +162,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label8.Location = new System.Drawing.Point(78, 300);
+            this.label8.Location = new System.Drawing.Point(575, 72);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 21);
             this.label8.TabIndex = 44;
@@ -174,7 +174,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label6.Location = new System.Drawing.Point(74, 333);
+            this.label6.Location = new System.Drawing.Point(571, 105);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 21);
             this.label6.TabIndex = 45;
@@ -186,23 +186,11 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label9.Location = new System.Drawing.Point(83, 36);
+            this.label9.Location = new System.Drawing.Point(86, 38);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 21);
             this.label9.TabIndex = 45;
             this.label9.Text = "Category :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label10.Location = new System.Drawing.Point(50, 69);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 21);
-            this.label10.TabIndex = 45;
-            this.label10.Text = "Sub Category :";
             // 
             // label11
             // 
@@ -210,7 +198,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label11.Location = new System.Drawing.Point(111, 365);
+            this.label11.Location = new System.Drawing.Point(608, 137);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 21);
             this.label11.TabIndex = 45;
@@ -222,7 +210,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label7.Location = new System.Drawing.Point(46, 267);
+            this.label7.Location = new System.Drawing.Point(543, 38);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 21);
             this.label7.TabIndex = 45;
@@ -235,7 +223,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label4.Location = new System.Drawing.Point(50, 234);
+            this.label4.Location = new System.Drawing.Point(53, 270);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 21);
             this.label4.TabIndex = 44;
@@ -247,7 +235,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(14, 167);
+            this.label3.Location = new System.Drawing.Point(17, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 21);
             this.label3.TabIndex = 44;
@@ -259,7 +247,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(36, 134);
+            this.label2.Location = new System.Drawing.Point(39, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 21);
             this.label2.TabIndex = 44;
@@ -271,7 +259,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(28, 101);
+            this.label1.Location = new System.Drawing.Point(31, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 21);
             this.label1.TabIndex = 44;
@@ -283,7 +271,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label12.Location = new System.Drawing.Point(35, 398);
+            this.label12.Location = new System.Drawing.Point(532, 170);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 21);
             this.label12.TabIndex = 47;
@@ -295,7 +283,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label13.Location = new System.Drawing.Point(31, 431);
+            this.label13.Location = new System.Drawing.Point(528, 203);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(137, 21);
             this.label13.TabIndex = 48;
@@ -308,7 +296,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label14.Location = new System.Drawing.Point(90, 464);
+            this.label14.Location = new System.Drawing.Point(587, 236);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(78, 21);
             this.label14.TabIndex = 49;
@@ -317,6 +305,7 @@
             // grpRegVendor
             // 
             this.grpRegVendor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpRegVendor.Controls.Add(this.btnAddCat);
             this.grpRegVendor.Controls.Add(this.btnDelete);
             this.grpRegVendor.Controls.Add(this.btnClear);
             this.grpRegVendor.Controls.Add(this.btnCancel);
@@ -343,19 +332,58 @@
             this.grpRegVendor.Controls.Add(this.label4);
             this.grpRegVendor.Controls.Add(this.label7);
             this.grpRegVendor.Controls.Add(this.label11);
-            this.grpRegVendor.Controls.Add(this.label10);
             this.grpRegVendor.Controls.Add(this.label9);
             this.grpRegVendor.Controls.Add(this.label6);
             this.grpRegVendor.Controls.Add(this.label8);
             this.grpRegVendor.Enabled = false;
             this.grpRegVendor.Font = new System.Drawing.Font("Montserrat Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpRegVendor.Location = new System.Drawing.Point(11, 63);
+            this.grpRegVendor.Location = new System.Drawing.Point(12, 12);
             this.grpRegVendor.Name = "grpRegVendor";
-            this.grpRegVendor.Size = new System.Drawing.Size(489, 549);
+            this.grpRegVendor.Size = new System.Drawing.Size(1021, 317);
             this.grpRegVendor.TabIndex = 45;
             this.grpRegVendor.TabStop = false;
             this.grpRegVendor.Text = "Register Form";
             this.grpRegVendor.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelete.BorderRadius = 0;
+            this.btnDelete.ButtonText = "Delete";
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDelete.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Iconcolor = System.Drawing.Color.Turquoise;
+            this.btnDelete.Iconimage = null;
+            this.btnDelete.Iconimage_right = null;
+            this.btnDelete.Iconimage_right_Selected = null;
+            this.btnDelete.Iconimage_Selected = null;
+            this.btnDelete.IconMarginLeft = 0;
+            this.btnDelete.IconMarginRight = 0;
+            this.btnDelete.IconRightVisible = false;
+            this.btnDelete.IconRightZoom = 0D;
+            this.btnDelete.IconVisible = false;
+            this.btnDelete.IconZoom = 0D;
+            this.btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDelete.IsTab = false;
+            this.btnDelete.Location = new System.Drawing.Point(911, 271);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Normalcolor = System.Drawing.Color.Firebrick;
+            this.btnDelete.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDelete.selected = false;
+            this.btnDelete.Size = new System.Drawing.Size(70, 37);
+            this.btnDelete.TabIndex = 52;
+            this.btnDelete.TabStop = false;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Textcolor = System.Drawing.Color.White;
+            this.btnDelete.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Visible = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
@@ -380,14 +408,14 @@
             this.btnClear.IconZoom = 0D;
             this.btnClear.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnClear.IsTab = false;
-            this.btnClear.Location = new System.Drawing.Point(373, 499);
+            this.btnClear.Location = new System.Drawing.Point(839, 271);
             this.btnClear.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnClear.Name = "btnClear";
             this.btnClear.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnClear.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnClear.OnHoverTextColor = System.Drawing.Color.White;
             this.btnClear.selected = false;
-            this.btnClear.Size = new System.Drawing.Size(97, 38);
+            this.btnClear.Size = new System.Drawing.Size(70, 37);
             this.btnClear.TabIndex = 51;
             this.btnClear.TabStop = false;
             this.btnClear.Text = "Clear";
@@ -420,14 +448,14 @@
             this.btnCancel.IconZoom = 0D;
             this.btnCancel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(275, 499);
+            this.btnCancel.Location = new System.Drawing.Point(767, 271);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnCancel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnCancel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCancel.selected = false;
-            this.btnCancel.Size = new System.Drawing.Size(97, 38);
+            this.btnCancel.Size = new System.Drawing.Size(70, 37);
             this.btnCancel.TabIndex = 50;
             this.btnCancel.TabStop = false;
             this.btnCancel.Text = "Cancel";
@@ -460,14 +488,14 @@
             this.btnSave.IconZoom = 0D;
             this.btnSave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(177, 499);
+            this.btnSave.Location = new System.Drawing.Point(695, 271);
             this.btnSave.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(97, 38);
+            this.btnSave.Size = new System.Drawing.Size(70, 37);
             this.btnSave.TabIndex = 13;
             this.btnSave.TabStop = false;
             this.btnSave.Text = "Save";
@@ -482,9 +510,9 @@
             this.cboSubCat.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSubCat.FormattingEnabled = true;
             this.cboSubCat.ItemHeight = 21;
-            this.cboSubCat.Location = new System.Drawing.Point(177, 66);
+            this.cboSubCat.Location = new System.Drawing.Point(180, 102);
             this.cboSubCat.Name = "cboSubCat";
-            this.cboSubCat.Size = new System.Drawing.Size(293, 29);
+            this.cboSubCat.Size = new System.Drawing.Size(324, 29);
             this.cboSubCat.TabIndex = 2;
             // 
             // cboCat
@@ -492,108 +520,108 @@
             this.cboCat.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCat.FormattingEnabled = true;
             this.cboCat.ItemHeight = 21;
-            this.cboCat.Location = new System.Drawing.Point(177, 33);
+            this.cboCat.Location = new System.Drawing.Point(180, 35);
             this.cboCat.Name = "cboCat";
-            this.cboCat.Size = new System.Drawing.Size(293, 29);
+            this.cboCat.Size = new System.Drawing.Size(324, 29);
             this.cboCat.TabIndex = 1;
             // 
             // txtWebsite
             // 
             this.txtWebsite.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWebsite.Location = new System.Drawing.Point(177, 461);
+            this.txtWebsite.Location = new System.Drawing.Point(674, 233);
             this.txtWebsite.Multiline = true;
             this.txtWebsite.Name = "txtWebsite";
-            this.txtWebsite.Size = new System.Drawing.Size(293, 29);
+            this.txtWebsite.Size = new System.Drawing.Size(324, 29);
             this.txtWebsite.TabIndex = 12;
             // 
             // txtEmail1
             // 
             this.txtEmail1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail1.Location = new System.Drawing.Point(177, 395);
+            this.txtEmail1.Location = new System.Drawing.Point(674, 167);
             this.txtEmail1.Multiline = true;
             this.txtEmail1.Name = "txtEmail1";
-            this.txtEmail1.Size = new System.Drawing.Size(293, 29);
+            this.txtEmail1.Size = new System.Drawing.Size(324, 29);
             this.txtEmail1.TabIndex = 11;
             // 
             // txtEmail2
             // 
             this.txtEmail2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail2.Location = new System.Drawing.Point(177, 428);
+            this.txtEmail2.Location = new System.Drawing.Point(674, 200);
             this.txtEmail2.Multiline = true;
             this.txtEmail2.Name = "txtEmail2";
-            this.txtEmail2.Size = new System.Drawing.Size(293, 29);
+            this.txtEmail2.Size = new System.Drawing.Size(324, 29);
             this.txtEmail2.TabIndex = 11;
             // 
             // txtFax
             // 
             this.txtFax.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFax.Location = new System.Drawing.Point(177, 362);
+            this.txtFax.Location = new System.Drawing.Point(674, 134);
             this.txtFax.Multiline = true;
             this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(293, 29);
+            this.txtFax.Size = new System.Drawing.Size(324, 29);
             this.txtFax.TabIndex = 10;
             // 
             // txtMob1
             // 
             this.txtMob1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMob1.Location = new System.Drawing.Point(177, 297);
+            this.txtMob1.Location = new System.Drawing.Point(674, 69);
             this.txtMob1.Multiline = true;
             this.txtMob1.Name = "txtMob1";
-            this.txtMob1.Size = new System.Drawing.Size(293, 29);
+            this.txtMob1.Size = new System.Drawing.Size(324, 29);
             this.txtMob1.TabIndex = 8;
             // 
             // txtMob2
             // 
             this.txtMob2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMob2.Location = new System.Drawing.Point(177, 330);
+            this.txtMob2.Location = new System.Drawing.Point(674, 102);
             this.txtMob2.Multiline = true;
             this.txtMob2.Name = "txtMob2";
-            this.txtMob2.Size = new System.Drawing.Size(293, 29);
+            this.txtMob2.Size = new System.Drawing.Size(324, 29);
             this.txtMob2.TabIndex = 9;
             // 
             // txtTel1
             // 
             this.txtTel1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel1.Location = new System.Drawing.Point(177, 231);
+            this.txtTel1.Location = new System.Drawing.Point(180, 267);
             this.txtTel1.Multiline = true;
             this.txtTel1.Name = "txtTel1";
-            this.txtTel1.Size = new System.Drawing.Size(293, 29);
+            this.txtTel1.Size = new System.Drawing.Size(324, 29);
             this.txtTel1.TabIndex = 6;
             // 
             // txtTel2
             // 
             this.txtTel2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel2.Location = new System.Drawing.Point(177, 264);
+            this.txtTel2.Location = new System.Drawing.Point(674, 35);
             this.txtTel2.Multiline = true;
             this.txtTel2.Name = "txtTel2";
-            this.txtTel2.Size = new System.Drawing.Size(293, 29);
+            this.txtTel2.Size = new System.Drawing.Size(324, 29);
             this.txtTel2.TabIndex = 7;
             // 
             // txtCompAddress
             // 
             this.txtCompAddress.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompAddress.Location = new System.Drawing.Point(177, 164);
+            this.txtCompAddress.Location = new System.Drawing.Point(180, 200);
             this.txtCompAddress.Multiline = true;
             this.txtCompAddress.Name = "txtCompAddress";
-            this.txtCompAddress.Size = new System.Drawing.Size(293, 63);
+            this.txtCompAddress.Size = new System.Drawing.Size(324, 63);
             this.txtCompAddress.TabIndex = 5;
             // 
             // txtContactPerson
             // 
             this.txtContactPerson.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContactPerson.Location = new System.Drawing.Point(177, 131);
+            this.txtContactPerson.Location = new System.Drawing.Point(180, 167);
             this.txtContactPerson.Multiline = true;
             this.txtContactPerson.Name = "txtContactPerson";
-            this.txtContactPerson.Size = new System.Drawing.Size(293, 29);
+            this.txtContactPerson.Size = new System.Drawing.Size(324, 29);
             this.txtContactPerson.TabIndex = 4;
             // 
             // txtVendorName
             // 
             this.txtVendorName.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendorName.Location = new System.Drawing.Point(177, 98);
+            this.txtVendorName.Location = new System.Drawing.Point(180, 134);
             this.txtVendorName.Multiline = true;
             this.txtVendorName.Name = "txtVendorName";
-            this.txtVendorName.Size = new System.Drawing.Size(293, 29);
+            this.txtVendorName.Size = new System.Drawing.Size(324, 29);
             this.txtVendorName.TabIndex = 3;
             // 
             // dgv_Vendors
@@ -630,7 +658,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Vendors.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_Vendors.Location = new System.Drawing.Point(513, 54);
+            this.dgv_Vendors.Location = new System.Drawing.Point(12, 375);
             this.dgv_Vendors.Name = "dgv_Vendors";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -649,7 +677,7 @@
             this.dgv_Vendors.RowTemplate.ReadOnly = true;
             this.dgv_Vendors.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Vendors.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Vendors.Size = new System.Drawing.Size(520, 558);
+            this.dgv_Vendors.Size = new System.Drawing.Size(1021, 237);
             this.dgv_Vendors.TabIndex = 46;
             this.dgv_Vendors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Vendors_CellContentClick);
             this.dgv_Vendors.Leave += new System.EventHandler(this.dgv_Vendors_Leave);
@@ -678,7 +706,7 @@
             this.btnRegVendor.IconZoom = 55D;
             this.btnRegVendor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegVendor.IsTab = false;
-            this.btnRegVendor.Location = new System.Drawing.Point(11, 15);
+            this.btnRegVendor.Location = new System.Drawing.Point(570, 335);
             this.btnRegVendor.Margin = new System.Windows.Forms.Padding(13, 8, 13, 8);
             this.btnRegVendor.Name = "btnRegVendor";
             this.btnRegVendor.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -694,45 +722,44 @@
             this.btnRegVendor.TextFont = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegVendor.Click += new System.EventHandler(this.btnRegVendor_Click);
             // 
-            // btnDelete
+            // btnAddCat
             // 
-            this.btnDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
-            this.btnDelete.BackColor = System.Drawing.Color.Brown;
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.BorderRadius = 0;
-            this.btnDelete.ButtonText = "Delete";
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelete.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Iconcolor = System.Drawing.Color.Turquoise;
-            this.btnDelete.Iconimage = null;
-            this.btnDelete.Iconimage_right = null;
-            this.btnDelete.Iconimage_right_Selected = null;
-            this.btnDelete.Iconimage_Selected = null;
-            this.btnDelete.IconMarginLeft = 0;
-            this.btnDelete.IconMarginRight = 0;
-            this.btnDelete.IconRightVisible = false;
-            this.btnDelete.IconRightZoom = 0D;
-            this.btnDelete.IconVisible = false;
-            this.btnDelete.IconZoom = 0D;
-            this.btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(79, 499);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Normalcolor = System.Drawing.Color.Firebrick;
-            this.btnDelete.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDelete.selected = false;
-            this.btnDelete.Size = new System.Drawing.Size(97, 38);
-            this.btnDelete.TabIndex = 52;
-            this.btnDelete.TabStop = false;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDelete.Textcolor = System.Drawing.Color.White;
-            this.btnDelete.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Visible = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnAddCat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnAddCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddCat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddCat.BorderRadius = 0;
+            this.btnAddCat.ButtonText = "Add Category";
+            this.btnAddCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCat.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAddCat.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCat.Iconcolor = System.Drawing.Color.Tomato;
+            this.btnAddCat.Iconimage = null;
+            this.btnAddCat.Iconimage_right = null;
+            this.btnAddCat.Iconimage_right_Selected = null;
+            this.btnAddCat.Iconimage_Selected = null;
+            this.btnAddCat.IconMarginLeft = 0;
+            this.btnAddCat.IconMarginRight = 0;
+            this.btnAddCat.IconRightVisible = false;
+            this.btnAddCat.IconRightZoom = 0D;
+            this.btnAddCat.IconVisible = false;
+            this.btnAddCat.IconZoom = 0D;
+            this.btnAddCat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAddCat.IsTab = false;
+            this.btnAddCat.Location = new System.Drawing.Point(180, 69);
+            this.btnAddCat.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.btnAddCat.Name = "btnAddCat";
+            this.btnAddCat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddCat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnAddCat.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAddCat.selected = false;
+            this.btnAddCat.Size = new System.Drawing.Size(149, 29);
+            this.btnAddCat.TabIndex = 53;
+            this.btnAddCat.TabStop = false;
+            this.btnAddCat.Text = "Add Category";
+            this.btnAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddCat.Textcolor = System.Drawing.Color.White;
+            this.btnAddCat.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCat.Visible = false;
             // 
             // Vendors
             // 
@@ -763,7 +790,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
@@ -793,5 +819,6 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnClear;
         public Bunifu.Framework.UI.BunifuFlatButton btnCancel;
         public Bunifu.Framework.UI.BunifuFlatButton btnDelete;
+        public Bunifu.Framework.UI.BunifuFlatButton btnAddCat;
     }
 }
