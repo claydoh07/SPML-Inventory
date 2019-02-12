@@ -225,6 +225,9 @@ namespace ShoppeTown_InventorySystem.MainControls
                 txtWebsite.Text =       row.Cells[13].Value.ToString();
             }
             grpRegVendor.Enabled = true;
+            btnClear.Visible = true;
+            btnSave.Visible = true;
+            btnCancel.Visible = true;
             btnDelete.Visible = true;
         }
         private void txtSearch_OnValueChanged(object sender, EventArgs e)

@@ -194,6 +194,41 @@ namespace ShoppeTown_InventorySystem
             return dgv1;
         }
 
+        public DataGridView dgv_showItemCode()
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = @"SELECT `id`,
+                            `itemCode`,
+                            `itemCode_Category`,
+                            `itemCode_SubCategory`,
+                            `itemCode_ItemName`,
+                            `itemCode_Brand`,
+                            `itemCode_Model`,
+                            `itemCode_Description` FROM tbl_itemcode;";
+
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }catch(MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
+
         public DataGridView dgvUnissued(string search)
         {
             DataGridView dgv1 = new DataGridView();
@@ -824,8 +859,34 @@ namespace ShoppeTown_InventorySystem
             return cont;
         }
 
-        public void RegisterItemCode(string category, string code, string subcat, string items, string brand, string model, string description)
+        public void RegisterItemCode(string itemCode, string category, string subcat, string items, string brand, string model, string description)
         {
+            try
+            {
+                con.Open();
+                string sql1 = "INSERT INTO tbl_itemcode(`itemCode`,`itemCode_Category`,`itemCode_SubCategory`,`itemCode_ItemName`,`itemCode_Brand`,`itemCode_Model`,`itemCode_Description`, `created_at`, `updated_at`) VALUES(@itemCode, @cat, @subCat, @item, @brand, @mod, @desc, @date1, @date2);";//inserting itemcode
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@itemCode", itemCode);
+                com1.Parameters.AddWithValue("@cat", category);
+                com1.Parameters.AddWithValue("@subCat", subcat);
+                com1.Parameters.AddWithValue("@item", items);
+                com1.Parameters.AddWithValue("@brand", brand);
+                com1.Parameters.AddWithValue("@mod", model);
+                com1.Parameters.AddWithValue("@desc", description);
+                com1.Parameters.AddWithValue("@date1", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                com1.Parameters.AddWithValue("@date2", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                com1.ExecuteNonQuery();
+                con.Close();
+                //MessageBox.Show("Created Successful", "Save!");
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "RegisterItemCode");
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         public void InsertCategory(string category, string code)//cat1
@@ -1141,6 +1202,42 @@ namespace ShoppeTown_InventorySystem
                 con.Close();
             }
         }
-
+        
+        public void UpdateItemCode(string id, string cat, string subName, string item, string brand, string model, string description)
+        {
+            try
+            {
+                con.Open();
+                string sql1 = @"UPDATE tbl_itemcode SET
+                            `itemCode_Category` = @cat,
+                            `itemCode_SubCategory` = @subCat,
+                            `itemCode_ItemName` = @item,
+                            `itemCode_Brand` = @brand,
+                            `itemCode_Model` = @model,
+                            `itemCode_Description` = @desc,
+                            `updated_at` = @date2
+                            WHERE `id` = @id;";//update item code
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@id", id);
+                com1.Parameters.AddWithValue("@cat", cat);
+                com1.Parameters.AddWithValue("@subCat", subName);
+                com1.Parameters.AddWithValue("@item", item);
+                com1.Parameters.AddWithValue("@brand", brand);
+                com1.Parameters.AddWithValue("@model", model);
+                com1.Parameters.AddWithValue("@desc", description);
+                com1.Parameters.AddWithValue("@date2", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                com1.ExecuteNonQuery();
+                con.Close();
+                //MessageBox.Show("Created Successful", "Save!");
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "UpdateItemCode");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

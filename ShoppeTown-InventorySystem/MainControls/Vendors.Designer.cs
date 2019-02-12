@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vendors));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,13 +51,17 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.grpRegVendor = new System.Windows.Forms.GroupBox();
-            this.btnAddCat = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pnlAddCategory = new System.Windows.Forms.Panel();
+            this.btnCan = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.cboCat = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnClear = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cboSubCat = new System.Windows.Forms.ComboBox();
-            this.cboCat = new System.Windows.Forms.ComboBox();
             this.txtWebsite = new System.Windows.Forms.TextBox();
             this.txtEmail1 = new System.Windows.Forms.TextBox();
             this.txtEmail2 = new System.Windows.Forms.TextBox();
@@ -66,21 +70,17 @@
             this.txtMob2 = new System.Windows.Forms.TextBox();
             this.txtTel1 = new System.Windows.Forms.TextBox();
             this.txtTel2 = new System.Windows.Forms.TextBox();
+            this.txtCat = new System.Windows.Forms.TextBox();
             this.txtCompAddress = new System.Windows.Forms.TextBox();
             this.txtContactPerson = new System.Windows.Forms.TextBox();
             this.txtVendorName = new System.Windows.Forms.TextBox();
+            this.btnAddCat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dgv_Vendors = new System.Windows.Forms.DataGridView();
             this.btnRegVendor = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pnlAddCategory = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnCan = new System.Windows.Forms.Button();
-            this.txtCat = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.grpRegVendor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Vendors)).BeginInit();
             this.pnlAddCategory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Vendors)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -354,44 +354,76 @@
             this.grpRegVendor.Text = "Register Form";
             this.grpRegVendor.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnAddCat
+            // pnlAddCategory
             // 
-            this.btnAddCat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
-            this.btnAddCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddCat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddCat.BorderRadius = 0;
-            this.btnAddCat.ButtonText = "Add";
-            this.btnAddCat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddCat.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAddCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCat.Iconcolor = System.Drawing.Color.Tomato;
-            this.btnAddCat.Iconimage = null;
-            this.btnAddCat.Iconimage_right = null;
-            this.btnAddCat.Iconimage_right_Selected = null;
-            this.btnAddCat.Iconimage_Selected = null;
-            this.btnAddCat.IconMarginLeft = 0;
-            this.btnAddCat.IconMarginRight = 0;
-            this.btnAddCat.IconRightVisible = false;
-            this.btnAddCat.IconRightZoom = 0D;
-            this.btnAddCat.IconVisible = false;
-            this.btnAddCat.IconZoom = 0D;
-            this.btnAddCat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAddCat.IsTab = false;
-            this.btnAddCat.Location = new System.Drawing.Point(462, 36);
-            this.btnAddCat.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.btnAddCat.Name = "btnAddCat";
-            this.btnAddCat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddCat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnAddCat.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAddCat.selected = false;
-            this.btnAddCat.Size = new System.Drawing.Size(42, 29);
-            this.btnAddCat.TabIndex = 53;
-            this.btnAddCat.TabStop = false;
-            this.btnAddCat.Text = "Add";
-            this.btnAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAddCat.Textcolor = System.Drawing.Color.White;
-            this.btnAddCat.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCat.Click += new System.EventHandler(this.btnAddCat_Click);
+            this.pnlAddCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAddCategory.Controls.Add(this.btnCan);
+            this.pnlAddCategory.Controls.Add(this.btnAdd);
+            this.pnlAddCategory.Controls.Add(this.cboCat);
+            this.pnlAddCategory.Controls.Add(this.label15);
+            this.pnlAddCategory.Controls.Add(this.label10);
+            this.pnlAddCategory.Location = new System.Drawing.Point(334, 15);
+            this.pnlAddCategory.Name = "pnlAddCategory";
+            this.pnlAddCategory.Size = new System.Drawing.Size(407, 185);
+            this.pnlAddCategory.TabIndex = 54;
+            this.pnlAddCategory.Visible = false;
+            // 
+            // btnCan
+            // 
+            this.btnCan.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCan.Location = new System.Drawing.Point(305, 123);
+            this.btnCan.Name = "btnCan";
+            this.btnCan.Size = new System.Drawing.Size(66, 25);
+            this.btnCan.TabIndex = 247;
+            this.btnCan.Text = "Cancel";
+            this.btnCan.UseVisualStyleBackColor = true;
+            this.btnCan.Click += new System.EventHandler(this.btnCan_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(230, 123);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(66, 25);
+            this.btnAdd.TabIndex = 247;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // cboCat
+            // 
+            this.cboCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCat.FormattingEnabled = true;
+            this.cboCat.ItemHeight = 18;
+            this.cboCat.Location = new System.Drawing.Point(47, 76);
+            this.cboCat.Name = "cboCat";
+            this.cboCat.Size = new System.Drawing.Size(324, 26);
+            this.cboCat.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.label15.Location = new System.Drawing.Point(15, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(281, 18);
+            this.label15.TabIndex = 44;
+            this.label15.Text = "Add Category for vendor registration";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.label10.Location = new System.Drawing.Point(44, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 18);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Select Category:";
             // 
             // btnDelete
             // 
@@ -563,17 +595,6 @@
             this.cboSubCat.Size = new System.Drawing.Size(324, 26);
             this.cboSubCat.TabIndex = 2;
             // 
-            // cboCat
-            // 
-            this.cboCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCat.FormattingEnabled = true;
-            this.cboCat.ItemHeight = 18;
-            this.cboCat.Location = new System.Drawing.Point(47, 76);
-            this.cboCat.Name = "cboCat";
-            this.cboCat.Size = new System.Drawing.Size(324, 26);
-            this.cboCat.TabIndex = 1;
-            // 
             // txtWebsite
             // 
             this.txtWebsite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -646,6 +667,15 @@
             this.txtTel2.Size = new System.Drawing.Size(324, 29);
             this.txtTel2.TabIndex = 7;
             // 
+            // txtCat
+            // 
+            this.txtCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCat.Location = new System.Drawing.Point(180, 36);
+            this.txtCat.Multiline = true;
+            this.txtCat.Name = "txtCat";
+            this.txtCat.Size = new System.Drawing.Size(278, 63);
+            this.txtCat.TabIndex = 5;
+            // 
             // txtCompAddress
             // 
             this.txtCompAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -673,56 +703,96 @@
             this.txtVendorName.Size = new System.Drawing.Size(324, 29);
             this.txtVendorName.TabIndex = 3;
             // 
+            // btnAddCat
+            // 
+            this.btnAddCat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnAddCat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddCat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddCat.BorderRadius = 0;
+            this.btnAddCat.ButtonText = "Add";
+            this.btnAddCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCat.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAddCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCat.Iconcolor = System.Drawing.Color.Tomato;
+            this.btnAddCat.Iconimage = null;
+            this.btnAddCat.Iconimage_right = null;
+            this.btnAddCat.Iconimage_right_Selected = null;
+            this.btnAddCat.Iconimage_Selected = null;
+            this.btnAddCat.IconMarginLeft = 0;
+            this.btnAddCat.IconMarginRight = 0;
+            this.btnAddCat.IconRightVisible = false;
+            this.btnAddCat.IconRightZoom = 0D;
+            this.btnAddCat.IconVisible = false;
+            this.btnAddCat.IconZoom = 0D;
+            this.btnAddCat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAddCat.IsTab = false;
+            this.btnAddCat.Location = new System.Drawing.Point(462, 36);
+            this.btnAddCat.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.btnAddCat.Name = "btnAddCat";
+            this.btnAddCat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddCat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnAddCat.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAddCat.selected = false;
+            this.btnAddCat.Size = new System.Drawing.Size(42, 29);
+            this.btnAddCat.TabIndex = 53;
+            this.btnAddCat.TabStop = false;
+            this.btnAddCat.Text = "Add";
+            this.btnAddCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddCat.Textcolor = System.Drawing.Color.White;
+            this.btnAddCat.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCat.Click += new System.EventHandler(this.btnAddCat_Click);
+            // 
             // dgv_Vendors
             // 
             this.dgv_Vendors.AllowUserToAddRows = false;
             this.dgv_Vendors.AllowUserToDeleteRows = false;
             this.dgv_Vendors.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Vendors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Vendors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Vendors.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Vendors.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_Vendors.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Vendors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Vendors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Vendors.ColumnHeadersHeight = 30;
             this.dgv_Vendors.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Vendors.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Vendors.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Vendors.Location = new System.Drawing.Point(12, 375);
+            this.dgv_Vendors.MultiSelect = false;
             this.dgv_Vendors.Name = "dgv_Vendors";
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Vendors.RowHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Vendors.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_Vendors.RowHeadersVisible = false;
             this.dgv_Vendors.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.dgv_Vendors.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.dgv_Vendors.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Vendors.RowTemplate.ReadOnly = true;
             this.dgv_Vendors.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Vendors.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -771,75 +841,6 @@
             this.btnRegVendor.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegVendor.Click += new System.EventHandler(this.btnRegVendor_Click);
             // 
-            // pnlAddCategory
-            // 
-            this.pnlAddCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAddCategory.Controls.Add(this.btnCan);
-            this.pnlAddCategory.Controls.Add(this.btnAdd);
-            this.pnlAddCategory.Controls.Add(this.cboCat);
-            this.pnlAddCategory.Controls.Add(this.label15);
-            this.pnlAddCategory.Controls.Add(this.label10);
-            this.pnlAddCategory.Location = new System.Drawing.Point(334, 15);
-            this.pnlAddCategory.Name = "pnlAddCategory";
-            this.pnlAddCategory.Size = new System.Drawing.Size(407, 185);
-            this.pnlAddCategory.TabIndex = 54;
-            this.pnlAddCategory.Visible = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label10.Location = new System.Drawing.Point(44, 52);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 18);
-            this.label10.TabIndex = 44;
-            this.label10.Text = "Select Category:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.label15.Location = new System.Drawing.Point(15, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(281, 18);
-            this.label15.TabIndex = 44;
-            this.label15.Text = "Add Category for vendor registration";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(230, 123);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(66, 25);
-            this.btnAdd.TabIndex = 247;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnCan
-            // 
-            this.btnCan.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCan.Location = new System.Drawing.Point(305, 123);
-            this.btnCan.Name = "btnCan";
-            this.btnCan.Size = new System.Drawing.Size(66, 25);
-            this.btnCan.TabIndex = 247;
-            this.btnCan.Text = "Cancel";
-            this.btnCan.UseVisualStyleBackColor = true;
-            this.btnCan.Click += new System.EventHandler(this.btnCan_Click);
-            // 
-            // txtCat
-            // 
-            this.txtCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCat.Location = new System.Drawing.Point(180, 36);
-            this.txtCat.Multiline = true;
-            this.txtCat.Name = "txtCat";
-            this.txtCat.Size = new System.Drawing.Size(278, 63);
-            this.txtCat.TabIndex = 5;
-            // 
             // Vendors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -855,9 +856,9 @@
             this.panel1.PerformLayout();
             this.grpRegVendor.ResumeLayout(false);
             this.grpRegVendor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Vendors)).EndInit();
             this.pnlAddCategory.ResumeLayout(false);
             this.pnlAddCategory.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Vendors)).EndInit();
             this.ResumeLayout(false);
 
         }

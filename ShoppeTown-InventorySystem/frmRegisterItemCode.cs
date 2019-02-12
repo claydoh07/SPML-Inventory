@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ShoppeTown_InventorySystem
 {
-    public partial class frmRegForm : MetroFramework.Forms.MetroForm
+    public partial class frmRegisterItemCode : MetroFramework.Forms.MetroForm
     {
-        public frmRegForm()
+        public frmRegisterItemCode()
         {
             InitializeComponent();
         }
@@ -243,12 +243,12 @@ namespace ShoppeTown_InventorySystem
                         cboItemName.Items.Add(md.ShowItems(cboCategoryName.Text, txtCode.Text, cboSubCat.Text).GetValue(x).ToString());
                 }
 
-                md.InsertBrand(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, txtNewItemName.Text, "Generic");//inserting new brand generic
+                md.InsertBrand(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, txtNewItemName.Text, "N/A");//inserting new brand generic
                 cboItemName_SelectedIndexChanged(sender, e);
                 cboItemName.Text = txtNewItemName.Text;
 
-                md.InsertModel(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, "Generic", "Generic");//inserting new model
-                md.InsertDescription(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, "Generic", "Generic", "N/A");//inserting new description
+                md.InsertModel(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, "N/A", "N/A");//inserting new model
+                md.InsertDescription(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, "N/A", "N/A", "N/A");//inserting new description
                 MessageBox.Show(txtNewItemName.Text + " created successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -302,7 +302,7 @@ namespace ShoppeTown_InventorySystem
                     if (md.ShowBrand(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text).GetValue(x).ToString() != "")
                         cboBrand.Items.Add(md.ShowBrand(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text).GetValue(x).ToString());
                 }
-                md.InsertModel(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, txtNewBrand.Text, "Generic");//inserting new model
+                md.InsertModel(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, txtNewBrand.Text, "N/A");//inserting new model
                 cboBrand_SelectedIndexChanged(sender, e);
                 cboBrand.Text = txtNewBrand.Text;
                 MessageBox.Show(txtNewItemName.Text + " created successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -477,6 +477,18 @@ namespace ShoppeTown_InventorySystem
                 cboBrand.Items.Clear();
                 cboModel.Items.Clear();
                 cboDescription.Items.Clear();
+
+                cboSubCat.Enabled = false;
+                cboItemName.Enabled = false;
+                cboBrand.Enabled = false;
+                cboModel.Enabled = false;
+                cboDescription.Enabled = false;
+
+                btnCreate2.Enabled = false;
+                btnCreate3.Enabled = false;
+                btnCreate4.Enabled = false;
+                btnCreate5.Enabled = false;
+                btnCreate6.Enabled = false;
             }
             else if (num == 1)//category
             {
@@ -496,6 +508,18 @@ namespace ShoppeTown_InventorySystem
                 cboBrand.Items.Clear();
                 cboModel.Items.Clear();
                 cboDescription.Items.Clear();
+
+                cboSubCat.Enabled = true;
+                cboItemName.Enabled = false;
+                cboBrand.Enabled = false;
+                cboModel.Enabled = false;
+                cboDescription.Enabled = false;
+
+                btnCreate2.Enabled = true;
+                btnCreate3.Enabled = false;
+                btnCreate4.Enabled = false;
+                btnCreate5.Enabled = false;
+                btnCreate6.Enabled = false;
             }
             else if (num == 2)//sub
             {
@@ -512,6 +536,18 @@ namespace ShoppeTown_InventorySystem
                 cboBrand.Items.Clear();
                 cboModel.Items.Clear();
                 cboDescription.Items.Clear();
+
+                cboSubCat.Enabled = true;
+                cboItemName.Enabled = true;
+                cboBrand.Enabled = false;
+                cboModel.Enabled = false;
+                cboDescription.Enabled = false;
+
+                btnCreate2.Enabled = true;
+                btnCreate3.Enabled = true;
+                btnCreate4.Enabled = false;
+                btnCreate5.Enabled = false;
+                btnCreate6.Enabled = false;
             }
             else if (num == 3)//item
             {
@@ -525,6 +561,18 @@ namespace ShoppeTown_InventorySystem
 
                 cboModel.Items.Clear();
                 cboDescription.Items.Clear();
+
+                cboSubCat.Enabled = true;
+                cboItemName.Enabled = true;
+                cboBrand.Enabled = true;
+                cboModel.Enabled = false;
+                cboDescription.Enabled = false;
+
+                btnCreate2.Enabled = true;
+                btnCreate3.Enabled = true;
+                btnCreate4.Enabled = true;
+                btnCreate5.Enabled = false;
+                btnCreate6.Enabled = false;
             }
             else if (num == 4)//brand
             {
@@ -535,12 +583,36 @@ namespace ShoppeTown_InventorySystem
                 txt_6.Text = "";
 
                 cboDescription.Items.Clear();
+
+                cboSubCat.Enabled = true;
+                cboItemName.Enabled = true;
+                cboBrand.Enabled = true;
+                cboModel.Enabled = true;
+                cboDescription.Enabled = false;
+
+                btnCreate2.Enabled = true;
+                btnCreate3.Enabled = true;
+                btnCreate4.Enabled = true;
+                btnCreate5.Enabled = true;
+                btnCreate6.Enabled = false;
             }
             else if (num == 5)//model
             {
                 txtDescription.Text = "";
 
                 txt_6.Text = "";
+
+                cboSubCat.Enabled = true;
+                cboItemName.Enabled = true;
+                cboBrand.Enabled = true;
+                cboModel.Enabled = true;
+                cboDescription.Enabled = true;
+
+                btnCreate2.Enabled = true;
+                btnCreate3.Enabled = true;
+                btnCreate4.Enabled = true;
+                btnCreate5.Enabled = true;
+                btnCreate6.Enabled = true;
             }
         }
 
@@ -587,6 +659,13 @@ namespace ShoppeTown_InventorySystem
         private void btnSave_6_Click(object sender, EventArgs e)
         {
             btnCreate6_Click(sender, e);
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+            md.RegisterItemCode(lblPreviewItemCode.Text, cboCategoryName.Text, cboSubCat.Text, cboItemName.Text, cboBrand.Text, cboModel.Text, cboDescription.Text);
+            MessageBox.Show(lblPreviewItemCode.Text + " created successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
         }
     }
 }

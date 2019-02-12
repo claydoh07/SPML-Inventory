@@ -66,11 +66,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(197)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(63, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(509, 37);
+            this.label2.Size = new System.Drawing.Size(499, 31);
             this.label2.TabIndex = 3;
             this.label2.Text = "UNITED AGRIMALL CORPORATION";
             // 
@@ -90,9 +90,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDtp.BackColor = System.Drawing.Color.Silver;
             this.pnlDtp.Controls.Add(this.lblDate);
-            this.pnlDtp.Location = new System.Drawing.Point(231, 684);
+            this.pnlDtp.Location = new System.Drawing.Point(181, 684);
             this.pnlDtp.Name = "pnlDtp";
-            this.pnlDtp.Size = new System.Drawing.Size(975, 18);
+            this.pnlDtp.Size = new System.Drawing.Size(1025, 18);
             this.pnlDtp.TabIndex = 6;
             // 
             // lblDate
@@ -124,7 +124,7 @@
             this.btnDashboard.ButtonText = "Dashboard";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDashboard.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
             this.btnDashboard.Iconimage_right = null;
@@ -164,7 +164,7 @@
             this.btnPurchaseOrder.ButtonText = "Purchase Order";
             this.btnPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseOrder.DisabledColor = System.Drawing.Color.Gray;
-            this.btnPurchaseOrder.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseOrder.Iconcolor = System.Drawing.Color.Transparent;
             this.btnPurchaseOrder.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPurchaseOrder.Iconimage")));
             this.btnPurchaseOrder.Iconimage_right = null;
@@ -178,7 +178,7 @@
             this.btnPurchaseOrder.IconZoom = 50D;
             this.btnPurchaseOrder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnPurchaseOrder.IsTab = false;
-            this.btnPurchaseOrder.Location = new System.Drawing.Point(0, 97);
+            this.btnPurchaseOrder.Location = new System.Drawing.Point(0, 189);
             this.btnPurchaseOrder.Name = "btnPurchaseOrder";
             this.btnPurchaseOrder.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseOrder.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -203,7 +203,7 @@
             this.btnFASM.ButtonText = "FASM";
             this.btnFASM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFASM.DisabledColor = System.Drawing.Color.Gray;
-            this.btnFASM.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFASM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFASM.Iconcolor = System.Drawing.Color.Transparent;
             this.btnFASM.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnFASM.Iconimage")));
             this.btnFASM.Iconimage_right = null;
@@ -217,7 +217,7 @@
             this.btnFASM.IconZoom = 50D;
             this.btnFASM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnFASM.IsTab = false;
-            this.btnFASM.Location = new System.Drawing.Point(0, 193);
+            this.btnFASM.Location = new System.Drawing.Point(0, 283);
             this.btnFASM.Name = "btnFASM";
             this.btnFASM.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnFASM.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -239,10 +239,10 @@
             this.btnRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegistration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegistration.BorderRadius = 0;
-            this.btnRegistration.ButtonText = "Registration";
+            this.btnRegistration.ButtonText = "Item Code";
             this.btnRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistration.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegistration.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistration.Iconcolor = System.Drawing.Color.Transparent;
             this.btnRegistration.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRegistration.Iconimage")));
             this.btnRegistration.Iconimage_right = null;
@@ -256,7 +256,7 @@
             this.btnRegistration.IconZoom = 50D;
             this.btnRegistration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegistration.IsTab = false;
-            this.btnRegistration.Location = new System.Drawing.Point(0, 241);
+            this.btnRegistration.Location = new System.Drawing.Point(0, 48);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegistration.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -266,7 +266,7 @@
             this.btnRegistration.Size = new System.Drawing.Size(182, 48);
             this.btnRegistration.TabIndex = 3;
             this.btnRegistration.TabStop = false;
-            this.btnRegistration.Text = "Registration";
+            this.btnRegistration.Text = "Item Code";
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistration.Textcolor = System.Drawing.Color.White;
             this.btnRegistration.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -281,7 +281,7 @@
             this.btnVendors.ButtonText = "Vendors";
             this.btnVendors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVendors.DisabledColor = System.Drawing.Color.Gray;
-            this.btnVendors.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendors.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendors.Iconcolor = System.Drawing.Color.Transparent;
             this.btnVendors.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnVendors.Iconimage")));
             this.btnVendors.Iconimage_right = null;
@@ -295,7 +295,7 @@
             this.btnVendors.IconZoom = 50D;
             this.btnVendors.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnVendors.IsTab = false;
-            this.btnVendors.Location = new System.Drawing.Point(0, 289);
+            this.btnVendors.Location = new System.Drawing.Point(0, 95);
             this.btnVendors.Name = "btnVendors";
             this.btnVendors.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnVendors.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -320,7 +320,7 @@
             this.btnLogout.ButtonText = "Logout";
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogout.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
             this.btnLogout.Iconimage_right = null;
@@ -334,7 +334,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 337);
+            this.btnLogout.Location = new System.Drawing.Point(0, 330);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -359,7 +359,7 @@
             this.btnPurchaseRequest.ButtonText = "Purchase Request";
             this.btnPurchaseRequest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseRequest.DisabledColor = System.Drawing.Color.Gray;
-            this.btnPurchaseRequest.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseRequest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseRequest.Iconcolor = System.Drawing.Color.Transparent;
             this.btnPurchaseRequest.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPurchaseRequest.Iconimage")));
             this.btnPurchaseRequest.Iconimage_right = null;
@@ -373,7 +373,7 @@
             this.btnPurchaseRequest.IconZoom = 50D;
             this.btnPurchaseRequest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnPurchaseRequest.IsTab = false;
-            this.btnPurchaseRequest.Location = new System.Drawing.Point(0, 49);
+            this.btnPurchaseRequest.Location = new System.Drawing.Point(0, 142);
             this.btnPurchaseRequest.Name = "btnPurchaseRequest";
             this.btnPurchaseRequest.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseRequest.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -414,7 +414,7 @@
             this.btnDelivery.ButtonText = "Delivery";
             this.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelivery.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelivery.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDelivery.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelivery.Iconimage")));
             this.btnDelivery.Iconimage_right = null;
@@ -428,7 +428,7 @@
             this.btnDelivery.IconZoom = 50D;
             this.btnDelivery.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDelivery.IsTab = false;
-            this.btnDelivery.Location = new System.Drawing.Point(0, 145);
+            this.btnDelivery.Location = new System.Drawing.Point(0, 236);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDelivery.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));

@@ -26,6 +26,7 @@ namespace ShoppeTown_InventorySystem
         {
             MainControls.Dashboard dash = new MainControls.Dashboard();
             pnlAdminBoard.Controls.Add(dash);
+            lblDate.Text = "Date: " + DateTime.Now.ToString("MM/dd/yyyy");
         }
 
         

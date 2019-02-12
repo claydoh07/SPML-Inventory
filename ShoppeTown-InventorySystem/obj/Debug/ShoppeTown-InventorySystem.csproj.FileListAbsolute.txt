@@ -128,7 +128,6 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Web.dll
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAdminDashboard.resources
-C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegForm.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Dashboard.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Delivery.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.FASM.resources
@@ -150,3 +149,4 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.Properties.Resources.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.register.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csproj.GenerateResource.Cache
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources

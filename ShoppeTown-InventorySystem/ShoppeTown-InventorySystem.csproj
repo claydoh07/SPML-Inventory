@@ -84,11 +84,11 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegForm.cs">
+    <Compile Include="frmRegisterItemCode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegForm.Designer.cs">
-      <DependentUpon>frmRegForm.cs</DependentUpon>
+    <Compile Include="frmRegisterItemCode.Designer.cs">
+      <DependentUpon>frmRegisterItemCode.cs</DependentUpon>
     </Compile>
     <Compile Include="MainControls\Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -213,8 +213,8 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegForm.resx">
-      <DependentUpon>frmRegForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegisterItemCode.resx">
+      <DependentUpon>frmRegisterItemCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainControls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
