@@ -70,7 +70,7 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if ((cboCat.Text != "" && cboSubCat.Text != "" && txtVendorName.Text != "" && txtContactPerson.Text != "" &&
+            if ((txtCat.Text != "" && cboSubCat.Text != "" && txtVendorName.Text != "" && txtContactPerson.Text != "" &&
                 txtCompAddress.Text != "" && txtTel1.Text != "" && txtTel2.Text != "" && txtMob1.Text != "" &&
                 txtMob2.Text != "" && txtFax.Text != "" && txtEmail1.Text != "" && txtEmail2.Text != "" && txtWebsite.Text != "") == true)
             {
@@ -79,7 +79,7 @@ namespace ShoppeTown_InventorySystem.MainControls
                 {
                     if (RegisterAutoProperty.vendorID == "0")
                     {
-                        md.AddVendor(cboCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
+                        md.AddVendor(txtCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
                          txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
                          txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
                         //Call Database
@@ -88,7 +88,7 @@ namespace ShoppeTown_InventorySystem.MainControls
                     }
                     else
                     {
-                        md.UpdateVendor(cboCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
+                        md.UpdateVendor(txtCat.Text, cboSubCat.Text, txtVendorName.Text, txtContactPerson.Text,
                          txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
                          txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
                         //Call Database
@@ -181,6 +181,7 @@ namespace ShoppeTown_InventorySystem.MainControls
             txtVendorName.Text = "";
             txtWebsite.Text = "";
             btnDelete.Visible = false;
+            txtCat.Text = "";
 
         }
         public string Review(string[] arr)
@@ -209,7 +210,7 @@ namespace ShoppeTown_InventorySystem.MainControls
             foreach (DataGridViewRow row in dgv_Vendors.SelectedRows)
             {
                 RegisterAutoProperty.vendorID = row.Cells[0].Value.ToString();
-                cboCat.Text =           row.Cells[1].Value.ToString();
+                txtCat.Text =           row.Cells[1].Value.ToString();
                 cboSubCat.Text =        row.Cells[2].Value.ToString();
                 txtVendorName.Text =    row.Cells[3].Value.ToString();
                 txtContactPerson.Text = row.Cells[4].Value.ToString();
@@ -263,6 +264,36 @@ namespace ShoppeTown_InventorySystem.MainControls
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnAddCat_Click(object sender, EventArgs e)
+        {
+            pnlAddCategory.Visible = true;
+            cboCat.Items.Clear();
+            for (int x = 0; x < md.showCategory().Length; x++)//for listing ng mga category name
+            {
+                if (md.showCategory().GetValue(x).ToString() != "")
+                    cboCat.Items.Add(md.showCategory().GetValue(x).ToString());
+            }
+            
+        }
+
+        private void btnCan_Click(object sender, EventArgs e)
+        {
+            pnlAddCategory.Visible = false;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (cboCat.Text != "")
+            {
+                txtCat.Text += cboCat.Text + ", ";
+                pnlAddCategory.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Please select category before you add.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
