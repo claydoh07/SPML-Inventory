@@ -61,6 +61,7 @@ namespace ShoppeTown_InventorySystem
         {
             if (btnCreate1.Text == "Create")
             {
+                pnlPopUp_Category.Visible = true;
                 cboCategoryName.Visible = false;
                 txtNewCode.Visible = true;
                 btnCreate1.Text = "Save";
@@ -71,6 +72,7 @@ namespace ShoppeTown_InventorySystem
             else
             {
                 //defaultSetting();//to default registration of item code
+                pnlPopUp_Category.Visible = false;
 
                 btnCancel1.Visible = false;
                 btnCreate1.Text = "Create";
@@ -95,6 +97,7 @@ namespace ShoppeTown_InventorySystem
 
         private void btnCancel1_Click(object sender, EventArgs e)
         {
+            pnlPopUp_Category.Visible = false;
             btnCreate1.Text = "Create";
             cboCategoryName.Visible = true;
             txtNewCode.Visible = false;
@@ -165,6 +168,7 @@ namespace ShoppeTown_InventorySystem
         {
             if (btnCreate2.Text == "Create")
             {
+                pnlPopUp_subcategory.Visible = true;
                 txtNewSubCategory.Visible = true;
                 btnCreate2.Text = "Save";
                 btnCancel2.Visible = true; ;
@@ -172,6 +176,7 @@ namespace ShoppeTown_InventorySystem
             }
             else
             {
+                pnlPopUp_subcategory.Visible = false;
                 btnCreate2.Text = "Create";
                 txtNewSubCategory.Visible = false;
                 btnCancel2.Visible = false;
@@ -190,6 +195,7 @@ namespace ShoppeTown_InventorySystem
 
         private void btnCancel2_Click(object sender, EventArgs e)
         {
+            pnlPopUp_subcategory.Visible = false;
             btnCancel2.Visible = false;
             btnCreate2.Text = "Create";
             txtNewSubCategory.Visible = false;
@@ -217,6 +223,7 @@ namespace ShoppeTown_InventorySystem
         {
             if (btnCreate3.Text == "Create")
             {
+                pnlPopUp_itemName.Visible = true;
                 txtNewItemName.Visible = true;
                 btnCreate3.Text = "Save";
                 btnCancel3.Visible = true;
@@ -224,6 +231,7 @@ namespace ShoppeTown_InventorySystem
             }
             else
             {
+                pnlPopUp_itemName.Visible = false;
                 btnCreate3.Text = "Create";
                 txtNewItemName.Visible = false;
                 btnCancel3.Visible = false;
@@ -247,6 +255,7 @@ namespace ShoppeTown_InventorySystem
 
         private void btnCancel3_Click(object sender, EventArgs e)
         {
+            pnlPopUp_itemName.Visible = false;
             btnCancel3.Visible = false;
             btnCreate3.Text = "Create";
             txtNewItemName.Visible = false;
@@ -274,6 +283,7 @@ namespace ShoppeTown_InventorySystem
         {
             if (btnCreate4.Text == "Create")
             {
+                pnlPopUp_brand.Visible = true;
                 txtNewBrand.Visible = true;
                 btnCreate4.Text = "Save";
                 btnCancel4.Visible = true;
@@ -281,6 +291,7 @@ namespace ShoppeTown_InventorySystem
             }
             else
             {
+                pnlPopUp_brand.Visible = false;
                 btnCreate4.Text = "Create";
                 txtNewBrand.Visible = false;
                 btnCancel4.Visible = false;
@@ -318,6 +329,7 @@ namespace ShoppeTown_InventorySystem
 
         private void btnCancel4_Click(object sender, EventArgs e)
         {
+            pnlPopUp_brand.Visible = false;
             btnCancel4.Visible = false;
             btnCreate4.Text = "Create";
             txtNewBrand.Visible = false;
@@ -327,6 +339,7 @@ namespace ShoppeTown_InventorySystem
         {
             if (btnCreate5.Text == "Create")
             {
+                pnlPopUp_model.Visible = true;
                 txtNewModel.Visible = true;
                 btnCreate5.Text = "Save";
                 btnCancel5.Visible = true;
@@ -334,6 +347,7 @@ namespace ShoppeTown_InventorySystem
             }
             else
             {
+                pnlPopUp_model.Visible = false;
                 btnCreate5.Text = "Create";
                 txtNewModel.Visible = false;
                 btnCancel5.Visible = false;
@@ -354,6 +368,7 @@ namespace ShoppeTown_InventorySystem
 
         private void btnCancel5_Click(object sender, EventArgs e)
         {
+            pnlPopUp_model.Visible = false;
             btnCancel5.Visible = false;
             btnCreate5.Text = "Create";
             txtNewModel.Visible = false;
@@ -395,12 +410,14 @@ namespace ShoppeTown_InventorySystem
             txt_6.Text = regItemCode.previewCode_6;
             lblPreviewItemCode.Text = regItemCode.previewCode_1 + regItemCode.previewCode_2 + regItemCode.previewCode_3 + regItemCode.previewCode_4 + regItemCode.previewCode_5 + regItemCode.previewCode_6;
             txtDescription.Text = cboDescription.Text;
+            txtDesc.Text = cboDescription.Text;
         }
 
         private void btnCreate6_Click(object sender, EventArgs e)
         {
             if (btnCreate6.Text == "Create")
             {
+                pnlPopUp_description.Visible = true;
                 txtDescription.Enabled = true;
                 btnCreate6.Text = "Save";
                 btnCancel6.Visible = true;
@@ -409,6 +426,7 @@ namespace ShoppeTown_InventorySystem
             }
             else
             {
+                pnlPopUp_description.Visible = false;
                 btnCreate6.Text = "Create";
                 txtDescription.Enabled = false;
                 btnCancel6.Visible = false;
@@ -427,6 +445,7 @@ namespace ShoppeTown_InventorySystem
 
         private void btnCancel6_Click(object sender, EventArgs e)
         {
+            pnlPopUp_description.Visible = false;
             btnCancel6.Visible = false;
             btnCreate6.Text = "Create";
             txtDescription.Enabled = false;
@@ -528,6 +547,46 @@ namespace ShoppeTown_InventorySystem
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnSave_1_Click(object sender, EventArgs e)
+        {
+            btnCreate1_Click(sender, e);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_2_Click(object sender, EventArgs e)
+        {
+            btnCreate2_Click(sender, e);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSave_3_Click(object sender, EventArgs e)
+        {
+            btnCreate3_Click(sender, e);
+        }
+
+        private void btnSave_4_Click(object sender, EventArgs e)
+        {
+            btnCreate4_Click(sender, e);
+        }
+
+        private void btnSave_5_Click(object sender, EventArgs e)
+        {
+            btnCreate5_Click(sender, e);
+        }
+
+        private void btnSave_6_Click(object sender, EventArgs e)
+        {
+            btnCreate6_Click(sender, e);
         }
     }
 }

@@ -66,7 +66,6 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblSubcat = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -74,35 +73,64 @@
             this.txtCategoryName = new System.Windows.Forms.TextBox();
             this.txtNewSubCategory = new System.Windows.Forms.TextBox();
             this.cboSubCat = new System.Windows.Forms.ComboBox();
+            this.pnlPopUp_Category = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnSave_1 = new System.Windows.Forms.Button();
+            this.pnlPopUp_subcategory = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnSave_2 = new System.Windows.Forms.Button();
+            this.pnlPopUp_itemName = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnSave_3 = new System.Windows.Forms.Button();
+            this.pnlPopUp_brand = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnSave_4 = new System.Windows.Forms.Button();
+            this.pnlPopUp_model = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnSave_5 = new System.Windows.Forms.Button();
+            this.pnlPopUp_description = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnSave_6 = new System.Windows.Forms.Button();
+            this.txtDesc = new System.Windows.Forms.TextBox();
             this.pnlRegisterItemCode.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pnlPopUp_Category.SuspendLayout();
+            this.pnlPopUp_subcategory.SuspendLayout();
+            this.pnlPopUp_itemName.SuspendLayout();
+            this.pnlPopUp_brand.SuspendLayout();
+            this.pnlPopUp_model.SuspendLayout();
+            this.pnlPopUp_description.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlRegisterItemCode
             // 
             this.pnlRegisterItemCode.BackColor = System.Drawing.Color.DarkGray;
+            this.pnlRegisterItemCode.Controls.Add(this.pnlPopUp_subcategory);
+            this.pnlRegisterItemCode.Controls.Add(this.pnlPopUp_Category);
+            this.pnlRegisterItemCode.Controls.Add(this.pnlPopUp_itemName);
+            this.pnlRegisterItemCode.Controls.Add(this.pnlPopUp_brand);
+            this.pnlRegisterItemCode.Controls.Add(this.pnlPopUp_model);
+            this.pnlRegisterItemCode.Controls.Add(this.pnlPopUp_description);
             this.pnlRegisterItemCode.Controls.Add(this.panel1);
-            this.pnlRegisterItemCode.Controls.Add(this.txtNewModel);
-            this.pnlRegisterItemCode.Controls.Add(this.txtNewBrand);
-            this.pnlRegisterItemCode.Controls.Add(this.txtNewItemName);
             this.pnlRegisterItemCode.Controls.Add(this.txt_6);
             this.pnlRegisterItemCode.Controls.Add(this.txt_5);
+            this.pnlRegisterItemCode.Controls.Add(this.txtDesc);
             this.pnlRegisterItemCode.Controls.Add(this.txt_4);
             this.pnlRegisterItemCode.Controls.Add(this.txt_3);
             this.pnlRegisterItemCode.Controls.Add(this.txt_2);
-            this.pnlRegisterItemCode.Controls.Add(this.txtNewCode);
-            this.pnlRegisterItemCode.Controls.Add(this.btnCancel6);
-            this.pnlRegisterItemCode.Controls.Add(this.btnCancel5);
-            this.pnlRegisterItemCode.Controls.Add(this.btnCancel4);
-            this.pnlRegisterItemCode.Controls.Add(this.btnCancel3);
             this.pnlRegisterItemCode.Controls.Add(this.btnCreate6);
             this.pnlRegisterItemCode.Controls.Add(this.btnCreate5);
             this.pnlRegisterItemCode.Controls.Add(this.btnCreate4);
-            this.pnlRegisterItemCode.Controls.Add(this.btnCancel2);
             this.pnlRegisterItemCode.Controls.Add(this.btnCreate3);
             this.pnlRegisterItemCode.Controls.Add(this.btnCreate2);
-            this.pnlRegisterItemCode.Controls.Add(this.btnCancel1);
             this.pnlRegisterItemCode.Controls.Add(this.btnCreate1);
             this.pnlRegisterItemCode.Controls.Add(this.btnCancel);
             this.pnlRegisterItemCode.Controls.Add(this.btnSave);
@@ -113,20 +141,16 @@
             this.pnlRegisterItemCode.Controls.Add(this.lblModel);
             this.pnlRegisterItemCode.Controls.Add(this.lblBrand);
             this.pnlRegisterItemCode.Controls.Add(this.lblitemname);
-            this.pnlRegisterItemCode.Controls.Add(this.txtDescription);
             this.pnlRegisterItemCode.Controls.Add(this.txtCode);
             this.pnlRegisterItemCode.Controls.Add(this.lblDescription);
             this.pnlRegisterItemCode.Controls.Add(this.lblSubcat);
-            this.pnlRegisterItemCode.Controls.Add(this.label1);
             this.pnlRegisterItemCode.Controls.Add(this.label2);
             this.pnlRegisterItemCode.Controls.Add(this.panel2);
-            this.pnlRegisterItemCode.Controls.Add(this.cboCategoryName);
-            this.pnlRegisterItemCode.Controls.Add(this.txtCategoryName);
-            this.pnlRegisterItemCode.Controls.Add(this.txtNewSubCategory);
             this.pnlRegisterItemCode.Controls.Add(this.cboSubCat);
+            this.pnlRegisterItemCode.Controls.Add(this.cboCategoryName);
             this.pnlRegisterItemCode.Location = new System.Drawing.Point(0, 0);
             this.pnlRegisterItemCode.Name = "pnlRegisterItemCode";
-            this.pnlRegisterItemCode.Size = new System.Drawing.Size(676, 418);
+            this.pnlRegisterItemCode.Size = new System.Drawing.Size(629, 418);
             this.pnlRegisterItemCode.TabIndex = 248;
             // 
             // panel1
@@ -162,7 +186,7 @@
             // txtNewModel
             // 
             this.txtNewModel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewModel.Location = new System.Drawing.Point(187, 211);
+            this.txtNewModel.Location = new System.Drawing.Point(54, 85);
             this.txtNewModel.Name = "txtNewModel";
             this.txtNewModel.Size = new System.Drawing.Size(339, 23);
             this.txtNewModel.TabIndex = 1;
@@ -171,7 +195,7 @@
             // txtNewBrand
             // 
             this.txtNewBrand.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewBrand.Location = new System.Drawing.Point(187, 180);
+            this.txtNewBrand.Location = new System.Drawing.Point(54, 85);
             this.txtNewBrand.Name = "txtNewBrand";
             this.txtNewBrand.Size = new System.Drawing.Size(339, 23);
             this.txtNewBrand.TabIndex = 1;
@@ -180,7 +204,7 @@
             // txtNewItemName
             // 
             this.txtNewItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewItemName.Location = new System.Drawing.Point(187, 149);
+            this.txtNewItemName.Location = new System.Drawing.Point(54, 85);
             this.txtNewItemName.Name = "txtNewItemName";
             this.txtNewItemName.Size = new System.Drawing.Size(339, 23);
             this.txtNewItemName.TabIndex = 1;
@@ -234,16 +258,16 @@
             // txtNewCode
             // 
             this.txtNewCode.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewCode.Location = new System.Drawing.Point(147, 89);
+            this.txtNewCode.Location = new System.Drawing.Point(54, 87);
             this.txtNewCode.Name = "txtNewCode";
-            this.txtNewCode.Size = new System.Drawing.Size(35, 23);
+            this.txtNewCode.Size = new System.Drawing.Size(150, 23);
             this.txtNewCode.TabIndex = 1;
             this.txtNewCode.Visible = false;
             // 
             // btnCancel6
             // 
             this.btnCancel6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel6.Location = new System.Drawing.Point(604, 240);
+            this.btnCancel6.Location = new System.Drawing.Point(325, 204);
             this.btnCancel6.Name = "btnCancel6";
             this.btnCancel6.Size = new System.Drawing.Size(66, 25);
             this.btnCancel6.TabIndex = 246;
@@ -255,7 +279,7 @@
             // btnCancel5
             // 
             this.btnCancel5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel5.Location = new System.Drawing.Point(604, 210);
+            this.btnCancel5.Location = new System.Drawing.Point(325, 204);
             this.btnCancel5.Name = "btnCancel5";
             this.btnCancel5.Size = new System.Drawing.Size(66, 25);
             this.btnCancel5.TabIndex = 246;
@@ -267,7 +291,7 @@
             // btnCancel4
             // 
             this.btnCancel4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel4.Location = new System.Drawing.Point(604, 179);
+            this.btnCancel4.Location = new System.Drawing.Point(325, 204);
             this.btnCancel4.Name = "btnCancel4";
             this.btnCancel4.Size = new System.Drawing.Size(66, 25);
             this.btnCancel4.TabIndex = 246;
@@ -279,7 +303,7 @@
             // btnCancel3
             // 
             this.btnCancel3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel3.Location = new System.Drawing.Point(604, 147);
+            this.btnCancel3.Location = new System.Drawing.Point(327, 204);
             this.btnCancel3.Name = "btnCancel3";
             this.btnCancel3.Size = new System.Drawing.Size(66, 25);
             this.btnCancel3.TabIndex = 246;
@@ -324,7 +348,7 @@
             // btnCancel2
             // 
             this.btnCancel2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel2.Location = new System.Drawing.Point(604, 117);
+            this.btnCancel2.Location = new System.Drawing.Point(325, 204);
             this.btnCancel2.Name = "btnCancel2";
             this.btnCancel2.Size = new System.Drawing.Size(66, 25);
             this.btnCancel2.TabIndex = 246;
@@ -358,7 +382,7 @@
             // btnCancel1
             // 
             this.btnCancel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel1.Location = new System.Drawing.Point(605, 88);
+            this.btnCancel1.Location = new System.Drawing.Point(327, 204);
             this.btnCancel1.Name = "btnCancel1";
             this.btnCancel1.Size = new System.Drawing.Size(66, 25);
             this.btnCancel1.TabIndex = 246;
@@ -526,10 +550,10 @@
             // 
             this.txtDescription.Enabled = false;
             this.txtDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescription.Location = new System.Drawing.Point(146, 272);
+            this.txtDescription.Location = new System.Drawing.Point(54, 85);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(453, 74);
+            this.txtDescription.Size = new System.Drawing.Size(337, 104);
             this.txtDescription.TabIndex = 6;
             // 
             // txtCode
@@ -561,16 +585,6 @@
             this.lblSubcat.TabIndex = 248;
             this.lblSubcat.Text = "Sub-Category:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 16);
-            this.label1.TabIndex = 248;
-            this.label1.Text = "Enter Category Code:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -589,7 +603,7 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(676, 37);
+            this.panel2.Size = new System.Drawing.Size(629, 37);
             this.panel2.TabIndex = 9;
             // 
             // label7
@@ -617,7 +631,7 @@
             // txtCategoryName
             // 
             this.txtCategoryName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoryName.Location = new System.Drawing.Point(187, 89);
+            this.txtCategoryName.Location = new System.Drawing.Point(54, 133);
             this.txtCategoryName.Name = "txtCategoryName";
             this.txtCategoryName.Size = new System.Drawing.Size(339, 23);
             this.txtCategoryName.TabIndex = 1;
@@ -625,7 +639,7 @@
             // txtNewSubCategory
             // 
             this.txtNewSubCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewSubCategory.Location = new System.Drawing.Point(187, 118);
+            this.txtNewSubCategory.Location = new System.Drawing.Point(54, 85);
             this.txtNewSubCategory.Name = "txtNewSubCategory";
             this.txtNewSubCategory.Size = new System.Drawing.Size(339, 23);
             this.txtNewSubCategory.TabIndex = 1;
@@ -642,11 +656,310 @@
             this.cboSubCat.TabIndex = 2;
             this.cboSubCat.SelectedIndexChanged += new System.EventHandler(this.cboSubCat_SelectedIndexChanged);
             // 
+            // pnlPopUp_Category
+            // 
+            this.pnlPopUp_Category.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_Category.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_Category.Controls.Add(this.label5);
+            this.pnlPopUp_Category.Controls.Add(this.label4);
+            this.pnlPopUp_Category.Controls.Add(this.label3);
+            this.pnlPopUp_Category.Controls.Add(this.txtNewCode);
+            this.pnlPopUp_Category.Controls.Add(this.txtCategoryName);
+            this.pnlPopUp_Category.Controls.Add(this.btnSave_1);
+            this.pnlPopUp_Category.Controls.Add(this.btnCancel1);
+            this.pnlPopUp_Category.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_Category.Name = "pnlPopUp_Category";
+            this.pnlPopUp_Category.Size = new System.Drawing.Size(452, 262);
+            this.pnlPopUp_Category.TabIndex = 249;
+            this.pnlPopUp_Category.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(17, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 18);
+            this.label3.TabIndex = 248;
+            this.label3.Text = "Create Category";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(51, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 17);
+            this.label4.TabIndex = 248;
+            this.label4.Text = "Enter Category Code:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(48, 113);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 17);
+            this.label5.TabIndex = 248;
+            this.label5.Text = "Enter Category Name:";
+            // 
+            // btnSave_1
+            // 
+            this.btnSave_1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_1.Location = new System.Drawing.Point(253, 204);
+            this.btnSave_1.Name = "btnSave_1";
+            this.btnSave_1.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_1.TabIndex = 246;
+            this.btnSave_1.Text = "Save";
+            this.btnSave_1.UseVisualStyleBackColor = true;
+            this.btnSave_1.Click += new System.EventHandler(this.btnSave_1_Click);
+            // 
+            // pnlPopUp_subcategory
+            // 
+            this.pnlPopUp_subcategory.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_subcategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_subcategory.Controls.Add(this.label6);
+            this.pnlPopUp_subcategory.Controls.Add(this.label8);
+            this.pnlPopUp_subcategory.Controls.Add(this.btnSave_2);
+            this.pnlPopUp_subcategory.Controls.Add(this.btnCancel2);
+            this.pnlPopUp_subcategory.Controls.Add(this.txtNewSubCategory);
+            this.pnlPopUp_subcategory.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_subcategory.Name = "pnlPopUp_subcategory";
+            this.pnlPopUp_subcategory.Size = new System.Drawing.Size(452, 262);
+            this.pnlPopUp_subcategory.TabIndex = 250;
+            this.pnlPopUp_subcategory.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(51, 65);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(180, 17);
+            this.label6.TabIndex = 248;
+            this.label6.Text = "Enter Sub-Category Name:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 14);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(166, 18);
+            this.label8.TabIndex = 248;
+            this.label8.Text = "Create Sub-Category";
+            // 
+            // btnSave_2
+            // 
+            this.btnSave_2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_2.Location = new System.Drawing.Point(253, 204);
+            this.btnSave_2.Name = "btnSave_2";
+            this.btnSave_2.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_2.TabIndex = 246;
+            this.btnSave_2.Text = "Save";
+            this.btnSave_2.UseVisualStyleBackColor = true;
+            this.btnSave_2.Click += new System.EventHandler(this.btnSave_2_Click);
+            // 
+            // pnlPopUp_itemName
+            // 
+            this.pnlPopUp_itemName.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_itemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_itemName.Controls.Add(this.label1);
+            this.pnlPopUp_itemName.Controls.Add(this.label10);
+            this.pnlPopUp_itemName.Controls.Add(this.btnSave_3);
+            this.pnlPopUp_itemName.Controls.Add(this.txtNewItemName);
+            this.pnlPopUp_itemName.Controls.Add(this.btnCancel3);
+            this.pnlPopUp_itemName.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_itemName.Name = "pnlPopUp_itemName";
+            this.pnlPopUp_itemName.Size = new System.Drawing.Size(452, 262);
+            this.pnlPopUp_itemName.TabIndex = 251;
+            this.pnlPopUp_itemName.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.TabIndex = 248;
+            this.label1.Text = "Enter Item Name:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(17, 14);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(144, 18);
+            this.label10.TabIndex = 248;
+            this.label10.Text = "Create Item Name";
+            // 
+            // btnSave_3
+            // 
+            this.btnSave_3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_3.Location = new System.Drawing.Point(253, 204);
+            this.btnSave_3.Name = "btnSave_3";
+            this.btnSave_3.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_3.TabIndex = 246;
+            this.btnSave_3.Text = "Save";
+            this.btnSave_3.UseVisualStyleBackColor = true;
+            this.btnSave_3.Click += new System.EventHandler(this.btnSave_3_Click);
+            // 
+            // pnlPopUp_brand
+            // 
+            this.pnlPopUp_brand.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_brand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_brand.Controls.Add(this.label11);
+            this.pnlPopUp_brand.Controls.Add(this.label12);
+            this.pnlPopUp_brand.Controls.Add(this.txtNewBrand);
+            this.pnlPopUp_brand.Controls.Add(this.btnSave_4);
+            this.pnlPopUp_brand.Controls.Add(this.btnCancel4);
+            this.pnlPopUp_brand.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_brand.Name = "pnlPopUp_brand";
+            this.pnlPopUp_brand.Size = new System.Drawing.Size(452, 262);
+            this.pnlPopUp_brand.TabIndex = 252;
+            this.pnlPopUp_brand.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(51, 65);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(129, 17);
+            this.label11.TabIndex = 248;
+            this.label11.Text = "Enter Brand Name:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(17, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 18);
+            this.label12.TabIndex = 248;
+            this.label12.Text = "Create Brand";
+            // 
+            // btnSave_4
+            // 
+            this.btnSave_4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_4.Location = new System.Drawing.Point(253, 204);
+            this.btnSave_4.Name = "btnSave_4";
+            this.btnSave_4.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_4.TabIndex = 246;
+            this.btnSave_4.Text = "Save";
+            this.btnSave_4.UseVisualStyleBackColor = true;
+            this.btnSave_4.Click += new System.EventHandler(this.btnSave_4_Click);
+            // 
+            // pnlPopUp_model
+            // 
+            this.pnlPopUp_model.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_model.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_model.Controls.Add(this.label13);
+            this.pnlPopUp_model.Controls.Add(this.txtNewModel);
+            this.pnlPopUp_model.Controls.Add(this.label14);
+            this.pnlPopUp_model.Controls.Add(this.btnSave_5);
+            this.pnlPopUp_model.Controls.Add(this.btnCancel5);
+            this.pnlPopUp_model.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_model.Name = "pnlPopUp_model";
+            this.pnlPopUp_model.Size = new System.Drawing.Size(452, 262);
+            this.pnlPopUp_model.TabIndex = 253;
+            this.pnlPopUp_model.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(51, 65);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(132, 17);
+            this.label13.TabIndex = 248;
+            this.label13.Text = "Enter Model Name:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(17, 14);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(111, 18);
+            this.label14.TabIndex = 248;
+            this.label14.Text = "Create Model";
+            // 
+            // btnSave_5
+            // 
+            this.btnSave_5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_5.Location = new System.Drawing.Point(253, 204);
+            this.btnSave_5.Name = "btnSave_5";
+            this.btnSave_5.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_5.TabIndex = 246;
+            this.btnSave_5.Text = "Save";
+            this.btnSave_5.UseVisualStyleBackColor = true;
+            this.btnSave_5.Click += new System.EventHandler(this.btnSave_5_Click);
+            // 
+            // pnlPopUp_description
+            // 
+            this.pnlPopUp_description.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_description.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_description.Controls.Add(this.label15);
+            this.pnlPopUp_description.Controls.Add(this.label16);
+            this.pnlPopUp_description.Controls.Add(this.btnSave_6);
+            this.pnlPopUp_description.Controls.Add(this.txtDescription);
+            this.pnlPopUp_description.Controls.Add(this.btnCancel6);
+            this.pnlPopUp_description.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_description.Name = "pnlPopUp_description";
+            this.pnlPopUp_description.Size = new System.Drawing.Size(452, 262);
+            this.pnlPopUp_description.TabIndex = 254;
+            this.pnlPopUp_description.Visible = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(51, 65);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(166, 17);
+            this.label15.TabIndex = 248;
+            this.label15.Text = "Enter Description details:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(17, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(146, 18);
+            this.label16.TabIndex = 248;
+            this.label16.Text = "Create Description";
+            // 
+            // btnSave_6
+            // 
+            this.btnSave_6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_6.Location = new System.Drawing.Point(253, 204);
+            this.btnSave_6.Name = "btnSave_6";
+            this.btnSave_6.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_6.TabIndex = 246;
+            this.btnSave_6.Text = "Save";
+            this.btnSave_6.UseVisualStyleBackColor = true;
+            this.btnSave_6.Click += new System.EventHandler(this.btnSave_6_Click);
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Enabled = false;
+            this.txtDesc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Location = new System.Drawing.Point(146, 270);
+            this.txtDesc.Multiline = true;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(380, 80);
+            this.txtDesc.TabIndex = 6;
+            // 
             // frmRegForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 418);
+            this.ClientSize = new System.Drawing.Size(628, 417);
             this.Controls.Add(this.pnlRegisterItemCode);
             this.Name = "frmRegForm";
             this.Style = MetroFramework.MetroColorStyle.White;
@@ -658,6 +971,18 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pnlPopUp_Category.ResumeLayout(false);
+            this.pnlPopUp_Category.PerformLayout();
+            this.pnlPopUp_subcategory.ResumeLayout(false);
+            this.pnlPopUp_subcategory.PerformLayout();
+            this.pnlPopUp_itemName.ResumeLayout(false);
+            this.pnlPopUp_itemName.PerformLayout();
+            this.pnlPopUp_brand.ResumeLayout(false);
+            this.pnlPopUp_brand.PerformLayout();
+            this.pnlPopUp_model.ResumeLayout(false);
+            this.pnlPopUp_model.PerformLayout();
+            this.pnlPopUp_description.ResumeLayout(false);
+            this.pnlPopUp_description.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -702,7 +1027,6 @@
         public System.Windows.Forms.TextBox txtCode;
         public System.Windows.Forms.Label lblDescription;
         public System.Windows.Forms.Label lblSubcat;
-        public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Label label7;
@@ -710,6 +1034,32 @@
         public System.Windows.Forms.TextBox txtCategoryName;
         public System.Windows.Forms.TextBox txtNewSubCategory;
         private System.Windows.Forms.ComboBox cboSubCat;
+        private System.Windows.Forms.Panel pnlPopUp_Category;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSave_1;
+        private System.Windows.Forms.Panel pnlPopUp_subcategory;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnSave_2;
+        private System.Windows.Forms.Panel pnlPopUp_itemName;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnSave_3;
+        private System.Windows.Forms.Panel pnlPopUp_brand;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnSave_4;
+        private System.Windows.Forms.Panel pnlPopUp_model;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnSave_5;
+        private System.Windows.Forms.Panel pnlPopUp_description;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnSave_6;
+        public System.Windows.Forms.TextBox txtDesc;
 
     }
 }
