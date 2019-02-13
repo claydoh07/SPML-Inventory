@@ -172,6 +172,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewSubCategory.Visible = true;
                 btnCreate2.Text = "Save";
                 btnCancel2.Visible = true; ;
+                txtNewSubCategory.Text = "";
                 txtNewSubCategory.Focus();
             }
             else
@@ -227,6 +228,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewItemName.Visible = true;
                 btnCreate3.Text = "Save";
                 btnCancel3.Visible = true;
+                txtNewItemName.Text = "";
                 txtNewItemName.Focus();
             }
             else
@@ -287,6 +289,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewBrand.Visible = true;
                 btnCreate4.Text = "Save";
                 btnCancel4.Visible = true;
+                txtNewBrand.Text = "";
                 txtNewBrand.Focus();
             }
             else
@@ -303,8 +306,11 @@ namespace ShoppeTown_InventorySystem
                         cboBrand.Items.Add(md.ShowBrand(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text).GetValue(x).ToString());
                 }
                 md.InsertModel(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, txtNewBrand.Text, "N/A");//inserting new model
+                md.InsertDescription(cboCategoryName.Text, txtCode.Text, cboSubCat.Text, cboItemName.Text, txtNewBrand.Text, "N/A", "N/A");//inserting new description
                 cboBrand_SelectedIndexChanged(sender, e);
                 cboBrand.Text = txtNewBrand.Text;
+
+                
                 MessageBox.Show(txtNewItemName.Text + " created successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -343,6 +349,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewModel.Visible = true;
                 btnCreate5.Text = "Save";
                 btnCancel5.Visible = true;
+                txtNewModel.Text = "";
                 txtNewModel.Focus();
             }
             else
@@ -463,6 +470,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewBrand.Text = "";
                 txtNewModel.Text = "";
                 txtDescription.Text = "";
+                txtDesc.Text = "";
 
                 txtCode.Text = "";
                 txt_2.Text = "";
@@ -497,6 +505,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewBrand.Text = "";
                 txtNewModel.Text = "";
                 txtDescription.Text = "";
+                txtDesc.Text = "";
 
                 txt_2.Text = "";
                 txt_3.Text = "";
@@ -527,6 +536,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewBrand.Text = "";
                 txtNewModel.Text = "";
                 txtDescription.Text = "";
+                txtDesc.Text = "";
 
                 txt_3.Text = "";
                 txt_4.Text = "";
@@ -554,6 +564,7 @@ namespace ShoppeTown_InventorySystem
                 txtNewBrand.Text = "";
                 txtNewModel.Text = "";
                 txtDescription.Text = "";
+                txtDesc.Text = "";
 
                 txt_4.Text = "";
                 txt_5.Text = "";
@@ -578,6 +589,7 @@ namespace ShoppeTown_InventorySystem
             {
                 txtNewModel.Text = "";
                 txtDescription.Text = "";
+                txtDesc.Text = "";
 
                 txt_5.Text = "";
                 txt_6.Text = "";
@@ -599,6 +611,7 @@ namespace ShoppeTown_InventorySystem
             else if (num == 5)//model
             {
                 txtDescription.Text = "";
+                txtDesc.Text = "";
 
                 txt_6.Text = "";
 
