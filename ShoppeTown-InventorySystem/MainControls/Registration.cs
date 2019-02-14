@@ -111,5 +111,20 @@ namespace ShoppeTown_InventorySystem.MainControls
             MessageBox.Show( lblPreviewItemCode.Text + " Update Succesfully.", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+        private void dgv_list_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pnlEditItemCode_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

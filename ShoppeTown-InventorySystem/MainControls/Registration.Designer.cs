@@ -29,23 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnRegICDrop = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRegICEdit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRegICAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEditItemCode = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnRegItemCode = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_list = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlEditItemCode = new System.Windows.Forms.Panel();
+            this.txtEditModel = new System.Windows.Forms.TextBox();
+            this.txtEditBrand = new System.Windows.Forms.TextBox();
+            this.txtEditItemName = new System.Windows.Forms.TextBox();
+            this.txtEditSubCategory = new System.Windows.Forms.TextBox();
+            this.txtEditCategory = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.lblPreviewItemCode = new System.Windows.Forms.Label();
@@ -60,17 +63,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtEditCategory = new System.Windows.Forms.TextBox();
-            this.txtEditSubCategory = new System.Windows.Forms.TextBox();
-            this.txtEditItemName = new System.Windows.Forms.TextBox();
-            this.txtEditBrand = new System.Windows.Forms.TextBox();
-            this.txtEditModel = new System.Windows.Forms.TextBox();
+            this.dgv_list = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_list)).BeginInit();
             this.pnlEditItemCode.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_list)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -92,18 +91,18 @@
             this.btnSearch.IconRightVisible = true;
             this.btnSearch.IconRightZoom = 0D;
             this.btnSearch.IconVisible = true;
-            this.btnSearch.IconZoom = 50D;
+            this.btnSearch.IconZoom = 40D;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSearch.IsTab = false;
-            this.btnSearch.Location = new System.Drawing.Point(275, 16);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSearch.Location = new System.Drawing.Point(272, 24);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnSearch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
             this.btnSearch.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnSearch.selected = false;
-            this.btnSearch.Size = new System.Drawing.Size(40, 40);
+            this.btnSearch.Size = new System.Drawing.Size(38, 38);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.TabStop = false;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -123,146 +122,29 @@
             this.txtSearch.LineIdleColor = System.Drawing.Color.DarkGray;
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
             this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(11, 16);
+            this.txtSearch.Location = new System.Drawing.Point(7, 24);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(265, 39);
+            this.txtSearch.Size = new System.Drawing.Size(265, 37);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Controls.Add(this.btnRegICDrop);
-            this.groupBox1.Controls.Add(this.btnRegICEdit);
-            this.groupBox1.Controls.Add(this.btnRegICAdd);
             this.groupBox1.Controls.Add(this.btnDelete);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.btnEditItemCode);
             this.groupBox1.Controls.Add(this.btnRegItemCode);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 62);
+            this.groupBox1.Location = new System.Drawing.Point(11, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(304, 551);
+            this.groupBox1.Size = new System.Drawing.Size(1019, 70);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Manage";
-            // 
-            // btnRegICDrop
-            // 
-            this.btnRegICDrop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnRegICDrop.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegICDrop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegICDrop.BorderRadius = 0;
-            this.btnRegICDrop.ButtonText = "Drop";
-            this.btnRegICDrop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegICDrop.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegICDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegICDrop.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegICDrop.Iconimage = null;
-            this.btnRegICDrop.Iconimage_right = null;
-            this.btnRegICDrop.Iconimage_right_Selected = null;
-            this.btnRegICDrop.Iconimage_Selected = null;
-            this.btnRegICDrop.IconMarginLeft = 0;
-            this.btnRegICDrop.IconMarginRight = 0;
-            this.btnRegICDrop.IconRightVisible = true;
-            this.btnRegICDrop.IconRightZoom = 0D;
-            this.btnRegICDrop.IconVisible = true;
-            this.btnRegICDrop.IconZoom = 500D;
-            this.btnRegICDrop.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegICDrop.IsTab = false;
-            this.btnRegICDrop.Location = new System.Drawing.Point(195, 438);
-            this.btnRegICDrop.Margin = new System.Windows.Forms.Padding(0);
-            this.btnRegICDrop.Name = "btnRegICDrop";
-            this.btnRegICDrop.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegICDrop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegICDrop.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRegICDrop.selected = false;
-            this.btnRegICDrop.Size = new System.Drawing.Size(49, 37);
-            this.btnRegICDrop.TabIndex = 32;
-            this.btnRegICDrop.TabStop = false;
-            this.btnRegICDrop.Text = "Drop";
-            this.btnRegICDrop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRegICDrop.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegICDrop.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegICDrop.Click += new System.EventHandler(this.btnRegICDrop_Click);
-            // 
-            // btnRegICEdit
-            // 
-            this.btnRegICEdit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnRegICEdit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegICEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegICEdit.BorderRadius = 0;
-            this.btnRegICEdit.ButtonText = "Edit";
-            this.btnRegICEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegICEdit.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegICEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegICEdit.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegICEdit.Iconimage = null;
-            this.btnRegICEdit.Iconimage_right = null;
-            this.btnRegICEdit.Iconimage_right_Selected = null;
-            this.btnRegICEdit.Iconimage_Selected = null;
-            this.btnRegICEdit.IconMarginLeft = 0;
-            this.btnRegICEdit.IconMarginRight = 0;
-            this.btnRegICEdit.IconRightVisible = true;
-            this.btnRegICEdit.IconRightZoom = 0D;
-            this.btnRegICEdit.IconVisible = true;
-            this.btnRegICEdit.IconZoom = 500D;
-            this.btnRegICEdit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegICEdit.IsTab = false;
-            this.btnRegICEdit.Location = new System.Drawing.Point(143, 438);
-            this.btnRegICEdit.Margin = new System.Windows.Forms.Padding(0);
-            this.btnRegICEdit.Name = "btnRegICEdit";
-            this.btnRegICEdit.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegICEdit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegICEdit.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRegICEdit.selected = false;
-            this.btnRegICEdit.Size = new System.Drawing.Size(49, 37);
-            this.btnRegICEdit.TabIndex = 31;
-            this.btnRegICEdit.TabStop = false;
-            this.btnRegICEdit.Text = "Edit";
-            this.btnRegICEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRegICEdit.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegICEdit.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegICEdit.Click += new System.EventHandler(this.btnRegICEdit_Click);
-            // 
-            // btnRegICAdd
-            // 
-            this.btnRegICAdd.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnRegICAdd.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegICAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegICAdd.BorderRadius = 0;
-            this.btnRegICAdd.ButtonText = "Add";
-            this.btnRegICAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegICAdd.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegICAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegICAdd.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegICAdd.Iconimage = null;
-            this.btnRegICAdd.Iconimage_right = null;
-            this.btnRegICAdd.Iconimage_right_Selected = null;
-            this.btnRegICAdd.Iconimage_Selected = null;
-            this.btnRegICAdd.IconMarginLeft = 0;
-            this.btnRegICAdd.IconMarginRight = 0;
-            this.btnRegICAdd.IconRightVisible = true;
-            this.btnRegICAdd.IconRightZoom = 0D;
-            this.btnRegICAdd.IconVisible = true;
-            this.btnRegICAdd.IconZoom = 500D;
-            this.btnRegICAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegICAdd.IsTab = false;
-            this.btnRegICAdd.Location = new System.Drawing.Point(94, 438);
-            this.btnRegICAdd.Margin = new System.Windows.Forms.Padding(0);
-            this.btnRegICAdd.Name = "btnRegICAdd";
-            this.btnRegICAdd.Normalcolor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegICAdd.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegICAdd.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRegICAdd.selected = false;
-            this.btnRegICAdd.Size = new System.Drawing.Size(49, 37);
-            this.btnRegICAdd.TabIndex = 30;
-            this.btnRegICAdd.TabStop = false;
-            this.btnRegICAdd.Text = "Add";
-            this.btnRegICAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRegICAdd.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegICAdd.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegICAdd.Click += new System.EventHandler(this.btnRegICAdd_Click);
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnDelete
             // 
@@ -273,7 +155,7 @@
             this.btnDelete.ButtonText = "Delete Item Code";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDelete.Iconimage = null;
             this.btnDelete.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage_right")));
@@ -287,14 +169,14 @@
             this.btnDelete.IconZoom = 50D;
             this.btnDelete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(21, 99);
+            this.btnDelete.Location = new System.Drawing.Point(783, 24);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDelete.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDelete.selected = false;
-            this.btnDelete.Size = new System.Drawing.Size(271, 37);
+            this.btnDelete.Size = new System.Drawing.Size(224, 37);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.TabStop = false;
             this.btnDelete.Text = "Delete Item Code";
@@ -313,7 +195,7 @@
             this.btnEditItemCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditItemCode.DisabledColor = System.Drawing.Color.Gray;
             this.btnEditItemCode.Enabled = false;
-            this.btnEditItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditItemCode.Iconcolor = System.Drawing.Color.Transparent;
             this.btnEditItemCode.Iconimage = null;
             this.btnEditItemCode.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btnEditItemCode.Iconimage_right")));
@@ -327,14 +209,14 @@
             this.btnEditItemCode.IconZoom = 50D;
             this.btnEditItemCode.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnEditItemCode.IsTab = false;
-            this.btnEditItemCode.Location = new System.Drawing.Point(21, 59);
+            this.btnEditItemCode.Location = new System.Drawing.Point(553, 24);
             this.btnEditItemCode.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnEditItemCode.Name = "btnEditItemCode";
             this.btnEditItemCode.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnEditItemCode.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnEditItemCode.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditItemCode.selected = false;
-            this.btnEditItemCode.Size = new System.Drawing.Size(271, 37);
+            this.btnEditItemCode.Size = new System.Drawing.Size(224, 37);
             this.btnEditItemCode.TabIndex = 1;
             this.btnEditItemCode.TabStop = false;
             this.btnEditItemCode.Text = "Edit Item Code";
@@ -352,7 +234,7 @@
             this.btnRegItemCode.ButtonText = "&Add Item Code";
             this.btnRegItemCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegItemCode.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegItemCode.Iconcolor = System.Drawing.Color.Transparent;
             this.btnRegItemCode.Iconimage = null;
             this.btnRegItemCode.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btnRegItemCode.Iconimage_right")));
@@ -366,14 +248,14 @@
             this.btnRegItemCode.IconZoom = 50D;
             this.btnRegItemCode.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegItemCode.IsTab = false;
-            this.btnRegItemCode.Location = new System.Drawing.Point(21, 19);
+            this.btnRegItemCode.Location = new System.Drawing.Point(323, 24);
             this.btnRegItemCode.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnRegItemCode.Name = "btnRegItemCode";
             this.btnRegItemCode.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegItemCode.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnRegItemCode.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRegItemCode.selected = false;
-            this.btnRegItemCode.Size = new System.Drawing.Size(271, 37);
+            this.btnRegItemCode.Size = new System.Drawing.Size(224, 37);
             this.btnRegItemCode.TabIndex = 0;
             this.btnRegItemCode.TabStop = false;
             this.btnRegItemCode.Text = "&Add Item Code";
@@ -398,55 +280,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnRefresh);
-            this.panel1.Location = new System.Drawing.Point(322, 16);
+            this.panel1.Location = new System.Drawing.Point(11, 92);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(711, 40);
+            this.panel1.Size = new System.Drawing.Size(1019, 40);
             this.panel1.TabIndex = 39;
-            // 
-            // dgv_list
-            // 
-            this.dgv_list.AllowUserToAddRows = false;
-            this.dgv_list.AllowUserToDeleteRows = false;
-            this.dgv_list.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_list.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgv_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgv_list.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgv_list.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_list.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgv_list.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_list.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgv_list.ColumnHeadersHeight = 30;
-            this.dgv_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_list.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dgv_list.Location = new System.Drawing.Point(322, 56);
-            this.dgv_list.MultiSelect = false;
-            this.dgv_list.Name = "dgv_list";
-            this.dgv_list.RowHeadersVisible = false;
-            this.dgv_list.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.dgv_list.RowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgv_list.RowTemplate.ReadOnly = true;
-            this.dgv_list.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_list.Size = new System.Drawing.Size(711, 557);
-            this.dgv_list.TabIndex = 3;
-            this.dgv_list.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_list_CellContentClick);
             // 
             // btnRefresh
             // 
@@ -511,6 +348,47 @@
             this.pnlEditItemCode.Size = new System.Drawing.Size(561, 418);
             this.pnlEditItemCode.TabIndex = 249;
             this.pnlEditItemCode.Visible = false;
+            this.pnlEditItemCode.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlEditItemCode_Paint);
+            // 
+            // txtEditModel
+            // 
+            this.txtEditModel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditModel.Location = new System.Drawing.Point(147, 212);
+            this.txtEditModel.Name = "txtEditModel";
+            this.txtEditModel.Size = new System.Drawing.Size(379, 23);
+            this.txtEditModel.TabIndex = 5;
+            // 
+            // txtEditBrand
+            // 
+            this.txtEditBrand.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditBrand.Location = new System.Drawing.Point(147, 180);
+            this.txtEditBrand.Name = "txtEditBrand";
+            this.txtEditBrand.Size = new System.Drawing.Size(379, 23);
+            this.txtEditBrand.TabIndex = 4;
+            // 
+            // txtEditItemName
+            // 
+            this.txtEditItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditItemName.Location = new System.Drawing.Point(147, 148);
+            this.txtEditItemName.Name = "txtEditItemName";
+            this.txtEditItemName.Size = new System.Drawing.Size(379, 23);
+            this.txtEditItemName.TabIndex = 3;
+            // 
+            // txtEditSubCategory
+            // 
+            this.txtEditSubCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditSubCategory.Location = new System.Drawing.Point(147, 118);
+            this.txtEditSubCategory.Name = "txtEditSubCategory";
+            this.txtEditSubCategory.Size = new System.Drawing.Size(379, 23);
+            this.txtEditSubCategory.TabIndex = 2;
+            // 
+            // txtEditCategory
+            // 
+            this.txtEditCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditCategory.Location = new System.Drawing.Point(147, 89);
+            this.txtEditCategory.Name = "txtEditCategory";
+            this.txtEditCategory.Size = new System.Drawing.Size(379, 23);
+            this.txtEditCategory.TabIndex = 1;
             // 
             // panel2
             // 
@@ -703,69 +581,85 @@
             this.label17.TabIndex = 10;
             this.label17.Text = "Edit Item Code";
             // 
-            // txtEditCategory
+            // dgv_list
             // 
-            this.txtEditCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditCategory.Location = new System.Drawing.Point(147, 89);
-            this.txtEditCategory.Name = "txtEditCategory";
-            this.txtEditCategory.Size = new System.Drawing.Size(379, 23);
-            this.txtEditCategory.TabIndex = 1;
-            // 
-            // txtEditSubCategory
-            // 
-            this.txtEditSubCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditSubCategory.Location = new System.Drawing.Point(147, 118);
-            this.txtEditSubCategory.Name = "txtEditSubCategory";
-            this.txtEditSubCategory.Size = new System.Drawing.Size(379, 23);
-            this.txtEditSubCategory.TabIndex = 2;
-            // 
-            // txtEditItemName
-            // 
-            this.txtEditItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditItemName.Location = new System.Drawing.Point(147, 148);
-            this.txtEditItemName.Name = "txtEditItemName";
-            this.txtEditItemName.Size = new System.Drawing.Size(379, 23);
-            this.txtEditItemName.TabIndex = 3;
-            // 
-            // txtEditBrand
-            // 
-            this.txtEditBrand.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditBrand.Location = new System.Drawing.Point(147, 180);
-            this.txtEditBrand.Name = "txtEditBrand";
-            this.txtEditBrand.Size = new System.Drawing.Size(379, 23);
-            this.txtEditBrand.TabIndex = 4;
-            // 
-            // txtEditModel
-            // 
-            this.txtEditModel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditModel.Location = new System.Drawing.Point(147, 212);
-            this.txtEditModel.Name = "txtEditModel";
-            this.txtEditModel.Size = new System.Drawing.Size(379, 23);
-            this.txtEditModel.TabIndex = 5;
+            this.dgv_list.AllowUserToAddRows = false;
+            this.dgv_list.AllowUserToDeleteRows = false;
+            this.dgv_list.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_list.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_list.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_list.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgv_list.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_list.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_list.ColumnHeadersHeight = 30;
+            this.dgv_list.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_list.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_list.Location = new System.Drawing.Point(11, 131);
+            this.dgv_list.MultiSelect = false;
+            this.dgv_list.Name = "dgv_list";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_list.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_list.RowHeadersVisible = false;
+            this.dgv_list.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.dgv_list.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_list.RowTemplate.ReadOnly = true;
+            this.dgv_list.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_list.Size = new System.Drawing.Size(1019, 482);
+            this.dgv_list.TabIndex = 250;
+            this.dgv_list.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_list_CellContentClick_1);
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlEditItemCode);
-            this.Controls.Add(this.dgv_list);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgv_list);
             this.Name = "Registration";
             this.Size = new System.Drawing.Size(1045, 626);
             this.Load += new System.EventHandler(this.Registration_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_list)).EndInit();
             this.pnlEditItemCode.ResumeLayout(false);
             this.pnlEditItemCode.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_list)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -779,10 +673,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         public Bunifu.Framework.UI.BunifuFlatButton btnDelete;
-        public Bunifu.Framework.UI.BunifuFlatButton btnRegICAdd;
-        public Bunifu.Framework.UI.BunifuFlatButton btnRegICDrop;
-        public Bunifu.Framework.UI.BunifuFlatButton btnRegICEdit;
-        private System.Windows.Forms.DataGridView dgv_list;
         public Bunifu.Framework.UI.BunifuFlatButton btnRefresh;
         private System.Windows.Forms.Panel pnlEditItemCode;
         private System.Windows.Forms.Panel panel2;
@@ -804,5 +694,6 @@
         public System.Windows.Forms.TextBox txtEditItemName;
         public System.Windows.Forms.TextBox txtEditSubCategory;
         public System.Windows.Forms.TextBox txtEditCategory;
+        private System.Windows.Forms.DataGridView dgv_list;
     }
 }
