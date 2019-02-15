@@ -680,5 +680,10 @@ namespace ShoppeTown_InventorySystem
             MessageBox.Show(lblPreviewItemCode.Text + " created successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
         }
+
+        private void pnlRegisterItemCode_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

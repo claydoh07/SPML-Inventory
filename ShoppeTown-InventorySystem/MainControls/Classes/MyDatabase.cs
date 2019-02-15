@@ -260,7 +260,8 @@ namespace ShoppeTown_InventorySystem
             return dgv1;
         }
         //Vendor Codes
-        public string AddVendor(string cat, string subcat, 
+        public string AddVendor(string cat1, string subcat1, string cat2, string subcat2, string cat3, string subcat3,
+            string cat4, string subcat4, string cat5, string subcat5, string cat6, string subcat6, string cat7, string subcat7,
             string compname, string contactperson, string compaddress, 
             string tel1, string tel2,
             string mob1, string mob2, 
@@ -271,20 +272,44 @@ namespace ShoppeTown_InventorySystem
             {
                 con.Open();
                 string SqlInsertVendor = "INSERT INTO tbl_vendor(" +
-                    "vendor_category, vendor_subcategory, vendor_name, " +
+                    "vendor_category1, vendor_subcategory1," +
+                    "vendor_category2, vendor_subcategory2," +
+                    "vendor_category3, vendor_subcategory3," +
+                    "vendor_category4, vendor_subcategory4," +
+                    "vendor_category5, vendor_subcategory5," +
+                    "vendor_category6, vendor_subcategory6," +
+                    "vendor_category7, vendor_subcategory7, vendor_name, " +
                     "vendor_contactperson, vendor_address, vendor_telephone1, " +
                     "vendor_telephone2, vendor_mobile1, vendor_mobile2, " +
                     "vendor_fax, vendor_emailadd1, vendor_emailadd2, vendor_website, " +
                     "created_at, updated_at) " +
-                    "VALUES (@category, @subcat, @vendorname, " +
+                    "VALUES (@category1, @subcat1, " +
+                    "        @category2, @subcat2, " +
+                    "        @category3, @subcat3, " +
+                    "        @category4, @subcat4, " +
+                    "        @category5, @subcat5, " +
+                    "        @category6, @subcat6, " +
+                    "        @category7, @subcat7, @vendorname, " +
                     "        @contactperson, @vendoraddress, @vendortel1, " +
                     "        @vendortel2, @vendormob1, @vendormob2, " +
                     "        @vendorfax, @vendoremail1, @vendoremail2, @vendorwebsite, " +
                     "        @created_at, @updated_at);";
 
                 MySqlCommand com = new MySqlCommand(SqlInsertVendor, con);
-                com.Parameters.AddWithValue("@category", cat);
-                com.Parameters.AddWithValue("@subcat", subcat);
+                com.Parameters.AddWithValue("@category1", cat1);
+                com.Parameters.AddWithValue("@subcat1", subcat1);
+                com.Parameters.AddWithValue("@category2", cat2);
+                com.Parameters.AddWithValue("@subcat2", subcat2);
+                com.Parameters.AddWithValue("@category3", cat3);
+                com.Parameters.AddWithValue("@subcat3", subcat3);
+                com.Parameters.AddWithValue("@category4", cat4);
+                com.Parameters.AddWithValue("@subcat4", subcat4);
+                com.Parameters.AddWithValue("@category5", cat5);
+                com.Parameters.AddWithValue("@subcat5", subcat5);
+                com.Parameters.AddWithValue("@category6", cat6);
+                com.Parameters.AddWithValue("@subcat6", subcat6);
+                com.Parameters.AddWithValue("@category7", cat7);
+                com.Parameters.AddWithValue("@subcat7", subcat7);
                 com.Parameters.AddWithValue("@vendorname", compname);
                 com.Parameters.AddWithValue("@contactperson", contactperson);
                 com.Parameters.AddWithValue("@vendoraddress", compaddress);
@@ -312,7 +337,8 @@ namespace ShoppeTown_InventorySystem
             return null;
         }
 
-        public string UpdateVendor(string cat, string subcat,
+        public string UpdateVendor(string cat1, string subcat1, string cat2, string subcat2, string cat3, string subcat3,
+            string cat4, string subcat4, string cat5, string subcat5, string cat6, string subcat6, string cat7, string subcat7,
             string compname, string contactperson, string compaddress,
             string tel1, string tel2,
             string mob1, string mob2,
@@ -335,7 +361,13 @@ namespace ShoppeTown_InventorySystem
                     "        @created_at, @updated_at);";*/
 
                 string SqlUpdateVendor = "UPDATE tbl_vendor " +
-                "SET vendor_category = @category, vendor_subcategory = @subcat," +
+                "SET vendor_category1 = @category1, vendor_subcategory1 = @subcat1," +
+                    "vendor_category2 = @category2, vendor_subcategory2 = @subcat2," +
+                    "vendor_category3 = @category3, vendor_subcategory3 = @subcat3," +
+                    "vendor_category4 = @category4, vendor_subcategory4 = @subcat4," +
+                    "vendor_category5 = @category5, vendor_subcategory5 = @subcat5," +
+                    "vendor_category6 = @category6, vendor_subcategory6 = @subcat6," +
+                    "vendor_category7 = @category7, vendor_subcategory7 = @subcat7," +
                     "vendor_name = @vendorname, vendor_contactperson = @contactperson," +
                     "vendor_address = @vendoraddress, vendor_telephone1 = @vendortel1," +
                     "vendor_telephone2 = @vendortel2, vendor_mobile1 = @vendormob1," +
@@ -345,8 +377,20 @@ namespace ShoppeTown_InventorySystem
                     " Where vendor_id = @id;";
 
                 MySqlCommand com = new MySqlCommand(SqlUpdateVendor, con);
-                com.Parameters.AddWithValue("@category", cat);
-                com.Parameters.AddWithValue("@subcat", subcat);
+                com.Parameters.AddWithValue("@category1", cat1);
+                com.Parameters.AddWithValue("@subcat1", subcat1);
+                com.Parameters.AddWithValue("@category2", cat2);
+                com.Parameters.AddWithValue("@subcat2", subcat2);
+                com.Parameters.AddWithValue("@category3", cat3);
+                com.Parameters.AddWithValue("@subcat3", subcat3);
+                com.Parameters.AddWithValue("@category4", cat4);
+                com.Parameters.AddWithValue("@subcat4", subcat4);
+                com.Parameters.AddWithValue("@category5", cat5);
+                com.Parameters.AddWithValue("@subcat5", subcat5);
+                com.Parameters.AddWithValue("@category6", cat6);
+                com.Parameters.AddWithValue("@subcat6", subcat6);
+                com.Parameters.AddWithValue("@category7", cat7);
+                com.Parameters.AddWithValue("@subcat7", subcat7);
                 com.Parameters.AddWithValue("@vendorname", compname);
                 com.Parameters.AddWithValue("@contactperson", contactperson);
                 com.Parameters.AddWithValue("@vendoraddress", compaddress);
@@ -374,7 +418,8 @@ namespace ShoppeTown_InventorySystem
             return null;
         }
 
-        public string DeleteVendor(string cat, string subcat,
+        public string DeleteVendor(string cat1, string subcat1, string cat2, string subcat2, string cat3, string subcat3,
+            string cat4, string subcat4, string cat5, string subcat5, string cat6, string subcat6, string cat7, string subcat7,
             string compname, string contactperson, string compaddress,
             string tel1, string tel2,
             string mob1, string mob2,
@@ -413,8 +458,21 @@ namespace ShoppeTown_InventorySystem
                 con.Open();
                 string sql = "" +
               "select * from tbl_vendor " +
-              "where vendor_category like '%" + search + "%' or " +
-              "      vendor_subcategory like '%" + search + "%' or " +
+              "where vendor_category1 like '%" + search + "%' or " +
+              "      vendor_subcategory1 like '%" + search + "%' or " +
+              "      vendor_category2 like '%" + search + "%' or " +
+              "      vendor_subcategory2 like '%" + search + "%' or " +
+              "      vendor_category3 like '%" + search + "%' or " +
+              "      vendor_subcategory3 like '%" + search + "%' or " +
+              "      vendor_category4 like '%" + search + "%' or " +
+              "      vendor_subcategory4 like '%" + search + "%' or " +
+              "      vendor_category5 like '%" + search + "%' or " +
+              "      vendor_subcategory5 like '%" + search + "%' or " +
+              "      vendor_category6 like '%" + search + "%' or " +
+              "      vendor_subcategory6 like '%" + search + "%' or " +
+              "      vendor_category7 like '%" + search + "%' or " +
+              "      vendor_subcategory7 like '%" + search + "%' or " +
+
               "      vendor_name like '%" + search + "%' or " +
               "      vendor_contactperson like '%" + search + "%' or " +
               "      vendor_address like '%" + search + "%' or " +
@@ -1238,6 +1296,41 @@ namespace ShoppeTown_InventorySystem
             {
                 con.Close();
             }
+        }
+
+        public string[] ShowSC(string cat)
+        {
+            string[] cont = new string[100];
+            for (int x = 0; x < 100; x++)
+                cont[x] = "";
+
+            int num = 0;
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN;";
+                
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[num++] = dr1["subCategory_Name"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "select SubCategory");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+
         }
     }
 }
