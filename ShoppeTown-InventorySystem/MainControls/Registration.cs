@@ -79,18 +79,7 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         private void dgv_list_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            foreach (DataGridViewRow row in dgv_list.SelectedRows)
-            {
-                btnEditItemCode.Enabled = true;
-                edit_id = row.Cells[0].Value.ToString();
-                lblPreviewItemCode.Text = row.Cells[1].Value.ToString();
-                txtEditCategory.Text = row.Cells[2].Value.ToString();
-                txtEditSubCategory.Text = row.Cells[3].Value.ToString();
-                txtEditItemName.Text = row.Cells[4].Value.ToString();
-                txtEditBrand.Text = row.Cells[5].Value.ToString();
-                txtEditModel.Text = row.Cells[6].Value.ToString();
-                txtEditDescription.Text = row.Cells[7].Value.ToString();
-            }
+            
         }
 
         private void btnEditItemCode_Click(object sender, EventArgs e)
@@ -112,11 +101,6 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         }
 
-        private void dgv_list_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void pnlEditItemCode_Paint(object sender, PaintEventArgs e)
         {
 
@@ -125,6 +109,22 @@ namespace ShoppeTown_InventorySystem.MainControls
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgv_list_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            foreach (DataGridViewRow row in dgv_list.SelectedRows)
+            {
+                btnEditItemCode.Enabled = true;
+                edit_id = row.Cells[0].Value.ToString();
+                lblPreviewItemCode.Text = row.Cells[1].Value.ToString();
+                txtEditCategory.Text = row.Cells[2].Value.ToString();
+                txtEditSubCategory.Text = row.Cells[3].Value.ToString();
+                txtEditItemName.Text = row.Cells[4].Value.ToString();
+                txtEditBrand.Text = row.Cells[5].Value.ToString();
+                txtEditModel.Text = row.Cells[6].Value.ToString();
+                txtEditDescription.Text = row.Cells[7].Value.ToString();
+            }
         }
     }
 }

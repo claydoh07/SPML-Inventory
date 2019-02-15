@@ -91,7 +91,7 @@
             this.btnSearch.IconRightVisible = true;
             this.btnSearch.IconRightZoom = 0D;
             this.btnSearch.IconVisible = true;
-            this.btnSearch.IconZoom = 40D;
+            this.btnSearch.IconZoom = 50D;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSearch.IsTab = false;
             this.btnSearch.Location = new System.Drawing.Point(272, 24);
@@ -594,6 +594,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_list.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_list.BackgroundColor = System.Drawing.Color.White;
             this.dgv_list.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_list.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
