@@ -68,6 +68,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -84,6 +85,12 @@
     </Compile>
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPurchaseRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPurchaseRequest.Designer.cs">
+      <DependentUpon>frmAddPurchaseRequest.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegisterItemCode.cs">
       <SubType>Form</SubType>
@@ -213,6 +220,9 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPurchaseRequest.resx">
+      <DependentUpon>frmAddPurchaseRequest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegisterItemCode.resx">
       <DependentUpon>frmRegisterItemCode.cs</DependentUpon>

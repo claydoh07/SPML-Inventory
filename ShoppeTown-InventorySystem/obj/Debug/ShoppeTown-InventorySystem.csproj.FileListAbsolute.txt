@@ -150,3 +150,4 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csproj.GenerateResource.Cache
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources
+D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAddPurchaseRequest.resources

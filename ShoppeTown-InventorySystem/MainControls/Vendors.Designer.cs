@@ -413,7 +413,7 @@
             this.pnlAddCategory.Controls.Add(this.cboCat);
             this.pnlAddCategory.Controls.Add(this.lblAddSubCat);
             this.pnlAddCategory.Controls.Add(this.lblSubCat);
-            this.pnlAddCategory.Location = new System.Drawing.Point(348, 241);
+            this.pnlAddCategory.Location = new System.Drawing.Point(348, 9);
             this.pnlAddCategory.Name = "pnlAddCategory";
             this.pnlAddCategory.Size = new System.Drawing.Size(325, 153);
             this.pnlAddCategory.TabIndex = 54;
