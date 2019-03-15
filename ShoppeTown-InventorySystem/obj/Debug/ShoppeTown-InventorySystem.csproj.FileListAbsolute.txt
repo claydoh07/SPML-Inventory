@@ -125,7 +125,6 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Web.dll
-C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAdminDashboard.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Dashboard.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Delivery.resources
