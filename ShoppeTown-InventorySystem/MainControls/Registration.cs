@@ -20,11 +20,6 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         string edit_id = "";
 
-        private void bunifuFlatButton12_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void showItemCode()
         {
             dgv_list.DataSource = md.dgv_showItemCode().DataSource;
@@ -116,6 +111,7 @@ namespace ShoppeTown_InventorySystem.MainControls
             foreach (DataGridViewRow row in dgv_list.SelectedRows)
             {
                 btnEditItemCode.Enabled = true;
+                btnDelete.Enabled = true;
                 edit_id = row.Cells[0].Value.ToString();
                 lblPreviewItemCode.Text = row.Cells[1].Value.ToString();
                 txtEditCategory.Text = row.Cells[2].Value.ToString();
@@ -124,6 +120,20 @@ namespace ShoppeTown_InventorySystem.MainControls
                 txtEditBrand.Text = row.Cells[5].Value.ToString();
                 txtEditModel.Text = row.Cells[6].Value.ToString();
                 txtEditDescription.Text = row.Cells[7].Value.ToString();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgv_list.SelectedRows)
+            {
+                DialogResult dr =  MessageBox.Show("Do you want to Delete?", "Delete item code", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    md.DeleteItemCode(row.Cells[0].Value.ToString());
+                    MessageBox.Show("Delete Successfully!?", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnRefresh_Click(sender, e);
+                }
             }
         }
     }

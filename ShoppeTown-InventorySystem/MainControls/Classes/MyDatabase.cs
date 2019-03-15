@@ -1298,6 +1298,29 @@ namespace ShoppeTown_InventorySystem
             }
         }
 
+        public void DeleteItemCode(string id)
+        {
+            try
+            {
+                con.Open();
+                string sql1 = @"DELETE FROM tbl_itemcode
+                            WHERE `id` = @id;";//Delete item code
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@id", id);
+                com1.ExecuteNonQuery();
+                con.Close();
+                //MessageBox.Show("Created Successful", "Save!");
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "DeleteItemCode");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         public string[] ShowSC(string cat)
         {
             string[] cont = new string[100];
