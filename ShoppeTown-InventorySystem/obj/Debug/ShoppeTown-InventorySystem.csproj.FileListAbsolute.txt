@@ -113,9 +113,8 @@ D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySyste
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.pdb
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Vendors.resources
 D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache
+D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\ShoppeTown-InventorySystem.exe.config
-C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.exe
-C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.pdb
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\ShoppeTown-InventorySystem.exe
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\ShoppeTown-InventorySystem.pdb
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MetroFramework.dll
@@ -126,6 +125,8 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\bin\Debug\MySql.Web.dll
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAdminDashboard.resources
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAddPurchaseRequest.resources
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Dashboard.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Delivery.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.FASM.resources
@@ -147,6 +148,8 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.Properties.Resources.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.register.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csproj.GenerateResource.Cache
-C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources
-D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmRegisterItemCode.resources
-C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAddPurchaseRequest.resources
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.exe
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.pdb
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.Account.resources
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Acct.resources
+C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache

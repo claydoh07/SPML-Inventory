@@ -124,6 +124,7 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "2")
             {
@@ -135,6 +136,7 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "3")
             {
@@ -146,6 +148,7 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "4")
             {
@@ -157,6 +160,7 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "5")
             {
@@ -168,6 +172,7 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "6")
             {
@@ -179,6 +184,7 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(96,169,23);
                 btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
             }
             else if (click == "7")
             {
@@ -190,6 +196,19 @@ namespace ShoppeTown_InventorySystem
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnVendors.Normalcolor = Color.FromArgb(96,169,23);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(21, 32, 40);
+            }
+            else if (click == "8")
+            {
+                btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnVendors.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnAccount.Normalcolor = Color.FromArgb(96, 169, 23);
             }
         }
 
@@ -224,6 +243,19 @@ namespace ShoppeTown_InventorySystem
             po1.Visible = false;
             delivery1.Visible = false;
             fasm1.Visible = false;
+            acct1.Visible = false;
+        }
+
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            button = "8";
+            getBackColor(button);
+
+            clearControls();
+            acct1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.Vendors v = new MainControls.Vendors();
+            //pnlAdminBoard.Controls.Add(v);
         }
     }
 }

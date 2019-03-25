@@ -43,13 +43,15 @@
             this.btnPurchaseRequest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnDelivery = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAccount = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.fasm1 = new ShoppeTown_InventorySystem.MainControls.FASM();
             this.vendors1 = new ShoppeTown_InventorySystem.MainControls.Vendors();
             this.dashboard1 = new ShoppeTown_InventorySystem.MainControls.Dashboard();
             this.registration1 = new ShoppeTown_InventorySystem.MainControls.Registration();
             this.delivery1 = new ShoppeTown_InventorySystem.MainControls.Delivery();
             this.po1 = new ShoppeTown_InventorySystem.MainControls.PO();
             this.pr1 = new ShoppeTown_InventorySystem.MainControls.PR();
-            this.fasm1 = new ShoppeTown_InventorySystem.MainControls.FASM();
+            this.acct1 = new ShoppeTown_InventorySystem.MainControls.Acct();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDtp.SuspendLayout();
@@ -121,7 +123,7 @@
             this.btnDashboard.ButtonText = "Dashboard";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
             this.btnDashboard.Iconimage_right = null;
@@ -161,7 +163,7 @@
             this.btnPurchaseOrder.ButtonText = "Purchase Order";
             this.btnPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseOrder.DisabledColor = System.Drawing.Color.Gray;
-            this.btnPurchaseOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseOrder.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseOrder.Iconcolor = System.Drawing.Color.Transparent;
             this.btnPurchaseOrder.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPurchaseOrder.Iconimage")));
             this.btnPurchaseOrder.Iconimage_right = null;
@@ -175,7 +177,7 @@
             this.btnPurchaseOrder.IconZoom = 50D;
             this.btnPurchaseOrder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnPurchaseOrder.IsTab = false;
-            this.btnPurchaseOrder.Location = new System.Drawing.Point(0, 189);
+            this.btnPurchaseOrder.Location = new System.Drawing.Point(0, 193);
             this.btnPurchaseOrder.Name = "btnPurchaseOrder";
             this.btnPurchaseOrder.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseOrder.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -200,7 +202,7 @@
             this.btnFASM.ButtonText = "FASM";
             this.btnFASM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFASM.DisabledColor = System.Drawing.Color.Gray;
-            this.btnFASM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFASM.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFASM.Iconcolor = System.Drawing.Color.Transparent;
             this.btnFASM.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnFASM.Iconimage")));
             this.btnFASM.Iconimage_right = null;
@@ -214,7 +216,7 @@
             this.btnFASM.IconZoom = 50D;
             this.btnFASM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnFASM.IsTab = false;
-            this.btnFASM.Location = new System.Drawing.Point(0, 283);
+            this.btnFASM.Location = new System.Drawing.Point(0, 289);
             this.btnFASM.Name = "btnFASM";
             this.btnFASM.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnFASM.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -239,7 +241,7 @@
             this.btnRegistration.ButtonText = "Item Code";
             this.btnRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistration.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistration.Iconcolor = System.Drawing.Color.Transparent;
             this.btnRegistration.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRegistration.Iconimage")));
             this.btnRegistration.Iconimage_right = null;
@@ -253,7 +255,7 @@
             this.btnRegistration.IconZoom = 50D;
             this.btnRegistration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegistration.IsTab = false;
-            this.btnRegistration.Location = new System.Drawing.Point(0, 48);
+            this.btnRegistration.Location = new System.Drawing.Point(0, 49);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegistration.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -278,7 +280,7 @@
             this.btnVendors.ButtonText = "Vendors";
             this.btnVendors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVendors.DisabledColor = System.Drawing.Color.Gray;
-            this.btnVendors.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendors.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendors.Iconcolor = System.Drawing.Color.Transparent;
             this.btnVendors.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnVendors.Iconimage")));
             this.btnVendors.Iconimage_right = null;
@@ -292,7 +294,7 @@
             this.btnVendors.IconZoom = 50D;
             this.btnVendors.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnVendors.IsTab = false;
-            this.btnVendors.Location = new System.Drawing.Point(0, 95);
+            this.btnVendors.Location = new System.Drawing.Point(0, 97);
             this.btnVendors.Name = "btnVendors";
             this.btnVendors.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnVendors.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -317,7 +319,7 @@
             this.btnLogout.ButtonText = "Logout";
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
             this.btnLogout.Iconimage_right = null;
@@ -331,7 +333,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 330);
+            this.btnLogout.Location = new System.Drawing.Point(0, 385);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -356,7 +358,7 @@
             this.btnPurchaseRequest.ButtonText = "Purchase Request";
             this.btnPurchaseRequest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseRequest.DisabledColor = System.Drawing.Color.Gray;
-            this.btnPurchaseRequest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseRequest.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseRequest.Iconcolor = System.Drawing.Color.Transparent;
             this.btnPurchaseRequest.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPurchaseRequest.Iconimage")));
             this.btnPurchaseRequest.Iconimage_right = null;
@@ -370,7 +372,7 @@
             this.btnPurchaseRequest.IconZoom = 50D;
             this.btnPurchaseRequest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnPurchaseRequest.IsTab = false;
-            this.btnPurchaseRequest.Location = new System.Drawing.Point(0, 142);
+            this.btnPurchaseRequest.Location = new System.Drawing.Point(0, 145);
             this.btnPurchaseRequest.Name = "btnPurchaseRequest";
             this.btnPurchaseRequest.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseRequest.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -396,6 +398,7 @@
             this.pnlButtons.Controls.Add(this.btnLogout);
             this.pnlButtons.Controls.Add(this.btnVendors);
             this.pnlButtons.Controls.Add(this.btnRegistration);
+            this.pnlButtons.Controls.Add(this.btnAccount);
             this.pnlButtons.Controls.Add(this.btnFASM);
             this.pnlButtons.Controls.Add(this.btnPurchaseOrder);
             this.pnlButtons.Controls.Add(this.btnDashboard);
@@ -413,7 +416,7 @@
             this.btnDelivery.ButtonText = "Delivery";
             this.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelivery.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelivery.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDelivery.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelivery.Iconimage")));
             this.btnDelivery.Iconimage_right = null;
@@ -427,7 +430,7 @@
             this.btnDelivery.IconZoom = 50D;
             this.btnDelivery.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDelivery.IsTab = false;
-            this.btnDelivery.Location = new System.Drawing.Point(0, 236);
+            this.btnDelivery.Location = new System.Drawing.Point(0, 241);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDelivery.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -442,6 +445,56 @@
             this.btnDelivery.Textcolor = System.Drawing.Color.White;
             this.btnDelivery.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAccount.BorderRadius = 0;
+            this.btnAccount.ButtonText = "Account Setting";
+            this.btnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAccount.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAccount.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAccount.Iconimage")));
+            this.btnAccount.Iconimage_right = null;
+            this.btnAccount.Iconimage_right_Selected = null;
+            this.btnAccount.Iconimage_Selected = null;
+            this.btnAccount.IconMarginLeft = 0;
+            this.btnAccount.IconMarginRight = 0;
+            this.btnAccount.IconRightVisible = true;
+            this.btnAccount.IconRightZoom = 0D;
+            this.btnAccount.IconVisible = true;
+            this.btnAccount.IconZoom = 50D;
+            this.btnAccount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAccount.IsTab = false;
+            this.btnAccount.Location = new System.Drawing.Point(0, 337);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAccount.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnAccount.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAccount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnAccount.selected = false;
+            this.btnAccount.Size = new System.Drawing.Size(182, 48);
+            this.btnAccount.TabIndex = 3;
+            this.btnAccount.TabStop = false;
+            this.btnAccount.Text = "Account Setting";
+            this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccount.Textcolor = System.Drawing.Color.White;
+            this.btnAccount.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            // 
+            // fasm1
+            // 
+            this.fasm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fasm1.Location = new System.Drawing.Point(183, 57);
+            this.fasm1.Name = "fasm1";
+            this.fasm1.Size = new System.Drawing.Size(1045, 626);
+            this.fasm1.TabIndex = 13;
+            this.fasm1.Visible = false;
             // 
             // vendors1
             // 
@@ -509,22 +562,23 @@
             this.pr1.TabIndex = 10;
             this.pr1.Visible = false;
             // 
-            // fasm1
+            // acct1
             // 
-            this.fasm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.acct1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fasm1.Location = new System.Drawing.Point(183, 57);
-            this.fasm1.Name = "fasm1";
-            this.fasm1.Size = new System.Drawing.Size(1045, 626);
-            this.fasm1.TabIndex = 13;
-            this.fasm1.Visible = false;
+            this.acct1.Location = new System.Drawing.Point(183, 57);
+            this.acct1.Name = "acct1";
+            this.acct1.Size = new System.Drawing.Size(1045, 626);
+            this.acct1.TabIndex = 14;
+            this.acct1.Visible = false;
             // 
             // frmAdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1226, 701);
+            this.Controls.Add(this.acct1);
             this.Controls.Add(this.fasm1);
             this.Controls.Add(this.pnlDtp);
             this.Controls.Add(this.panel1);
@@ -572,5 +626,7 @@
         private MainControls.PO po1;
         private MainControls.Delivery delivery1;
         private MainControls.FASM fasm1;
+        public Bunifu.Framework.UI.BunifuFlatButton btnAccount;
+        private MainControls.Acct acct1;
     }
 }

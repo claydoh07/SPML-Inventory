@@ -22,14 +22,12 @@ namespace ShoppeTown_InventorySystem.MainControls
         private void Dashboard_Load(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = md.dgv_SearchInventory("").DataSource;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            dgv_Dashboard.DataSource = md.dgv_SearchInventory("").DataSource;
         }
 
         private void txtSearch_OnValueChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = md.dgv_SearchInventory(txtSearch.Text).DataSource;
+            dgv_Dashboard.DataSource = md.dgv_SearchInventory(txtSearch.Text).DataSource;
         }
     }
 }

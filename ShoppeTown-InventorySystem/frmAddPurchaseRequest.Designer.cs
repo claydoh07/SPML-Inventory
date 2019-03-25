@@ -63,7 +63,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.tx = new System.Windows.Forms.TextBox();
+            this.txtItem_2 = new System.Windows.Forms.TextBox();
             this.txtQuantity_2 = new System.Windows.Forms.TextBox();
             this.cboCategory_2 = new System.Windows.Forms.ComboBox();
             this.cboCategory_1 = new System.Windows.Forms.ComboBox();
@@ -93,7 +93,7 @@
             this.cboTOS_10 = new System.Windows.Forms.ComboBox();
             this.cboTOS_11 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.t = new System.Windows.Forms.TextBox();
+            this.txtDesc_1 = new System.Windows.Forms.TextBox();
             this.txtDesc_2 = new System.Windows.Forms.TextBox();
             this.txtDesc_3 = new System.Windows.Forms.TextBox();
             this.txtDesc_4 = new System.Windows.Forms.TextBox();
@@ -139,9 +139,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.numRow = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtRequiredDate = new System.Windows.Forms.TextBox();
             this.txtCostCenter = new System.Windows.Forms.TextBox();
-            this.dtpReqDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpReqDate2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpReqDate1 = new System.Windows.Forms.DateTimePicker();
             this.cboBusinessType = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -366,13 +366,13 @@
             this.groupBox1.Controls.Add(this.numRow);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.txtRequiredDate);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtCostCenter);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.dtpReqDate);
+            this.groupBox1.Controls.Add(this.dtpReqDate2);
+            this.groupBox1.Controls.Add(this.dtpReqDate1);
             this.groupBox1.Controls.Add(this.txtPRNo);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label23);
@@ -495,12 +495,13 @@
             this.btnSave.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
             this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(108, 34);
+            this.btnSave.Size = new System.Drawing.Size(111, 34);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "SAVE";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // tblRegPanel
             // 
@@ -524,7 +525,7 @@
             this.tblRegPanel.Controls.Add(this.label6, 6, 0);
             this.tblRegPanel.Controls.Add(this.label13, 0, 1);
             this.tblRegPanel.Controls.Add(this.label14, 0, 2);
-            this.tblRegPanel.Controls.Add(this.tx, 2, 2);
+            this.tblRegPanel.Controls.Add(this.txtItem_2, 2, 2);
             this.tblRegPanel.Controls.Add(this.txtQuantity_2, 5, 2);
             this.tblRegPanel.Controls.Add(this.cboCategory_2, 4, 2);
             this.tblRegPanel.Controls.Add(this.cboCategory_1, 4, 1);
@@ -554,7 +555,7 @@
             this.tblRegPanel.Controls.Add(this.cboTOS_10, 1, 10);
             this.tblRegPanel.Controls.Add(this.cboTOS_11, 1, 11);
             this.tblRegPanel.Controls.Add(this.label4, 3, 0);
-            this.tblRegPanel.Controls.Add(this.t, 3, 1);
+            this.tblRegPanel.Controls.Add(this.txtDesc_1, 3, 1);
             this.tblRegPanel.Controls.Add(this.txtDesc_2, 3, 2);
             this.tblRegPanel.Controls.Add(this.txtDesc_3, 3, 3);
             this.tblRegPanel.Controls.Add(this.txtDesc_4, 3, 4);
@@ -749,13 +750,13 @@
             this.label14.Text = "2.";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tx
+            // txtItem_2
             // 
-            this.tx.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx.Location = new System.Drawing.Point(159, 53);
-            this.tx.Name = "tx";
-            this.tx.Size = new System.Drawing.Size(111, 23);
-            this.tx.TabIndex = 22;
+            this.txtItem_2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtItem_2.Location = new System.Drawing.Point(159, 53);
+            this.txtItem_2.Name = "txtItem_2";
+            this.txtItem_2.Size = new System.Drawing.Size(111, 23);
+            this.txtItem_2.TabIndex = 22;
             // 
             // txtQuantity_2
             // 
@@ -1136,20 +1137,20 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(276, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 20);
+            this.label4.Size = new System.Drawing.Size(164, 20);
             this.label4.TabIndex = 190;
             this.label4.Text = "Description/Specification";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // t
+            // txtDesc_1
             // 
-            this.t.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t.Location = new System.Drawing.Point(276, 28);
-            this.t.Name = "t";
-            this.t.Size = new System.Drawing.Size(164, 23);
-            this.t.TabIndex = 16;
-            this.t.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtDesc_1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc_1.Location = new System.Drawing.Point(276, 28);
+            this.txtDesc_1.Name = "txtDesc_1";
+            this.txtDesc_1.Size = new System.Drawing.Size(164, 23);
+            this.txtDesc_1.TabIndex = 16;
+            this.txtDesc_1.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtDesc_2
             // 
@@ -1648,14 +1649,6 @@
             this.label11.TabIndex = 178;
             this.label11.Text = "Business Type :";
             // 
-            // txtRequiredDate
-            // 
-            this.txtRequiredDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRequiredDate.Location = new System.Drawing.Point(466, 59);
-            this.txtRequiredDate.Name = "txtRequiredDate";
-            this.txtRequiredDate.Size = new System.Drawing.Size(170, 23);
-            this.txtRequiredDate.TabIndex = 7;
-            // 
             // txtCostCenter
             // 
             this.txtCostCenter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1664,14 +1657,26 @@
             this.txtCostCenter.Size = new System.Drawing.Size(170, 23);
             this.txtCostCenter.TabIndex = 8;
             // 
-            // dtpReqDate
+            // dtpReqDate2
             // 
-            this.dtpReqDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpReqDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpReqDate.Location = new System.Drawing.Point(466, 30);
-            this.dtpReqDate.Name = "dtpReqDate";
-            this.dtpReqDate.Size = new System.Drawing.Size(170, 23);
-            this.dtpReqDate.TabIndex = 6;
+            this.dtpReqDate2.CustomFormat = "yyyy-MM-dd";
+            this.dtpReqDate2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpReqDate2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpReqDate2.Location = new System.Drawing.Point(466, 59);
+            this.dtpReqDate2.Name = "dtpReqDate2";
+            this.dtpReqDate2.Size = new System.Drawing.Size(170, 23);
+            this.dtpReqDate2.TabIndex = 6;
+            // 
+            // dtpReqDate1
+            // 
+            this.dtpReqDate1.CustomFormat = "yyyy-MM-dd";
+            this.dtpReqDate1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpReqDate1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpReqDate1.Location = new System.Drawing.Point(466, 30);
+            this.dtpReqDate1.Name = "dtpReqDate1";
+            this.dtpReqDate1.Size = new System.Drawing.Size(170, 23);
+            this.dtpReqDate1.TabIndex = 6;
+            this.dtpReqDate1.Value = new System.DateTime(2019, 3, 26, 0, 9, 25, 0);
             // 
             // cboBusinessType
             // 
@@ -1730,8 +1735,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dtpReqDate;
-        private System.Windows.Forms.TextBox txtRequiredDate;
+        private System.Windows.Forms.DateTimePicker dtpReqDate1;
         private System.Windows.Forms.TextBox txtCostCenter;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cboBusinessType;
@@ -1750,7 +1754,7 @@
         private System.Windows.Forms.ComboBox cboUnit_1;
         private System.Windows.Forms.TextBox txtQuantity_1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox tx;
+        private System.Windows.Forms.TextBox txtItem_2;
         private System.Windows.Forms.ComboBox cboCategory_2;
         private System.Windows.Forms.ComboBox cboUnit_2;
         private System.Windows.Forms.ComboBox cboCategory_1;
@@ -1779,7 +1783,7 @@
         private System.Windows.Forms.ComboBox cboTOS_9;
         private System.Windows.Forms.ComboBox cboTOS_10;
         private System.Windows.Forms.ComboBox cboTOS_11;
-        private System.Windows.Forms.TextBox t;
+        private System.Windows.Forms.TextBox txtDesc_1;
         private System.Windows.Forms.TextBox txtDesc_2;
         private System.Windows.Forms.TextBox txtDesc_3;
         private System.Windows.Forms.TextBox txtDesc_4;
@@ -1825,5 +1829,6 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnClose;
         public Bunifu.Framework.UI.BunifuFlatButton btnSave;
         public Bunifu.Framework.UI.BunifuFlatButton btnClear;
+        private System.Windows.Forms.DateTimePicker dtpReqDate2;
     }
 }

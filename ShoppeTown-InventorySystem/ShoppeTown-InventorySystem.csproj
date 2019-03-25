@@ -79,6 +79,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainControls\Account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountInfo.cs" />
     <Compile Include="AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +103,12 @@
     </Compile>
     <Compile Include="frmRegisterItemCode.Designer.cs">
       <DependentUpon>frmRegisterItemCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\Acct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Acct.Designer.cs">
+      <DependentUpon>Acct.cs</DependentUpon>
     </Compile>
     <Compile Include="MainControls\Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -217,6 +230,9 @@
     <Compile Include="Login\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MainControls\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegisterItemCode.resx">
       <DependentUpon>frmRegisterItemCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Acct.resx">
+      <DependentUpon>Acct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainControls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

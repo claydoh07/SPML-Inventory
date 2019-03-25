@@ -34,6 +34,7 @@ namespace ShoppeTown_InventorySystem
                 MySqlDataReader dr = com.ExecuteReader();
                 if (dr.Read())
                 {
+                    AccountInfo.id = dr["user_id"].ToString();
                     usersResult = "PASSED";
                 }
             }
@@ -1382,45 +1383,274 @@ namespace ShoppeTown_InventorySystem
         }
 
         //===============Purchase Request=============
-        public void getPRNo()
+        public int getPRNo()
         {
+            int usersResult = 0;
             try
             {
                 con.Open();
-                string sql1 = @"INSERT INTO tbl_purchase_request(
-                                `pr_no`,
-                                `pr_requestor_name`,
-                                `contact_number`,
-                                `department`,
-                                `project_name`,
-                                `business_type`,
-                                `requisition_date`,
-                                `required_date`,
-                                `cost_center`,
-                                `purpose`,
-                                `priority`,
-                                `type_of_supply`,
-                                `item`,
-                                `description`,
-                                `category`,
-                                `quantity`,
-                                `unit`,
-                                `updated_at`,
-                                `created_at`) VALUES();";//inserting category
-                MySqlCommand com = new MySqlCommand(sql1, con);
+                string sql1 = @"SELECT * FROM tbl_pr_no ORDER BY pr_no DESC LIMIT 1;";//select pr no
 
+                MySqlCommand com = new MySqlCommand(sql1, con);
                 com.ExecuteNonQuery();
-                con.Close();
+
+                MySqlDataReader dr = com.ExecuteReader();
+                if (dr.Read())
+                {
+                    usersResult = Convert.ToInt32(dr["pr_no"].ToString());
+
+                    usersResult = Convert.ToInt32(usersResult) + 1;
+                }
+                else
+                {
+                    usersResult = 1001;
+                }
             }
             catch (MySqlException sq)
             {
-                MessageBox.Show(sq.Message, "select SubCategory");
+                MessageBox.Show(sq.Message, "getPRNo");
             }
             finally
             {
                 con.Close();
             }
+            return usersResult;
 
+        }
+
+        public void PRno_insert(string prNO, string name)
+        {
+            try
+            {
+                con.Open();
+                string sql1 = @"INSERT INTO `db_spml_inventory`.`tbl_pr_no`
+                            (`pr_no`,
+                            `name`)
+                            VALUES
+                            (@prNo,
+                            @name);";//inserting pr NO
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@prNo", prNO);
+                com1.Parameters.AddWithValue("@name", name);
+                com1.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "PRno_insert");
+            }
+            finally
+            {
+                con.Close();
+            }
+        } 
+
+        public void PR_insert(string prNO, string requestor, string contactNumber, string dept, string projectName, string businessType, string date1, string date2, string cost, string purpose, string priority, string entry, string[,] info)
+        {
+            for(int x = 0; x < Convert.ToInt32(entry); x++)
+            try
+            {
+                con.Open();
+                string sql1 = @"INSERT INTO tbl_purchase_request
+                        (
+                        `pr_no`,
+                        `pr_requestor_name`,
+                        `contact_number`,
+                        `department`,
+                        `project_name`,
+                        `business_type`,
+                        `requisition_date`,
+                        `required_date`,
+                        `cost_center`,
+                        `purpose`,
+                        `priority`,
+                        `type_of_supply`,
+                        `item`,
+                        `description`,
+                        `category`,
+                        `quantity`,
+                        `unit`,
+                        `updated_at`,
+                        `created_at`)
+                        VALUES
+                        (
+                        @pr_no,
+                        @pr_requestor_name,
+                        @contact_number,
+                        @department,
+                        @project_name,
+                        @business_type,
+                        @requisition_date,
+                        @required_date,
+                        @cost_center,
+                        @purpose,
+                        @priority,
+                        @type_of_supply,
+                        @item,
+                        @description,
+                        @category,
+                        @quantity,
+                        @unit,
+                        @updated_at,
+                        @created_at);
+                        ";//inserting pr
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+
+                com1.Parameters.AddWithValue("@pr_no", prNO);
+                com1.Parameters.AddWithValue("@pr_requestor_name", requestor);
+                com1.Parameters.AddWithValue("@contact_number", contactNumber);
+                com1.Parameters.AddWithValue("@department", dept);
+                com1.Parameters.AddWithValue("@project_name", projectName);
+                com1.Parameters.AddWithValue("@business_type", businessType);
+                com1.Parameters.AddWithValue("@requisition_date", date1);
+                com1.Parameters.AddWithValue("@required_date", date2);
+                com1.Parameters.AddWithValue("@cost_center", cost);
+                com1.Parameters.AddWithValue("@purpose", purpose);
+                com1.Parameters.AddWithValue("@priority", priority);
+                com1.Parameters.AddWithValue("@type_of_supply", info[x, 0]);
+                com1.Parameters.AddWithValue("@item", info[x, 1]);
+                com1.Parameters.AddWithValue("@description", info[x, 2]);
+                com1.Parameters.AddWithValue("@category", info[x, 3]);
+                com1.Parameters.AddWithValue("@quantity", info[x, 4]);
+                com1.Parameters.AddWithValue("@unit", info[x, 5]);
+                com1.Parameters.AddWithValue("@updated_at", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                com1.Parameters.AddWithValue("@created_at", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+
+                com1.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "PR_insert");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public DataGridView dgv_showPR()
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = @"SELECT 
+                            `id`,
+                            `pr_no`,
+                            `pr_requestor_name`,
+                            `contact_number`,
+                            `department`,
+                            `project_name`,
+                            `business_type`,
+                            `requisition_date`,
+                            `required_date`,
+                            `cost_center`,
+                            `purpose`,
+                            `priority`,
+                            `type_of_supply`,
+                            `item`,
+                            `description`,
+                            `category`,
+                            `quantity`,
+                            `unit` FROM tbl_purchase_request;";
+
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_showPR");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
+
+        //===============accounts===============
+        public string[] ShowAccountInfor(string id)
+        {
+            string[] cont = new string[200];
+           
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_users WHERE user_id = @id;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@id", id);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[0] = dr1["firstName"].ToString();
+                    cont[1] = dr1["middleName"].ToString();
+                    cont[2] = dr1["lastName"].ToString();
+                    cont[3] = dr1["userType"].ToString();
+                    cont[4] = dr1["position"].ToString();
+                    cont[5] = dr1["department"].ToString();
+                    cont[6] = dr1["username"].ToString();
+                    cont[7] = dr1["password"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "ShowAccountInfo");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+        }
+
+        public void Account_update(string id, string fname, string mname, string lname, string pos, string dept, string user, string pass )
+        {
+            try
+            {
+                con.Open();
+                string sql1 = @"UPDATE tbl_users SET
+                            `firstName` = @fn,
+                            `middleName` = @mn,
+                            `lastName` = @ln,
+                            `position` = @p,
+                            `department` = @d,
+                            `username` = @usr,
+                            `password` = @pass,
+                            `updated_at` = @date2
+                            WHERE `user_id` = @id;";//update item code
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@id", id);
+                com1.Parameters.AddWithValue("@fn", fname);
+                com1.Parameters.AddWithValue("@mn", mname);
+                com1.Parameters.AddWithValue("@ln", lname);
+                com1.Parameters.AddWithValue("@p", pos);
+                com1.Parameters.AddWithValue("@d", dept);
+                com1.Parameters.AddWithValue("@usr", user);
+                com1.Parameters.AddWithValue("@pass", pass);
+                com1.Parameters.AddWithValue("@date2", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                com1.ExecuteNonQuery();
+                con.Close();
+                //MessageBox.Show("Created Successful", "Save!");
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "Account_update");
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }
