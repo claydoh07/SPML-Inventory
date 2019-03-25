@@ -337,6 +337,8 @@
             // 
             // grpRegVendor
             // 
+            this.grpRegVendor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grpRegVendor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.grpRegVendor.Controls.Add(this.pnlAddCategory);
             this.grpRegVendor.Controls.Add(this.label16);
@@ -1249,6 +1251,9 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Vendors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Vendors.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Vendors.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_Vendors.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Vendors.BackgroundColor = System.Drawing.Color.White;

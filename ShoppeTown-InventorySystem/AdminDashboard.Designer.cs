@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlDtp = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
-            this.pnlAdminBoard = new System.Windows.Forms.Panel();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPurchaseOrder = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnFASM = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -44,6 +43,13 @@
             this.btnPurchaseRequest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnDelivery = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.vendors1 = new ShoppeTown_InventorySystem.MainControls.Vendors();
+            this.dashboard1 = new ShoppeTown_InventorySystem.MainControls.Dashboard();
+            this.registration1 = new ShoppeTown_InventorySystem.MainControls.Registration();
+            this.delivery1 = new ShoppeTown_InventorySystem.MainControls.Delivery();
+            this.po1 = new ShoppeTown_InventorySystem.MainControls.PO();
+            this.pr1 = new ShoppeTown_InventorySystem.MainControls.PR();
+            this.fasm1 = new ShoppeTown_InventorySystem.MainControls.FASM();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDtp.SuspendLayout();
@@ -105,18 +111,6 @@
             this.lblDate.Size = new System.Drawing.Size(96, 17);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "Date: 01/09/19";
-            // 
-            // pnlAdminBoard
-            // 
-            this.pnlAdminBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlAdminBoard.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlAdminBoard.Location = new System.Drawing.Point(181, 56);
-            this.pnlAdminBoard.Name = "pnlAdminBoard";
-            this.pnlAdminBoard.Size = new System.Drawing.Size(1045, 625);
-            this.pnlAdminBoard.TabIndex = 18;
-            this.pnlAdminBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAdminBoard_Paint);
             // 
             // btnDashboard
             // 
@@ -394,9 +388,8 @@
             // 
             // pnlButtons
             // 
-            this.pnlButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnlButtons.Controls.Add(this.btnDelivery);
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
@@ -450,15 +443,98 @@
             this.btnDelivery.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
+            // vendors1
+            // 
+            this.vendors1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.vendors1.Location = new System.Drawing.Point(183, 57);
+            this.vendors1.Name = "vendors1";
+            this.vendors1.Size = new System.Drawing.Size(1045, 626);
+            this.vendors1.TabIndex = 9;
+            this.vendors1.Visible = false;
+            // 
+            // dashboard1
+            // 
+            this.dashboard1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dashboard1.Location = new System.Drawing.Point(183, 57);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(1045, 626);
+            this.dashboard1.TabIndex = 7;
+            this.dashboard1.Visible = false;
+            // 
+            // registration1
+            // 
+            this.registration1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.registration1.Location = new System.Drawing.Point(183, 57);
+            this.registration1.Name = "registration1";
+            this.registration1.Size = new System.Drawing.Size(1045, 626);
+            this.registration1.TabIndex = 8;
+            this.registration1.Visible = false;
+            // 
+            // delivery1
+            // 
+            this.delivery1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.delivery1.Location = new System.Drawing.Point(183, 57);
+            this.delivery1.Name = "delivery1";
+            this.delivery1.Size = new System.Drawing.Size(1045, 626);
+            this.delivery1.TabIndex = 12;
+            this.delivery1.Visible = false;
+            // 
+            // po1
+            // 
+            this.po1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.po1.Location = new System.Drawing.Point(183, 57);
+            this.po1.Name = "po1";
+            this.po1.Size = new System.Drawing.Size(1045, 626);
+            this.po1.TabIndex = 11;
+            this.po1.Visible = false;
+            // 
+            // pr1
+            // 
+            this.pr1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pr1.Location = new System.Drawing.Point(183, 57);
+            this.pr1.Name = "pr1";
+            this.pr1.Size = new System.Drawing.Size(1045, 626);
+            this.pr1.TabIndex = 10;
+            this.pr1.Visible = false;
+            // 
+            // fasm1
+            // 
+            this.fasm1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.fasm1.Location = new System.Drawing.Point(183, 57);
+            this.fasm1.Name = "fasm1";
+            this.fasm1.Size = new System.Drawing.Size(1045, 626);
+            this.fasm1.TabIndex = 13;
+            this.fasm1.Visible = false;
+            // 
             // frmAdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1226, 701);
-            this.Controls.Add(this.pnlAdminBoard);
+            this.Controls.Add(this.fasm1);
             this.Controls.Add(this.pnlDtp);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlButtons);
+            this.Controls.Add(this.vendors1);
+            this.Controls.Add(this.dashboard1);
+            this.Controls.Add(this.registration1);
+            this.Controls.Add(this.delivery1);
+            this.Controls.Add(this.po1);
+            this.Controls.Add(this.pr1);
             this.Name = "frmAdminDashboard";
             this.Style = MetroFramework.MetroColorStyle.White;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -479,7 +555,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlDtp;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Panel pnlAdminBoard;
         public Bunifu.Framework.UI.BunifuFlatButton btnDashboard;
         public Bunifu.Framework.UI.BunifuFlatButton btnPurchaseOrder;
         public Bunifu.Framework.UI.BunifuFlatButton btnFASM;
@@ -490,5 +565,12 @@
         private System.Windows.Forms.Panel pnlButtons;
         public Bunifu.Framework.UI.BunifuFlatButton btnDelivery;
         private System.Windows.Forms.Label label2;
+        private MainControls.Dashboard dashboard1;
+        private MainControls.Registration registration1;
+        private MainControls.Vendors vendors1;
+        private MainControls.PR pr1;
+        private MainControls.PO po1;
+        private MainControls.Delivery delivery1;
+        private MainControls.FASM fasm1;
     }
 }

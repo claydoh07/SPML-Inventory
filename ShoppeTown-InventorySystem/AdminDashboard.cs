@@ -17,6 +17,7 @@ namespace ShoppeTown_InventorySystem
         MyDatabase md = new MyDatabase();
       
         string button;
+
         public frmAdminDashboard()
         {
             InitializeComponent();
@@ -24,34 +25,35 @@ namespace ShoppeTown_InventorySystem
 
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
-            MainControls.Dashboard dash = new MainControls.Dashboard();
-            pnlAdminBoard.Controls.Add(dash);
+            //MainControls.Dashboard dash = new MainControls.Dashboard();
+            //pnlAdminBoard.Controls.Add(dash);
+            dashboard1.Visible = true;
             lblDate.Text = "Date: " + DateTime.Now.ToString("MM/dd/yyyy");
         }
-
-        
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             button = "1";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.Dashboard dash = new MainControls.Dashboard();
-            pnlAdminBoard.Controls.Add(dash);
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.Dashboard dash = new MainControls.Dashboard();
+            //pnlAdminBoard.Controls.Add(dash);
+            clearControls();
+            dashboard1.Visible = true;
             
         }
-
-       
 
         private void btnPurchaseRequest_Click(object sender, EventArgs e)
         {
             button = "2";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.PR pr = new MainControls.PR();
-            pnlAdminBoard.Controls.Add(pr);
+            clearControls();
+            pr1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.PR pr = new MainControls.PR();
+            //pnlAdminBoard.Controls.Add(pr);
         }
 
         private void btnPurchaseOrder_Click(object sender, EventArgs e)
@@ -59,12 +61,13 @@ namespace ShoppeTown_InventorySystem
             button = "3";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.PO po = new MainControls.PO();
-            pnlAdminBoard.Controls.Add(po);
+            clearControls();
+            po1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.PO po = new MainControls.PO();
+            //pnlAdminBoard.Controls.Add(po);
 
         }
-
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -78,9 +81,11 @@ namespace ShoppeTown_InventorySystem
             button = "4";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.Delivery deliv = new MainControls.Delivery();
-            pnlAdminBoard.Controls.Add(deliv);
+            clearControls();
+            delivery1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.Delivery deliv = new MainControls.Delivery();
+            //pnlAdminBoard.Controls.Add(deliv);
         }
 
         private void btnFASM_Click(object sender, EventArgs e)
@@ -88,9 +93,11 @@ namespace ShoppeTown_InventorySystem
             button = "5";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.FASM fasm = new MainControls.FASM();
-            pnlAdminBoard.Controls.Add(fasm);
+            clearControls();
+            fasm1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.FASM fasm = new MainControls.FASM();
+            //pnlAdminBoard.Controls.Add(fasm);
         }
 
         private void btnRegistration_Click(object sender, EventArgs e)
@@ -98,12 +105,12 @@ namespace ShoppeTown_InventorySystem
             button = "6";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.Registration rg = new MainControls.Registration();
-            pnlAdminBoard.Controls.Add(rg);
+            clearControls();
+            registration1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.Registration rg = new MainControls.Registration();
+            //pnlAdminBoard.Controls.Add(rg);
         }
-
-     
 
         public void getBackColor(string click)
         {
@@ -201,9 +208,22 @@ namespace ShoppeTown_InventorySystem
             button = "7";
             getBackColor(button);
 
-            pnlAdminBoard.Controls.Clear();
-            MainControls.Vendors v = new MainControls.Vendors();
-            pnlAdminBoard.Controls.Add(v);
+            clearControls();
+            vendors1.Visible = true;
+            //pnlAdminBoard.Controls.Clear();
+            //MainControls.Vendors v = new MainControls.Vendors();
+            //pnlAdminBoard.Controls.Add(v);
+        }
+
+        private void clearControls()
+        {
+            registration1.Visible = false;
+            dashboard1.Visible = false;
+            vendors1.Visible = false;
+            pr1.Visible = false;
+            po1.Visible = false;
+            delivery1.Visible = false;
+            fasm1.Visible = false;
         }
     }
 }
