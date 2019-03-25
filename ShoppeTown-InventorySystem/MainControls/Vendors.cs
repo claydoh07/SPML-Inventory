@@ -22,6 +22,7 @@ namespace ShoppeTown_InventorySystem.MainControls
         private void Vendors_Load(object sender, EventArgs e)
         {
             dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+            showDgv();//to change the header of the datagridview
 
             for (int x = 0; x < md.showCategory().Length; x++)//for listing ng mga category name
             {
@@ -40,6 +41,38 @@ namespace ShoppeTown_InventorySystem.MainControls
                 if (md.showCategory().GetValue(x).ToString() != "")
                     cboCat7.Items.Add(md.showCategory().GetValue(x).ToString());
             }
+
+        }
+
+        private void showDgv()
+        {
+            dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+            dgv_Vendors.Columns[0].Visible = false;
+            dgv_Vendors.Columns[1].HeaderText = "Category 1";
+            dgv_Vendors.Columns[2].HeaderText = "Sub category 1";
+            dgv_Vendors.Columns[3].HeaderText = "Category 2";
+            dgv_Vendors.Columns[4].HeaderText = "Sub category 2";
+            dgv_Vendors.Columns[5].HeaderText = "Category 3";
+            dgv_Vendors.Columns[6].HeaderText = "Sub category 3";
+            dgv_Vendors.Columns[7].HeaderText = "Category 4";
+            dgv_Vendors.Columns[8].HeaderText = "Sub category 4";
+            dgv_Vendors.Columns[9].HeaderText = "Category 5";
+            dgv_Vendors.Columns[10].HeaderText = "Sub category 5";
+            dgv_Vendors.Columns[11].HeaderText = "Category 6";
+            dgv_Vendors.Columns[12].HeaderText = "Sub category 6";
+            dgv_Vendors.Columns[13].HeaderText = "Category 7";
+            dgv_Vendors.Columns[14].HeaderText = "Sub category 7";
+            dgv_Vendors.Columns[15].HeaderText = "Vendor Name";
+            dgv_Vendors.Columns[16].HeaderText = "Contact Person";
+            dgv_Vendors.Columns[17].HeaderText = "Address";
+            dgv_Vendors.Columns[18].HeaderText = "Tel no. 1";
+            dgv_Vendors.Columns[19].HeaderText = "Tel no. 2";
+            dgv_Vendors.Columns[20].HeaderText = "mobile no. 1";
+            dgv_Vendors.Columns[21].HeaderText = "mobile no. 2";
+            dgv_Vendors.Columns[22].HeaderText = "FAX no.";
+            dgv_Vendors.Columns[23].HeaderText = "Email no. 1";
+            dgv_Vendors.Columns[24].HeaderText = "Email no. 2";
+            dgv_Vendors.Columns[25].HeaderText = "Website";
 
         }
 
@@ -108,6 +141,7 @@ namespace ShoppeTown_InventorySystem.MainControls
                         //Call Database
                         dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
                         Clear();
+                        btnCancel_Click(sender, e);
                     }
                     else
                     {
@@ -120,6 +154,7 @@ namespace ShoppeTown_InventorySystem.MainControls
                         //Call Database
                         dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
                         Clear();
+                        btnCancel_Click(sender, e);
                     }
                 }
 

@@ -90,9 +90,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDtp.BackColor = System.Drawing.Color.Silver;
             this.pnlDtp.Controls.Add(this.lblDate);
-            this.pnlDtp.Location = new System.Drawing.Point(181, 684);
+            this.pnlDtp.Location = new System.Drawing.Point(181, 675);
             this.pnlDtp.Name = "pnlDtp";
-            this.pnlDtp.Size = new System.Drawing.Size(1025, 18);
+            this.pnlDtp.Size = new System.Drawing.Size(1045, 27);
             this.pnlDtp.TabIndex = 6;
             // 
             // lblDate
@@ -100,7 +100,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDate.Location = new System.Drawing.Point(17, 0);
+            this.lblDate.Location = new System.Drawing.Point(3, 7);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(96, 17);
             this.lblDate.TabIndex = 3;
@@ -108,10 +108,13 @@
             // 
             // pnlAdminBoard
             // 
+            this.pnlAdminBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlAdminBoard.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlAdminBoard.Location = new System.Drawing.Point(181, 56);
             this.pnlAdminBoard.Name = "pnlAdminBoard";
-            this.pnlAdminBoard.Size = new System.Drawing.Size(1045, 626);
+            this.pnlAdminBoard.Size = new System.Drawing.Size(1045, 625);
             this.pnlAdminBoard.TabIndex = 18;
             this.pnlAdminBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAdminBoard_Paint);
             // 
@@ -391,6 +394,9 @@
             // 
             // pnlButtons
             // 
+            this.pnlButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnlButtons.Controls.Add(this.btnDelivery);
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
@@ -402,7 +408,7 @@
             this.pnlButtons.Controls.Add(this.btnDashboard);
             this.pnlButtons.Location = new System.Drawing.Point(0, 55);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(182, 647);
+            this.pnlButtons.Size = new System.Drawing.Size(182, 646);
             this.pnlButtons.TabIndex = 2;
             // 
             // btnDelivery
@@ -455,6 +461,7 @@
             this.Controls.Add(this.pnlButtons);
             this.Name = "frmAdminDashboard";
             this.Style = MetroFramework.MetroColorStyle.White;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AdminDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

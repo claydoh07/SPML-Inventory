@@ -40,5 +40,11 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             
         }
+
+        private void btnAddPR_Click(object sender, EventArgs e)
+        {
+            frmAddPurchaseRequest addPR = new frmAddPurchaseRequest();
+            addPR.Show();
+        }
     }
 }

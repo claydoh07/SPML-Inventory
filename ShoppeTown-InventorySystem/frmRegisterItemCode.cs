@@ -685,5 +685,17 @@ namespace ShoppeTown_InventorySystem
         {
 
         }
+
+        private void frmRegisterItemCode_KeyDown(object sender, KeyEventArgs e)
+        {
+            // If Escape, quit application.  
+            if (e.KeyCode == System.Windows.Forms.Keys.Escape)
+            {
+                // Call quit method.  
+                btnCancel_Click_1(sender, e);
+            } 
+        }
+
+        
     }
 }

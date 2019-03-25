@@ -341,6 +341,7 @@
             this.btnAddPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddPR.Textcolor = System.Drawing.Color.White;
             this.btnAddPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPR.Click += new System.EventHandler(this.btnAddPR_Click);
             // 
             // PR
             // 

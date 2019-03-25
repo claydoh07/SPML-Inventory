@@ -457,7 +457,32 @@ namespace ShoppeTown_InventorySystem
             {
                 con.Open();
                 string sql = "" +
-              "select * from tbl_vendor " +
+              @"select `tbl_vendor`.`vendor_id`,
+                `tbl_vendor`.`vendor_name`,
+                `tbl_vendor`.`vendor_contactperson`,
+                `tbl_vendor`.`vendor_address`,
+                `tbl_vendor`.`vendor_telephone1`,
+                `tbl_vendor`.`vendor_telephone2`,
+                `tbl_vendor`.`vendor_mobile1`,
+                `tbl_vendor`.`vendor_mobile2`,
+                `tbl_vendor`.`vendor_fax`,
+                `tbl_vendor`.`vendor_emailadd1`,
+                `tbl_vendor`.`vendor_emailadd2`,
+                `tbl_vendor`.`vendor_website`,
+                `tbl_vendor`.`vendor_category1`,
+                `tbl_vendor`.`vendor_subcategory1`,
+                `tbl_vendor`.`vendor_category2`,
+                `tbl_vendor`.`vendor_subcategory2`,
+                `tbl_vendor`.`vendor_category3`,
+                `tbl_vendor`.`vendor_subcategory3`,
+                `tbl_vendor`.`vendor_category4`,
+                `tbl_vendor`.`vendor_subcategory4`,
+                `tbl_vendor`.`vendor_category5`,
+                `tbl_vendor`.`vendor_subcategory5`,
+                `tbl_vendor`.`vendor_category6`,
+                `tbl_vendor`.`vendor_subcategory6`,
+                `tbl_vendor`.`vendor_category7`,
+                `tbl_vendor`.`vendor_subcategory7` from tbl_vendor " +
               "where vendor_category1 like '%" + search + "%' or " +
               "      vendor_subcategory1 like '%" + search + "%' or " +
               "      vendor_category2 like '%" + search + "%' or " +
@@ -1355,5 +1380,48 @@ namespace ShoppeTown_InventorySystem
             return cont;
 
         }
+
+        //===============Purchase Request=============
+        public void getPRNo()
+        {
+            try
+            {
+                con.Open();
+                string sql1 = @"INSERT INTO tbl_purchase_request(
+                                `pr_no`,
+                                `pr_requestor_name`,
+                                `contact_number`,
+                                `department`,
+                                `project_name`,
+                                `business_type`,
+                                `requisition_date`,
+                                `required_date`,
+                                `cost_center`,
+                                `purpose`,
+                                `priority`,
+                                `type_of_supply`,
+                                `item`,
+                                `description`,
+                                `category`,
+                                `quantity`,
+                                `unit`,
+                                `updated_at`,
+                                `created_at`) VALUES();";//inserting category
+                MySqlCommand com = new MySqlCommand(sql1, con);
+
+                com.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "select SubCategory");
+            }
+            finally
+            {
+                con.Close();
+            }
+
+        }
     }
 }
+ 
