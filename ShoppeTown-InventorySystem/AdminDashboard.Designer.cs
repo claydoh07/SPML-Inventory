@@ -32,6 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMaximize = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnMinimize = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlDtp = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -65,6 +67,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnMaximize);
+            this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1226, 56);
@@ -91,6 +95,86 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
+            this.btnMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaximize.BorderRadius = 0;
+            this.btnMaximize.ButtonText = "";
+            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximize.DisabledColor = System.Drawing.Color.Gray;
+            this.btnMaximize.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaximize.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnMaximize.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Iconimage")));
+            this.btnMaximize.Iconimage_right = null;
+            this.btnMaximize.Iconimage_right_Selected = null;
+            this.btnMaximize.Iconimage_Selected = null;
+            this.btnMaximize.IconMarginLeft = 0;
+            this.btnMaximize.IconMarginRight = 0;
+            this.btnMaximize.IconRightVisible = true;
+            this.btnMaximize.IconRightZoom = 0D;
+            this.btnMaximize.IconVisible = true;
+            this.btnMaximize.IconZoom = 65D;
+            this.btnMaximize.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMaximize.IsTab = false;
+            this.btnMaximize.Location = new System.Drawing.Point(1187, -3);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
+            this.btnMaximize.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnMaximize.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnMaximize.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMaximize.selected = false;
+            this.btnMaximize.Size = new System.Drawing.Size(38, 36);
+            this.btnMaximize.TabIndex = 3;
+            this.btnMaximize.TabStop = false;
+            this.btnMaximize.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMaximize.Textcolor = System.Drawing.Color.White;
+            this.btnMaximize.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimize.BorderRadius = 0;
+            this.btnMinimize.ButtonText = "";
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.DisabledColor = System.Drawing.Color.Gray;
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnMinimize.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Iconimage")));
+            this.btnMinimize.Iconimage_right = null;
+            this.btnMinimize.Iconimage_right_Selected = null;
+            this.btnMinimize.Iconimage_Selected = null;
+            this.btnMinimize.IconMarginLeft = 0;
+            this.btnMinimize.IconMarginRight = 0;
+            this.btnMinimize.IconRightVisible = true;
+            this.btnMinimize.IconRightZoom = 0D;
+            this.btnMinimize.IconVisible = true;
+            this.btnMinimize.IconZoom = 65D;
+            this.btnMinimize.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnMinimize.IsTab = false;
+            this.btnMinimize.Location = new System.Drawing.Point(1155, -3);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
+            this.btnMinimize.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnMinimize.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnMinimize.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMinimize.selected = false;
+            this.btnMinimize.Size = new System.Drawing.Size(38, 36);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMinimize.Textcolor = System.Drawing.Color.White;
+            this.btnMinimize.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // pnlDtp
             // 
@@ -628,5 +712,7 @@
         private MainControls.FASM fasm1;
         public Bunifu.Framework.UI.BunifuFlatButton btnAccount;
         private MainControls.Acct acct1;
+        public Bunifu.Framework.UI.BunifuFlatButton btnMaximize;
+        public Bunifu.Framework.UI.BunifuFlatButton btnMinimize;
     }
 }

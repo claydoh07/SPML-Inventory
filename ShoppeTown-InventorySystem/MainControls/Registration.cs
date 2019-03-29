@@ -162,5 +162,30 @@ namespace ShoppeTown_InventorySystem.MainControls
                     , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showItemCode();
+        }
+
+        private void Registration_KeyDown(object sender, KeyEventArgs e)
+        {
+            // If Escape, quit the edit mode.  
+            if (e.KeyCode == System.Windows.Forms.Keys.Escape)
+            {
+                // Call quit method.  
+                pnlEditItemCode.Visible = false;
+            } 
+        }
+
+        private void txtEditCategory_KeyDown(object sender, KeyEventArgs e)
+        {
+            // If Escape, quit the edit mode.  
+            if (e.KeyCode == System.Windows.Forms.Keys.Escape)
+            {
+                // Call quit method.  
+                pnlEditItemCode.Visible = false;
+            } 
+        }
     }
 }

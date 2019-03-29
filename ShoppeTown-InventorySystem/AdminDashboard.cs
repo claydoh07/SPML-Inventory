@@ -71,9 +71,13 @@ namespace ShoppeTown_InventorySystem
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            frmLogin login = new frmLogin();
-            this.Hide();
-            login.Show();
+            DialogResult dr = MessageBox.Show("Do you want to logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                frmLogin login = new frmLogin();
+                this.Hide();
+                login.Show();
+            }
         }
 
         private void btnDelivery_Click(object sender, EventArgs e)
@@ -256,6 +260,22 @@ namespace ShoppeTown_InventorySystem
             //pnlAdminBoard.Controls.Clear();
             //MainControls.Vendors v = new MainControls.Vendors();
             //pnlAdminBoard.Controls.Add(v);
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+            }
+            else
+                this.WindowState = FormWindowState.Maximized;
         }
     }
 }

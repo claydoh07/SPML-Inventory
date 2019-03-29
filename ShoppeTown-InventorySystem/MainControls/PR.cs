@@ -102,5 +102,10 @@ namespace ShoppeTown_InventorySystem.MainControls
                     , "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPR();
+        }
     }
 }

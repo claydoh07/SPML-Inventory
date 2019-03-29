@@ -93,6 +93,11 @@ namespace ShoppeTown_InventorySystem
         {
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
 
 }

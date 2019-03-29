@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -64,12 +65,15 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.dgv_list = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlEditItemCode.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_list)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -158,7 +162,7 @@
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
             this.btnDelete.Enabled = false;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDelete.Iconimage = null;
             this.btnDelete.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage_right")));
@@ -198,7 +202,7 @@
             this.btnEditItemCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditItemCode.DisabledColor = System.Drawing.Color.Gray;
             this.btnEditItemCode.Enabled = false;
-            this.btnEditItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditItemCode.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditItemCode.Iconcolor = System.Drawing.Color.Transparent;
             this.btnEditItemCode.Iconimage = null;
             this.btnEditItemCode.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btnEditItemCode.Iconimage_right")));
@@ -237,7 +241,7 @@
             this.btnRegItemCode.ButtonText = "&Add Item Code";
             this.btnRegItemCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegItemCode.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegItemCode.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegItemCode.Iconcolor = System.Drawing.Color.Transparent;
             this.btnRegItemCode.Iconimage = null;
             this.btnRegItemCode.Iconimage_right = ((System.Drawing.Image)(resources.GetObject("btnRegItemCode.Iconimage_right")));
@@ -272,7 +276,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(7, 8);
+            this.label5.Location = new System.Drawing.Point(7, -1);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 21);
             this.label5.TabIndex = 0;
@@ -287,7 +291,7 @@
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Location = new System.Drawing.Point(11, 92);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1019, 40);
+            this.panel1.Size = new System.Drawing.Size(1019, 25);
             this.panel1.TabIndex = 39;
             // 
             // btnRefresh
@@ -314,7 +318,7 @@
             this.btnRefresh.IconZoom = 50D;
             this.btnRefresh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRefresh.IsTab = false;
-            this.btnRefresh.Location = new System.Drawing.Point(929, -5);
+            this.btnRefresh.Location = new System.Drawing.Point(929, -14);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -359,43 +363,48 @@
             // 
             // txtEditModel
             // 
-            this.txtEditModel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditModel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditModel.Location = new System.Drawing.Point(147, 212);
             this.txtEditModel.Name = "txtEditModel";
-            this.txtEditModel.Size = new System.Drawing.Size(379, 23);
+            this.txtEditModel.Size = new System.Drawing.Size(379, 22);
             this.txtEditModel.TabIndex = 5;
+            this.txtEditModel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEditCategory_KeyDown);
             // 
             // txtEditBrand
             // 
-            this.txtEditBrand.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditBrand.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditBrand.Location = new System.Drawing.Point(147, 180);
             this.txtEditBrand.Name = "txtEditBrand";
-            this.txtEditBrand.Size = new System.Drawing.Size(379, 23);
+            this.txtEditBrand.Size = new System.Drawing.Size(379, 22);
             this.txtEditBrand.TabIndex = 4;
+            this.txtEditBrand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEditCategory_KeyDown);
             // 
             // txtEditItemName
             // 
-            this.txtEditItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditItemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditItemName.Location = new System.Drawing.Point(147, 148);
             this.txtEditItemName.Name = "txtEditItemName";
-            this.txtEditItemName.Size = new System.Drawing.Size(379, 23);
+            this.txtEditItemName.Size = new System.Drawing.Size(379, 22);
             this.txtEditItemName.TabIndex = 3;
+            this.txtEditItemName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEditCategory_KeyDown);
             // 
             // txtEditSubCategory
             // 
-            this.txtEditSubCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditSubCategory.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditSubCategory.Location = new System.Drawing.Point(147, 118);
             this.txtEditSubCategory.Name = "txtEditSubCategory";
-            this.txtEditSubCategory.Size = new System.Drawing.Size(379, 23);
+            this.txtEditSubCategory.Size = new System.Drawing.Size(379, 22);
             this.txtEditSubCategory.TabIndex = 2;
+            this.txtEditSubCategory.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEditCategory_KeyDown);
             // 
             // txtEditCategory
             // 
-            this.txtEditCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditCategory.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditCategory.Location = new System.Drawing.Point(147, 89);
             this.txtEditCategory.Name = "txtEditCategory";
-            this.txtEditCategory.Size = new System.Drawing.Size(379, 23);
+            this.txtEditCategory.Size = new System.Drawing.Size(379, 22);
             this.txtEditCategory.TabIndex = 1;
+            this.txtEditCategory.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEditCategory_KeyDown);
             // 
             // panel2
             // 
@@ -419,7 +428,7 @@
             // 
             // lblPreviewItemCode
             // 
-            this.lblPreviewItemCode.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreviewItemCode.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreviewItemCode.Location = new System.Drawing.Point(69, 2);
             this.lblPreviewItemCode.Name = "lblPreviewItemCode";
             this.lblPreviewItemCode.Size = new System.Drawing.Size(177, 36);
@@ -429,12 +438,13 @@
             // 
             // txtEditDescription
             // 
-            this.txtEditDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditDescription.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditDescription.Location = new System.Drawing.Point(147, 241);
             this.txtEditDescription.Multiline = true;
             this.txtEditDescription.Name = "txtEditDescription";
             this.txtEditDescription.Size = new System.Drawing.Size(379, 109);
             this.txtEditDescription.TabIndex = 6;
+            this.txtEditDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEditCategory_KeyDown);
             // 
             // btnClose
             // 
@@ -618,6 +628,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_list.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_list.ColumnHeadersHeight = 25;
+            this.dgv_list.ContextMenuStrip = this.contextMenuStrip1;
             this.dgv_list.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -628,7 +639,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_list.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_list.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dgv_list.Location = new System.Drawing.Point(11, 131);
+            this.dgv_list.Location = new System.Drawing.Point(11, 115);
             this.dgv_list.MultiSelect = false;
             this.dgv_list.Name = "dgv_list";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -650,10 +661,24 @@
             this.dgv_list.RowTemplate.ReadOnly = true;
             this.dgv_list.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_list.Size = new System.Drawing.Size(1019, 482);
+            this.dgv_list.Size = new System.Drawing.Size(1019, 498);
             this.dgv_list.TabIndex = 250;
             this.dgv_list.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_list_CellContentClick_1);
             this.dgv_list.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_list_CellDoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.refreshToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(114, 26);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // Registration
             // 
@@ -666,6 +691,7 @@
             this.Name = "Registration";
             this.Size = new System.Drawing.Size(1045, 626);
             this.Load += new System.EventHandler(this.Registration_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Registration_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -676,6 +702,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_list)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -711,5 +738,7 @@
         public System.Windows.Forms.TextBox txtEditSubCategory;
         public System.Windows.Forms.TextBox txtEditCategory;
         private System.Windows.Forms.DataGridView dgv_list;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
     }
 }

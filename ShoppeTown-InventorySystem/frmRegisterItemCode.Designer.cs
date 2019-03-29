@@ -148,6 +148,7 @@
             this.pnlRegisterItemCode.Controls.Add(this.panel2);
             this.pnlRegisterItemCode.Controls.Add(this.cboSubCat);
             this.pnlRegisterItemCode.Controls.Add(this.cboCategoryName);
+            this.pnlRegisterItemCode.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlRegisterItemCode.Location = new System.Drawing.Point(0, 0);
             this.pnlRegisterItemCode.Name = "pnlRegisterItemCode";
             this.pnlRegisterItemCode.Size = new System.Drawing.Size(629, 418);
@@ -163,6 +164,7 @@
             this.pnlPopUp_description.Controls.Add(this.btnSave_6);
             this.pnlPopUp_description.Controls.Add(this.txtDescription);
             this.pnlPopUp_description.Controls.Add(this.btnCancel6);
+            this.pnlPopUp_description.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPopUp_description.Location = new System.Drawing.Point(146, 88);
             this.pnlPopUp_description.Name = "pnlPopUp_description";
             this.pnlPopUp_description.Size = new System.Drawing.Size(378, 211);
@@ -172,26 +174,26 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(48, 46);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(166, 17);
+            this.label15.Size = new System.Drawing.Size(136, 13);
             this.label15.TabIndex = 248;
             this.label15.Text = "Enter Description details:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(17, 14);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(146, 18);
+            this.label16.Size = new System.Drawing.Size(102, 13);
             this.label16.TabIndex = 248;
             this.label16.Text = "Create Description";
             // 
             // btnSave_6
             // 
-            this.btnSave_6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave_6.Location = new System.Drawing.Point(190, 164);
             this.btnSave_6.Name = "btnSave_6";
             this.btnSave_6.Size = new System.Drawing.Size(66, 25);
@@ -203,7 +205,7 @@
             // txtDescription
             // 
             this.txtDescription.Enabled = false;
-            this.txtDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Location = new System.Drawing.Point(51, 66);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
@@ -212,7 +214,7 @@
             // 
             // btnCancel6
             // 
-            this.btnCancel6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel6.Location = new System.Drawing.Point(262, 164);
             this.btnCancel6.Name = "btnCancel6";
             this.btnCancel6.Size = new System.Drawing.Size(66, 25);
@@ -231,6 +233,7 @@
             this.pnlPopUp_model.Controls.Add(this.label14);
             this.pnlPopUp_model.Controls.Add(this.btnSave_5);
             this.pnlPopUp_model.Controls.Add(this.btnCancel5);
+            this.pnlPopUp_model.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPopUp_model.Location = new System.Drawing.Point(146, 88);
             this.pnlPopUp_model.Name = "pnlPopUp_model";
             this.pnlPopUp_model.Size = new System.Drawing.Size(378, 178);
@@ -240,35 +243,35 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(51, 48);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(132, 17);
+            this.label13.Size = new System.Drawing.Size(105, 13);
             this.label13.TabIndex = 248;
             this.label13.Text = "Enter Model Name:";
             // 
             // txtNewModel
             // 
-            this.txtNewModel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewModel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewModel.Location = new System.Drawing.Point(54, 68);
             this.txtNewModel.Name = "txtNewModel";
-            this.txtNewModel.Size = new System.Drawing.Size(277, 23);
+            this.txtNewModel.Size = new System.Drawing.Size(277, 22);
             this.txtNewModel.TabIndex = 1;
             this.txtNewModel.Visible = false;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(17, 14);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(111, 18);
+            this.label14.Size = new System.Drawing.Size(76, 13);
             this.label14.TabIndex = 248;
             this.label14.Text = "Create Model";
             // 
             // btnSave_5
             // 
-            this.btnSave_5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave_5.Location = new System.Drawing.Point(193, 101);
             this.btnSave_5.Name = "btnSave_5";
             this.btnSave_5.Size = new System.Drawing.Size(66, 25);
@@ -279,7 +282,7 @@
             // 
             // btnCancel5
             // 
-            this.btnCancel5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel5.Location = new System.Drawing.Point(265, 101);
             this.btnCancel5.Name = "btnCancel5";
             this.btnCancel5.Size = new System.Drawing.Size(66, 25);
@@ -298,6 +301,7 @@
             this.pnlPopUp_itemName.Controls.Add(this.btnSave_3);
             this.pnlPopUp_itemName.Controls.Add(this.txtNewItemName);
             this.pnlPopUp_itemName.Controls.Add(this.btnCancel3);
+            this.pnlPopUp_itemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPopUp_itemName.Location = new System.Drawing.Point(146, 88);
             this.pnlPopUp_itemName.Name = "pnlPopUp_itemName";
             this.pnlPopUp_itemName.Size = new System.Drawing.Size(378, 178);
@@ -307,26 +311,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(51, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 248;
             this.label1.Text = "Enter Item Name:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(17, 14);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(144, 18);
+            this.label10.Size = new System.Drawing.Size(97, 13);
             this.label10.TabIndex = 248;
             this.label10.Text = "Create Item Name";
             // 
             // btnSave_3
             // 
-            this.btnSave_3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave_3.Location = new System.Drawing.Point(191, 110);
             this.btnSave_3.Name = "btnSave_3";
             this.btnSave_3.Size = new System.Drawing.Size(66, 25);
@@ -337,16 +341,16 @@
             // 
             // txtNewItemName
             // 
-            this.txtNewItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewItemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewItemName.Location = new System.Drawing.Point(54, 72);
             this.txtNewItemName.Name = "txtNewItemName";
-            this.txtNewItemName.Size = new System.Drawing.Size(277, 23);
+            this.txtNewItemName.Size = new System.Drawing.Size(277, 22);
             this.txtNewItemName.TabIndex = 1;
             this.txtNewItemName.Visible = false;
             // 
             // btnCancel3
             // 
-            this.btnCancel3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel3.Location = new System.Drawing.Point(265, 110);
             this.btnCancel3.Name = "btnCancel3";
             this.btnCancel3.Size = new System.Drawing.Size(66, 25);
@@ -367,6 +371,7 @@
             this.pnlPopUp_Category.Controls.Add(this.txtCategoryName);
             this.pnlPopUp_Category.Controls.Add(this.btnSave_1);
             this.pnlPopUp_Category.Controls.Add(this.btnCancel1);
+            this.pnlPopUp_Category.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPopUp_Category.Location = new System.Drawing.Point(146, 88);
             this.pnlPopUp_Category.Name = "pnlPopUp_Category";
             this.pnlPopUp_Category.Size = new System.Drawing.Size(378, 204);
@@ -376,53 +381,53 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(40, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 17);
+            this.label5.Size = new System.Drawing.Size(118, 13);
             this.label5.TabIndex = 248;
             this.label5.Text = "Enter Category Name:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(43, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 17);
+            this.label4.Size = new System.Drawing.Size(116, 13);
             this.label4.TabIndex = 248;
             this.label4.Text = "Enter Category Code:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(17, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 18);
+            this.label3.Size = new System.Drawing.Size(89, 13);
             this.label3.TabIndex = 248;
             this.label3.Text = "Create Category";
             // 
             // txtNewCode
             // 
-            this.txtNewCode.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewCode.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewCode.Location = new System.Drawing.Point(46, 70);
             this.txtNewCode.Name = "txtNewCode";
-            this.txtNewCode.Size = new System.Drawing.Size(150, 23);
+            this.txtNewCode.Size = new System.Drawing.Size(150, 22);
             this.txtNewCode.TabIndex = 1;
             this.txtNewCode.Visible = false;
             // 
             // txtCategoryName
             // 
-            this.txtCategoryName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCategoryName.Location = new System.Drawing.Point(46, 116);
             this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(277, 23);
+            this.txtCategoryName.Size = new System.Drawing.Size(277, 22);
             this.txtCategoryName.TabIndex = 1;
             // 
             // btnSave_1
             // 
-            this.btnSave_1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave_1.Location = new System.Drawing.Point(183, 160);
             this.btnSave_1.Name = "btnSave_1";
             this.btnSave_1.Size = new System.Drawing.Size(66, 25);
@@ -433,7 +438,7 @@
             // 
             // btnCancel1
             // 
-            this.btnCancel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel1.Location = new System.Drawing.Point(257, 160);
             this.btnCancel1.Name = "btnCancel1";
             this.btnCancel1.Size = new System.Drawing.Size(66, 25);
@@ -452,6 +457,7 @@
             this.pnlPopUp_brand.Controls.Add(this.txtNewBrand);
             this.pnlPopUp_brand.Controls.Add(this.btnSave_4);
             this.pnlPopUp_brand.Controls.Add(this.btnCancel4);
+            this.pnlPopUp_brand.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPopUp_brand.Location = new System.Drawing.Point(145, 88);
             this.pnlPopUp_brand.Name = "pnlPopUp_brand";
             this.pnlPopUp_brand.Size = new System.Drawing.Size(378, 178);
@@ -461,35 +467,35 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(39, 52);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(129, 17);
+            this.label11.Size = new System.Drawing.Size(103, 13);
             this.label11.TabIndex = 248;
             this.label11.Text = "Enter Brand Name:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(17, 14);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 18);
+            this.label12.Size = new System.Drawing.Size(74, 13);
             this.label12.TabIndex = 248;
             this.label12.Text = "Create Brand";
             // 
             // txtNewBrand
             // 
-            this.txtNewBrand.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewBrand.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewBrand.Location = new System.Drawing.Point(42, 72);
             this.txtNewBrand.Name = "txtNewBrand";
-            this.txtNewBrand.Size = new System.Drawing.Size(277, 23);
+            this.txtNewBrand.Size = new System.Drawing.Size(277, 22);
             this.txtNewBrand.TabIndex = 1;
             this.txtNewBrand.Visible = false;
             // 
             // btnSave_4
             // 
-            this.btnSave_4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave_4.Location = new System.Drawing.Point(181, 109);
             this.btnSave_4.Name = "btnSave_4";
             this.btnSave_4.Size = new System.Drawing.Size(66, 25);
@@ -500,7 +506,7 @@
             // 
             // btnCancel4
             // 
-            this.btnCancel4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel4.Location = new System.Drawing.Point(253, 109);
             this.btnCancel4.Name = "btnCancel4";
             this.btnCancel4.Size = new System.Drawing.Size(66, 25);
@@ -519,6 +525,7 @@
             this.pnlPopUp_subcategory.Controls.Add(this.btnSave_2);
             this.pnlPopUp_subcategory.Controls.Add(this.btnCancel2);
             this.pnlPopUp_subcategory.Controls.Add(this.txtNewSubCategory);
+            this.pnlPopUp_subcategory.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPopUp_subcategory.Location = new System.Drawing.Point(145, 88);
             this.pnlPopUp_subcategory.Name = "pnlPopUp_subcategory";
             this.pnlPopUp_subcategory.Size = new System.Drawing.Size(378, 178);
@@ -528,10 +535,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(48, 51);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(180, 17);
+            this.label6.Size = new System.Drawing.Size(142, 13);
             this.label6.TabIndex = 248;
             this.label6.Text = "Enter Sub-Category Name:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -539,16 +546,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(17, 14);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 18);
+            this.label8.Size = new System.Drawing.Size(113, 13);
             this.label8.TabIndex = 248;
             this.label8.Text = "Create Sub-Category";
             // 
             // btnSave_2
             // 
-            this.btnSave_2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave_2.Location = new System.Drawing.Point(195, 108);
             this.btnSave_2.Name = "btnSave_2";
             this.btnSave_2.Size = new System.Drawing.Size(66, 25);
@@ -559,7 +566,7 @@
             // 
             // btnCancel2
             // 
-            this.btnCancel2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel2.Location = new System.Drawing.Point(267, 108);
             this.btnCancel2.Name = "btnCancel2";
             this.btnCancel2.Size = new System.Drawing.Size(66, 25);
@@ -571,10 +578,10 @@
             // 
             // txtNewSubCategory
             // 
-            this.txtNewSubCategory.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewSubCategory.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewSubCategory.Location = new System.Drawing.Point(51, 71);
             this.txtNewSubCategory.Name = "txtNewSubCategory";
-            this.txtNewSubCategory.Size = new System.Drawing.Size(282, 23);
+            this.txtNewSubCategory.Size = new System.Drawing.Size(282, 22);
             this.txtNewSubCategory.TabIndex = 1;
             this.txtNewSubCategory.Visible = false;
             // 
@@ -583,6 +590,7 @@
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.lblPreviewItemCode);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(365, 43);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 38);
@@ -591,16 +599,16 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(3, 12);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 16);
+            this.label9.Size = new System.Drawing.Size(75, 17);
             this.label9.TabIndex = 248;
             this.label9.Text = "Item Code:";
             // 
             // lblPreviewItemCode
             // 
-            this.lblPreviewItemCode.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreviewItemCode.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreviewItemCode.Location = new System.Drawing.Point(69, 2);
             this.lblPreviewItemCode.Name = "lblPreviewItemCode";
             this.lblPreviewItemCode.Size = new System.Drawing.Size(177, 36);
@@ -611,25 +619,25 @@
             // txt_6
             // 
             this.txt_6.Enabled = false;
-            this.txt_6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_6.Location = new System.Drawing.Point(146, 241);
             this.txt_6.Name = "txt_6";
-            this.txt_6.Size = new System.Drawing.Size(35, 23);
+            this.txt_6.Size = new System.Drawing.Size(35, 22);
             this.txt_6.TabIndex = 1;
             // 
             // txt_5
             // 
             this.txt_5.Enabled = false;
-            this.txt_5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_5.Location = new System.Drawing.Point(146, 211);
             this.txt_5.Name = "txt_5";
-            this.txt_5.Size = new System.Drawing.Size(35, 23);
+            this.txt_5.Size = new System.Drawing.Size(35, 22);
             this.txt_5.TabIndex = 1;
             // 
             // txtDesc
             // 
             this.txtDesc.Enabled = false;
-            this.txtDesc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDesc.Location = new System.Drawing.Point(146, 270);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
@@ -639,34 +647,34 @@
             // txt_4
             // 
             this.txt_4.Enabled = false;
-            this.txt_4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_4.Location = new System.Drawing.Point(146, 180);
             this.txt_4.Name = "txt_4";
-            this.txt_4.Size = new System.Drawing.Size(35, 23);
+            this.txt_4.Size = new System.Drawing.Size(35, 22);
             this.txt_4.TabIndex = 1;
             // 
             // txt_3
             // 
             this.txt_3.Enabled = false;
-            this.txt_3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_3.Location = new System.Drawing.Point(147, 148);
             this.txt_3.Name = "txt_3";
-            this.txt_3.Size = new System.Drawing.Size(35, 23);
+            this.txt_3.Size = new System.Drawing.Size(35, 22);
             this.txt_3.TabIndex = 1;
             // 
             // txt_2
             // 
             this.txt_2.Enabled = false;
-            this.txt_2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_2.Location = new System.Drawing.Point(147, 118);
             this.txt_2.Name = "txt_2";
-            this.txt_2.Size = new System.Drawing.Size(35, 23);
+            this.txt_2.Size = new System.Drawing.Size(35, 22);
             this.txt_2.TabIndex = 1;
             // 
             // btnCreate6
             // 
             this.btnCreate6.Enabled = false;
-            this.btnCreate6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate6.Location = new System.Drawing.Point(532, 240);
             this.btnCreate6.Name = "btnCreate6";
             this.btnCreate6.Size = new System.Drawing.Size(66, 25);
@@ -678,7 +686,7 @@
             // btnCreate5
             // 
             this.btnCreate5.Enabled = false;
-            this.btnCreate5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate5.Location = new System.Drawing.Point(532, 210);
             this.btnCreate5.Name = "btnCreate5";
             this.btnCreate5.Size = new System.Drawing.Size(66, 25);
@@ -690,7 +698,7 @@
             // btnCreate4
             // 
             this.btnCreate4.Enabled = false;
-            this.btnCreate4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate4.Location = new System.Drawing.Point(532, 179);
             this.btnCreate4.Name = "btnCreate4";
             this.btnCreate4.Size = new System.Drawing.Size(66, 25);
@@ -702,7 +710,7 @@
             // btnCreate3
             // 
             this.btnCreate3.Enabled = false;
-            this.btnCreate3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate3.Location = new System.Drawing.Point(532, 147);
             this.btnCreate3.Name = "btnCreate3";
             this.btnCreate3.Size = new System.Drawing.Size(66, 25);
@@ -714,7 +722,7 @@
             // btnCreate2
             // 
             this.btnCreate2.Enabled = false;
-            this.btnCreate2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate2.Location = new System.Drawing.Point(532, 117);
             this.btnCreate2.Name = "btnCreate2";
             this.btnCreate2.Size = new System.Drawing.Size(66, 25);
@@ -725,7 +733,7 @@
             // 
             // btnCreate1
             // 
-            this.btnCreate1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate1.Location = new System.Drawing.Point(532, 88);
             this.btnCreate1.Name = "btnCreate1";
             this.btnCreate1.Size = new System.Drawing.Size(66, 25);
@@ -743,6 +751,7 @@
             this.btnCancel.ButtonText = "CLOSE";
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Iconcolor = System.Drawing.Color.Transparent;
             this.btnCancel.Iconimage = null;
             this.btnCancel.Iconimage_right = null;
@@ -778,6 +787,7 @@
             this.btnSave.ButtonText = "SAVE";
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Iconcolor = System.Drawing.Color.Transparent;
             this.btnSave.Iconimage = null;
             this.btnSave.Iconimage_right = null;
@@ -808,12 +818,12 @@
             // 
             this.cboDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDescription.Enabled = false;
-            this.cboDescription.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cboDescription.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDescription.FormattingEnabled = true;
-            this.cboDescription.ItemHeight = 17;
+            this.cboDescription.ItemHeight = 13;
             this.cboDescription.Location = new System.Drawing.Point(187, 241);
             this.cboDescription.Name = "cboDescription";
-            this.cboDescription.Size = new System.Drawing.Size(339, 25);
+            this.cboDescription.Size = new System.Drawing.Size(339, 21);
             this.cboDescription.TabIndex = 5;
             this.cboDescription.SelectedIndexChanged += new System.EventHandler(this.cboDescription_SelectedIndexChanged);
             // 
@@ -821,11 +831,11 @@
             // 
             this.cboModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboModel.Enabled = false;
-            this.cboModel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cboModel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboModel.FormattingEnabled = true;
             this.cboModel.Location = new System.Drawing.Point(187, 210);
             this.cboModel.Name = "cboModel";
-            this.cboModel.Size = new System.Drawing.Size(339, 25);
+            this.cboModel.Size = new System.Drawing.Size(339, 21);
             this.cboModel.TabIndex = 5;
             this.cboModel.SelectedIndexChanged += new System.EventHandler(this.cboModel_SelectedIndexChanged);
             // 
@@ -833,11 +843,11 @@
             // 
             this.cboBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBrand.Enabled = false;
-            this.cboBrand.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cboBrand.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboBrand.FormattingEnabled = true;
             this.cboBrand.Location = new System.Drawing.Point(187, 179);
             this.cboBrand.Name = "cboBrand";
-            this.cboBrand.Size = new System.Drawing.Size(339, 25);
+            this.cboBrand.Size = new System.Drawing.Size(339, 21);
             this.cboBrand.TabIndex = 4;
             this.cboBrand.SelectedIndexChanged += new System.EventHandler(this.cboBrand_SelectedIndexChanged);
             // 
@@ -845,80 +855,80 @@
             // 
             this.cboItemName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboItemName.Enabled = false;
-            this.cboItemName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cboItemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboItemName.FormattingEnabled = true;
             this.cboItemName.Location = new System.Drawing.Point(187, 148);
             this.cboItemName.Name = "cboItemName";
-            this.cboItemName.Size = new System.Drawing.Size(339, 25);
+            this.cboItemName.Size = new System.Drawing.Size(339, 21);
             this.cboItemName.TabIndex = 3;
             this.cboItemName.SelectedIndexChanged += new System.EventHandler(this.cboItemName_SelectedIndexChanged);
             // 
             // lblModel
             // 
             this.lblModel.AutoSize = true;
-            this.lblModel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblModel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModel.Location = new System.Drawing.Point(29, 212);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(44, 15);
+            this.lblModel.Size = new System.Drawing.Size(43, 13);
             this.lblModel.TabIndex = 248;
             this.lblModel.Text = "Model:";
             // 
             // lblBrand
             // 
             this.lblBrand.AutoSize = true;
-            this.lblBrand.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblBrand.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBrand.Location = new System.Drawing.Point(29, 182);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(41, 15);
+            this.lblBrand.Size = new System.Drawing.Size(41, 13);
             this.lblBrand.TabIndex = 248;
             this.lblBrand.Text = "Brand:";
             // 
             // lblitemname
             // 
             this.lblitemname.AutoSize = true;
-            this.lblitemname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblitemname.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblitemname.Location = new System.Drawing.Point(29, 148);
             this.lblitemname.Name = "lblitemname";
-            this.lblitemname.Size = new System.Drawing.Size(69, 15);
+            this.lblitemname.Size = new System.Drawing.Size(64, 13);
             this.lblitemname.TabIndex = 248;
             this.lblitemname.Text = "Item Name:";
             // 
             // txtCode
             // 
             this.txtCode.Enabled = false;
-            this.txtCode.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCode.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCode.Location = new System.Drawing.Point(147, 89);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(35, 23);
+            this.txtCode.Size = new System.Drawing.Size(35, 22);
             this.txtCode.TabIndex = 1;
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDescription.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.Location = new System.Drawing.Point(30, 241);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(70, 15);
+            this.lblDescription.Size = new System.Drawing.Size(69, 13);
             this.lblDescription.TabIndex = 248;
             this.lblDescription.Text = "Description:";
             // 
             // lblSubcat
             // 
             this.lblSubcat.AutoSize = true;
-            this.lblSubcat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSubcat.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubcat.Location = new System.Drawing.Point(29, 117);
             this.lblSubcat.Name = "lblSubcat";
-            this.lblSubcat.Size = new System.Drawing.Size(83, 15);
+            this.lblSubcat.Size = new System.Drawing.Size(80, 13);
             this.lblSubcat.TabIndex = 248;
             this.lblSubcat.Text = "Sub-Category:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 15);
+            this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 248;
             this.label2.Text = "Category Name:";
             // 
@@ -928,6 +938,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
             this.panel2.Controls.Add(this.label7);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(629, 37);
@@ -936,11 +947,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(3, 5);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(204, 25);
+            this.label7.Size = new System.Drawing.Size(125, 17);
             this.label7.TabIndex = 10;
             this.label7.Text = "Register Item Code";
             // 
@@ -948,22 +959,22 @@
             // 
             this.cboSubCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSubCat.Enabled = false;
-            this.cboSubCat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cboSubCat.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSubCat.FormattingEnabled = true;
             this.cboSubCat.Location = new System.Drawing.Point(187, 117);
             this.cboSubCat.Name = "cboSubCat";
-            this.cboSubCat.Size = new System.Drawing.Size(339, 25);
+            this.cboSubCat.Size = new System.Drawing.Size(339, 21);
             this.cboSubCat.TabIndex = 2;
             this.cboSubCat.SelectedIndexChanged += new System.EventHandler(this.cboSubCat_SelectedIndexChanged);
             // 
             // cboCategoryName
             // 
             this.cboCategoryName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCategoryName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cboCategoryName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCategoryName.FormattingEnabled = true;
             this.cboCategoryName.Location = new System.Drawing.Point(187, 88);
             this.cboCategoryName.Name = "cboCategoryName";
-            this.cboCategoryName.Size = new System.Drawing.Size(339, 25);
+            this.cboCategoryName.Size = new System.Drawing.Size(339, 21);
             this.cboCategoryName.TabIndex = 0;
             this.cboCategoryName.SelectedIndexChanged += new System.EventHandler(this.cboCategoryName_SelectedIndexChanged);
             // 

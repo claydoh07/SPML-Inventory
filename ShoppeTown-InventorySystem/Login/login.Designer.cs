@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnRegister = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -45,11 +46,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.label1.Location = new System.Drawing.Point(302, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 33);
+            this.label1.Size = new System.Drawing.Size(78, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -77,7 +78,7 @@
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "Username";
@@ -97,7 +98,7 @@
             // txtPassword
             // 
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.txtPassword.HintForeColor = System.Drawing.Color.Empty;
             this.txtPassword.HintText = "Password";
@@ -124,7 +125,7 @@
             this.btnLogin.ButtonText = "LOGIN";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DisabledColor = System.Drawing.Color.OldLace;
-            this.btnLogin.Font = new System.Drawing.Font("Montserrat", 8.249999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogin.Iconimage = null;
             this.btnLogin.Iconimage_right = null;
@@ -149,12 +150,12 @@
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Textcolor = System.Drawing.SystemColors.Window;
-            this.btnLogin.TextFont = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(305, 70);
             this.label2.Name = "label2";
@@ -172,7 +173,7 @@
             this.btnRegister.ButtonText = "REGISTER";
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegister.Font = new System.Drawing.Font("Montserrat Medium", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Iconcolor = System.Drawing.Color.Transparent;
             this.btnRegister.Iconimage = null;
             this.btnRegister.Iconimage_right = null;
@@ -197,7 +198,7 @@
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegister.Textcolor = System.Drawing.Color.Transparent;
-            this.btnRegister.TextFont = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // panel2
@@ -207,11 +208,52 @@
             this.panel2.Size = new System.Drawing.Size(71, 26);
             this.panel2.TabIndex = 8;
             // 
+            // btnExit
+            // 
+            this.btnExit.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.BorderRadius = 0;
+            this.btnExit.ButtonText = "";
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.DisabledColor = System.Drawing.Color.Gray;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnExit.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnExit.Iconimage")));
+            this.btnExit.Iconimage_right = null;
+            this.btnExit.Iconimage_right_Selected = null;
+            this.btnExit.Iconimage_Selected = null;
+            this.btnExit.IconMarginLeft = 0;
+            this.btnExit.IconMarginRight = 0;
+            this.btnExit.IconRightVisible = true;
+            this.btnExit.IconRightZoom = 0D;
+            this.btnExit.IconVisible = true;
+            this.btnExit.IconZoom = 65D;
+            this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExit.IsTab = false;
+            this.btnExit.Location = new System.Drawing.Point(656, -4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnExit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnExit.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnExit.selected = false;
+            this.btnExit.Size = new System.Drawing.Size(38, 36);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.TabStop = false;
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExit.Textcolor = System.Drawing.Color.White;
+            this.btnExit.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 401);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label2);
@@ -243,6 +285,7 @@
         public System.Windows.Forms.Label label2;
         public Bunifu.Framework.UI.BunifuFlatButton btnRegister;
         private System.Windows.Forms.Panel panel2;
+        public Bunifu.Framework.UI.BunifuFlatButton btnExit;
     }
 }
 

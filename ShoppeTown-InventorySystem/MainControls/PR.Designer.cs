@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PR));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -45,9 +46,12 @@
             this.btnDeletePR = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAddPR = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dgv_PR = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PR)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -117,7 +121,7 @@
             this.bunifuFlatButton1.ButtonText = "Refresh";
             this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
             this.bunifuFlatButton1.Iconimage_right = null;
@@ -131,7 +135,7 @@
             this.bunifuFlatButton1.IconZoom = 60D;
             this.bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(563, 5);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(563, 0);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -139,7 +143,7 @@
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(108, 30);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(108, 24);
             this.bunifuFlatButton1.TabIndex = 12;
             this.bunifuFlatButton1.TabStop = false;
             this.bunifuFlatButton1.Text = "Refresh";
@@ -157,17 +161,17 @@
             this.panel1.Controls.Add(this.bunifuFlatButton1);
             this.panel1.Location = new System.Drawing.Point(356, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 40);
+            this.panel1.Size = new System.Drawing.Size(677, 26);
             this.panel1.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 8);
+            this.label1.Location = new System.Drawing.Point(3, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 21);
+            this.label1.Size = new System.Drawing.Size(116, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "Purchase Request";
             // 
@@ -374,6 +378,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_PR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_PR.ColumnHeadersHeight = 25;
+            this.dgv_PR.ContextMenuStrip = this.contextMenuStrip1;
             this.dgv_PR.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -384,7 +389,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_PR.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_PR.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dgv_PR.Location = new System.Drawing.Point(357, 59);
+            this.dgv_PR.Location = new System.Drawing.Point(357, 44);
             this.dgv_PR.MultiSelect = false;
             this.dgv_PR.Name = "dgv_PR";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -406,19 +411,33 @@
             this.dgv_PR.RowTemplate.ReadOnly = true;
             this.dgv_PR.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_PR.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_PR.Size = new System.Drawing.Size(676, 554);
+            this.dgv_PR.Size = new System.Drawing.Size(676, 569);
             this.dgv_PR.TabIndex = 251;
             this.dgv_PR.DoubleClick += new System.EventHandler(this.dgv_PR_DoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.refreshToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(114, 26);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // PR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgv_PR);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dgv_PR);
             this.Name = "PR";
             this.Size = new System.Drawing.Size(1045, 626);
             this.Load += new System.EventHandler(this.PR_Load);
@@ -426,6 +445,7 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PR)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -443,5 +463,7 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnEditPR;
         public Bunifu.Framework.UI.BunifuFlatButton btnSend;
         private System.Windows.Forms.DataGridView dgv_PR;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
     }
 }

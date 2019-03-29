@@ -475,15 +475,8 @@ namespace ShoppeTown_InventorySystem
                 `tbl_vendor`.`vendor_category2`,
                 `tbl_vendor`.`vendor_subcategory2`,
                 `tbl_vendor`.`vendor_category3`,
-                `tbl_vendor`.`vendor_subcategory3`,
-                `tbl_vendor`.`vendor_category4`,
-                `tbl_vendor`.`vendor_subcategory4`,
-                `tbl_vendor`.`vendor_category5`,
-                `tbl_vendor`.`vendor_subcategory5`,
-                `tbl_vendor`.`vendor_category6`,
-                `tbl_vendor`.`vendor_subcategory6`,
-                `tbl_vendor`.`vendor_category7`,
-                `tbl_vendor`.`vendor_subcategory7` from tbl_vendor " +
+                `tbl_vendor`.`vendor_subcategory3`
+                    from tbl_vendor " +
               "where vendor_category1 like '%" + search + "%' or " +
               "      vendor_subcategory1 like '%" + search + "%' or " +
               "      vendor_category2 like '%" + search + "%' or " +

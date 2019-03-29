@@ -32,14 +32,6 @@ namespace ShoppeTown_InventorySystem.MainControls
                     cboCat2.Items.Add(md.showCategory().GetValue(x).ToString());
                 if (md.showCategory().GetValue(x).ToString() != "")
                     cboCat3.Items.Add(md.showCategory().GetValue(x).ToString());
-                if (md.showCategory().GetValue(x).ToString() != "")
-                    cboCat4.Items.Add(md.showCategory().GetValue(x).ToString());
-                if (md.showCategory().GetValue(x).ToString() != "")
-                    cboCat5.Items.Add(md.showCategory().GetValue(x).ToString());
-                if (md.showCategory().GetValue(x).ToString() != "")
-                    cboCat6.Items.Add(md.showCategory().GetValue(x).ToString());
-                if (md.showCategory().GetValue(x).ToString() != "")
-                    cboCat7.Items.Add(md.showCategory().GetValue(x).ToString());
             }
 
         }
@@ -48,31 +40,23 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
             dgv_Vendors.Columns[0].Visible = false;
-            dgv_Vendors.Columns[1].HeaderText = "Category 1";
-            dgv_Vendors.Columns[2].HeaderText = "Sub category 1";
-            dgv_Vendors.Columns[3].HeaderText = "Category 2";
-            dgv_Vendors.Columns[4].HeaderText = "Sub category 2";
-            dgv_Vendors.Columns[5].HeaderText = "Category 3";
-            dgv_Vendors.Columns[6].HeaderText = "Sub category 3";
-            dgv_Vendors.Columns[7].HeaderText = "Category 4";
-            dgv_Vendors.Columns[8].HeaderText = "Sub category 4";
-            dgv_Vendors.Columns[9].HeaderText = "Category 5";
-            dgv_Vendors.Columns[10].HeaderText = "Sub category 5";
-            dgv_Vendors.Columns[11].HeaderText = "Category 6";
-            dgv_Vendors.Columns[12].HeaderText = "Sub category 6";
-            dgv_Vendors.Columns[13].HeaderText = "Category 7";
-            dgv_Vendors.Columns[14].HeaderText = "Sub category 7";
-            dgv_Vendors.Columns[15].HeaderText = "Vendor Name";
-            dgv_Vendors.Columns[16].HeaderText = "Contact Person";
-            dgv_Vendors.Columns[17].HeaderText = "Address";
-            dgv_Vendors.Columns[18].HeaderText = "Tel no. 1";
-            dgv_Vendors.Columns[19].HeaderText = "Tel no. 2";
-            dgv_Vendors.Columns[20].HeaderText = "mobile no. 1";
-            dgv_Vendors.Columns[21].HeaderText = "mobile no. 2";
-            dgv_Vendors.Columns[22].HeaderText = "FAX no.";
-            dgv_Vendors.Columns[23].HeaderText = "Email no. 1";
-            dgv_Vendors.Columns[24].HeaderText = "Email no. 2";
-            dgv_Vendors.Columns[25].HeaderText = "Website";
+            dgv_Vendors.Columns[1].HeaderText = "Vendor Name";
+            dgv_Vendors.Columns[2].HeaderText = "Contact Person";
+            dgv_Vendors.Columns[3].HeaderText = "Address";
+            dgv_Vendors.Columns[4].HeaderText = "Tel no 1";
+            dgv_Vendors.Columns[5].HeaderText = "Tel no 2";
+            dgv_Vendors.Columns[6].HeaderText = "Mobile no 1";
+            dgv_Vendors.Columns[7].HeaderText = "Mobile no 2";
+            dgv_Vendors.Columns[8].HeaderText = "FAX no";
+            dgv_Vendors.Columns[9].HeaderText = "Email 1";
+            dgv_Vendors.Columns[10].HeaderText = "Email 2";
+            dgv_Vendors.Columns[11].HeaderText = "Website";
+            dgv_Vendors.Columns[12].HeaderText = "Category 1";
+            dgv_Vendors.Columns[13].HeaderText = "Sub Category 1";
+            dgv_Vendors.Columns[14].HeaderText = "Category 2";
+            dgv_Vendors.Columns[15].HeaderText = "Sub Category 2";
+            dgv_Vendors.Columns[16].HeaderText = "Category 3";
+            dgv_Vendors.Columns[17].HeaderText = "Sub Category 3";
 
         }
 
@@ -116,6 +100,7 @@ namespace ShoppeTown_InventorySystem.MainControls
             
 
         }
+
         public string[] msg = new string[]
                 { "", "Category ", "Sub Category ", "Company Name ", "Contact Person ",
                   "Company Address ", "Telephone # 1 ", "Telephone # 2 ", "Mobile # 1 ",
@@ -133,26 +118,24 @@ namespace ShoppeTown_InventorySystem.MainControls
                     if (RegisterAutoProperty.vendorID == "0")
                     {
                         md.AddVendor(cboCat1.Text, txtCat1.Text, cboCat2.Text, txtCat2.Text,
-                            cboCat3.Text, txtCat3.Text, cboCat4.Text, txtCat4.Text,
-                            cboCat5.Text, txtCat5.Text, cboCat6.Text, txtCat6.Text,
-                            cboCat7.Text, txtCat7.Text, txtVendorName.Text, txtContactPerson.Text,
+                            cboCat3.Text, txtCat3.Text, "", "", "", "", "", "", "", "", txtVendorName.Text, txtContactPerson.Text,
                          txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
                          txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
                         //Call Database
-                        dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                        //dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                        showDgv();
                         Clear();
                         btnCancel_Click(sender, e);
                     }
                     else
                     {
                         md.UpdateVendor(cboCat1.Text, txtCat1.Text, cboCat2.Text, txtCat2.Text,
-                            cboCat3.Text, txtCat3.Text, cboCat4.Text, txtCat4.Text,
-                            cboCat5.Text, txtCat5.Text, cboCat6.Text, txtCat6.Text,
-                            cboCat7.Text, txtCat7.Text, txtVendorName.Text, txtContactPerson.Text,
+                            cboCat3.Text, txtCat3.Text, "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", txtVendorName.Text, txtContactPerson.Text,
                          txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
                          txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
                         //Call Database
-                        dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                        //dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
+                        showDgv();
                         Clear();
                         btnCancel_Click(sender, e);
                     }
@@ -234,14 +217,6 @@ namespace ShoppeTown_InventorySystem.MainControls
             txtCat2.Text = "";
             cboCat3.SelectedIndex = -1;
             txtCat3.Text = "";
-            cboCat4.SelectedIndex = -1;
-            txtCat4.Text = "";
-            cboCat5.SelectedIndex = -1;
-            txtCat5.Text = "";
-            cboCat6.SelectedIndex = -1;
-            txtCat6.Text = "";
-            cboCat7.SelectedIndex = -1;
-            txtCat7.Text = "";
             txtContactPerson.Text = "";
             txtCompAddress.Text = "";
             txtEmail1.Text = "";
@@ -262,14 +237,6 @@ namespace ShoppeTown_InventorySystem.MainControls
             txtCat2.Enabled = false;
             btnAddCat3.Enabled = false;
             txtCat3.Enabled = false;
-            btnAddCat4.Enabled = false;
-            txtCat4.Enabled = false;
-            btnAddCat5.Enabled = false;
-            txtCat5.Enabled = false;
-            btnAddCat6.Enabled = false;
-            txtCat6.Enabled = false;
-            btnAddCat7.Enabled = false;
-            txtCat7.Enabled = false;
 
 
         }
@@ -299,31 +266,24 @@ namespace ShoppeTown_InventorySystem.MainControls
             foreach (DataGridViewRow row in dgv_Vendors.SelectedRows)
             {
                 RegisterAutoProperty.vendorID = row.Cells[0].Value.ToString();
-                cboCat1.SelectedItem =           row.Cells[1].Value.ToString();
-                txtCat1.Text =           row.Cells[2].Value.ToString();
-                cboCat2.SelectedItem =           row.Cells[3].Value.ToString();
-                txtCat2.Text =           row.Cells[4].Value.ToString();
-                cboCat3.SelectedItem =           row.Cells[5].Value.ToString();
-                txtCat3.Text =           row.Cells[6].Value.ToString();
-                cboCat4.SelectedItem =           row.Cells[7].Value.ToString();
-                txtCat4.Text =           row.Cells[8].Value.ToString();
-                cboCat5.SelectedItem =           row.Cells[9].Value.ToString();
-                txtCat5.Text =           row.Cells[10].Value.ToString();
-                cboCat6.SelectedItem =           row.Cells[11].Value.ToString();
-                txtCat6.Text =           row.Cells[12].Value.ToString();
-                cboCat7.SelectedItem =           row.Cells[13].Value.ToString();
-                txtCat7.Text =           row.Cells[14].Value.ToString();
-                txtVendorName.Text =    row.Cells[15].Value.ToString();
-                txtContactPerson.Text = row.Cells[16].Value.ToString();
-                txtCompAddress.Text =   row.Cells[17].Value.ToString();
-                txtTel1.Text =          row.Cells[18].Value.ToString();
-                txtTel2.Text =          row.Cells[19].Value.ToString();
-                txtMob1.Text =          row.Cells[20].Value.ToString();
-                txtMob2.Text =          row.Cells[21].Value.ToString();
-                txtFax.Text =           row.Cells[22].Value.ToString();
-                txtEmail1.Text =        row.Cells[23].Value.ToString();
-                txtEmail2.Text =        row.Cells[24].Value.ToString();
-                txtWebsite.Text =       row.Cells[25].Value.ToString();
+                cboCat1.SelectedItem =           row.Cells[12].Value.ToString();
+                txtCat1.Text =           row.Cells[13].Value.ToString();
+                cboCat2.SelectedItem =           row.Cells[14].Value.ToString();
+                txtCat2.Text =           row.Cells[15].Value.ToString();
+                cboCat3.SelectedItem =           row.Cells[16].Value.ToString();
+                txtCat3.Text =           row.Cells[17].Value.ToString();
+               
+                txtVendorName.Text =    row.Cells[1].Value.ToString();
+                txtContactPerson.Text = row.Cells[2].Value.ToString();
+                txtCompAddress.Text =   row.Cells[3].Value.ToString();
+                txtTel1.Text =          row.Cells[4].Value.ToString();
+                txtTel2.Text =          row.Cells[5].Value.ToString();
+                txtMob1.Text =          row.Cells[6].Value.ToString();
+                txtMob2.Text =          row.Cells[7].Value.ToString();
+                txtFax.Text =           row.Cells[8].Value.ToString();
+                txtEmail1.Text =        row.Cells[9].Value.ToString();
+                txtEmail2.Text =        row.Cells[10].Value.ToString();
+                txtWebsite.Text =       row.Cells[11].Value.ToString();
             }
             grpRegVendor.Enabled = true;
             btnClear.Visible = true;
@@ -344,9 +304,7 @@ namespace ShoppeTown_InventorySystem.MainControls
                 if (dg == DialogResult.OK)
                 {
                     md.DeleteVendor(txtCat1.Text, cboCat1.Text, cboCat2.Text, txtCat2.Text,
-                            cboCat3.Text, txtCat3.Text, cboCat4.Text, txtCat4.Text,
-                            cboCat5.Text, txtCat5.Text, cboCat6.Text, txtCat6.Text,
-                            cboCat7.Text, txtCat7.Text, txtVendorName.Text, txtContactPerson.Text,
+                            cboCat3.Text, txtCat3.Text, "", "", "", "", "", "", "", "", txtVendorName.Text, txtContactPerson.Text,
                         txtCompAddress.Text, txtTel1.Text, txtTel2.Text, txtMob1.Text, txtMob2.Text,
                         txtFax.Text, txtEmail1.Text, txtEmail2.Text, txtWebsite.Text);
                     //Call Database
@@ -420,58 +378,6 @@ namespace ShoppeTown_InventorySystem.MainControls
                 }
                 ctrl = 0;
             }
-            else if (ctrl == 4)
-            {
-                if (cboCat.Text != "")
-                {
-                    txtCat4.Text += cboCat.Text + ", ";
-                    pnlAddCategory.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Please select category before you add.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                ctrl = 0;
-            }
-            else if (ctrl == 5)
-            {
-                if (cboCat.Text != "")
-                {
-                    txtCat5.Text += cboCat.Text + ", ";
-                    pnlAddCategory.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Please select category before you add.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                ctrl = 0;
-            }
-            else if (ctrl == 6)
-            {
-                if (cboCat.Text != "")
-                {
-                    txtCat6.Text += cboCat.Text + ", ";
-                    pnlAddCategory.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Please select category before you add.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                ctrl = 0;
-            }
-            else if (ctrl == 7)
-            {
-                if (cboCat.Text != "")
-                {
-                    txtCat7.Text += cboCat.Text + ", ";
-                    pnlAddCategory.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Please select category before you add.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                ctrl = 0;
-            }
         }
 
         private void btnAddCat_Click(object sender, EventArgs e)
@@ -518,73 +424,23 @@ namespace ShoppeTown_InventorySystem.MainControls
             {
                 if (md.ShowSC(cboCat3.Text).GetValue(x).ToString() != "")
                     cboCat.Items.Add(md.ShowSC(cboCat3.Text).GetValue(x).ToString());
-
-
             }
         }
 
         private void btnAddCat4_Click(object sender, EventArgs e)
         {
-            ctrl = 4;
-            lblAddSubCat.Text = "Add Sub Category for Category # " + ctrl;
-            pnlAddCategory.Visible = true;
-            cboCat.Items.Clear();
-
-            for (int x = 0; x < md.ShowSC(cboCat4.Text).Length; x++)//for listing ng mga item name
-            {
-                if (md.ShowSC(cboCat4.Text).GetValue(x).ToString() != "")
-                    cboCat.Items.Add(md.ShowSC(cboCat4.Text).GetValue(x).ToString());
-
-
-            }
         }
 
         private void btnAddCat5_Click(object sender, EventArgs e)
         {
-            ctrl = 5;
-            lblAddSubCat.Text = "Add Sub Category for Category # " + ctrl;
-            pnlAddCategory.Visible = true;
-            cboCat.Items.Clear();
-
-            for (int x = 0; x < md.ShowSC(cboCat5.Text).Length; x++)//for listing ng mga item name
-            {
-                if (md.ShowSC(cboCat5.Text).GetValue(x).ToString() != "")
-                    cboCat.Items.Add(md.ShowSC(cboCat5.Text).GetValue(x).ToString());
-
-
-            }
         }
 
         private void btnAddCat6_Click(object sender, EventArgs e)
         {
-            ctrl = 6;
-            lblAddSubCat.Text = "Add Sub Category for Category # " + ctrl;
-            pnlAddCategory.Visible = true;
-            cboCat.Items.Clear();
-
-            for (int x = 0; x < md.ShowSC(cboCat6.Text).Length; x++)//for listing ng mga item name
-            {
-                if (md.ShowSC(cboCat6.Text).GetValue(x).ToString() != "")
-                    cboCat.Items.Add(md.ShowSC(cboCat6.Text).GetValue(x).ToString());
-
-
-            }
         }
 
         private void btnAddCat7_Click(object sender, EventArgs e)
         {
-            ctrl = 7;
-            lblAddSubCat.Text = "Add Sub Category for Category # " + ctrl;
-            pnlAddCategory.Visible = true;
-            cboCat.Items.Clear();
-
-            for (int x = 0; x < md.ShowSC(cboCat7.Text).Length; x++)//for listing ng mga item name
-            {
-                if (md.ShowSC(cboCat7.Text).GetValue(x).ToString() != "")
-                    cboCat.Items.Add(md.ShowSC(cboCat7.Text).GetValue(x).ToString());
-
-
-            }
         }
 
         private void pnlAddCategory_Paint(object sender, PaintEventArgs e)
@@ -606,26 +462,6 @@ namespace ShoppeTown_InventorySystem.MainControls
             {
                 txtCat3.Enabled = true;
                 btnAddCat3.Enabled = true;
-            }
-            if (cboCat4.SelectedIndex > -1)
-            {
-                txtCat4.Enabled = true;
-                btnAddCat4.Enabled = true;
-            }
-            if (cboCat5.SelectedIndex > -1)
-            {
-                txtCat5.Enabled = true;
-                btnAddCat5.Enabled = true;
-            }
-            if (cboCat6.SelectedIndex > -1)
-            {
-                txtCat6.Enabled = true;
-                btnAddCat6.Enabled = true;
-            }
-            if (cboCat7.SelectedIndex > -1)
-            {
-                txtCat7.Enabled = true;
-                btnAddCat7.Enabled = true;
             }
         }
 
@@ -667,6 +503,11 @@ namespace ShoppeTown_InventorySystem.MainControls
         private void cboCat4_SelectedIndexChanged(object sender, EventArgs e)
         {
             EnableTxtBox();
+        }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showDgv();
         }
     }
 }
