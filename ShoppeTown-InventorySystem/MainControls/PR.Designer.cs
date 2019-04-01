@@ -167,13 +167,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 4);
+            this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 17);
+            this.label1.Size = new System.Drawing.Size(114, 13);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Purchase Request";
+            this.label1.Text = "PURCHASE REQUEST";
             // 
             // groupBox1
             // 
@@ -198,7 +198,7 @@
             this.btnSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSend.BorderRadius = 0;
-            this.btnSend.ButtonText = "&Send to Purchase Order";
+            this.btnSend.ButtonText = "&SEND TO PURCHASE ORDER";
             this.btnSend.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSend.DisabledColor = System.Drawing.Color.Gray;
             this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -225,10 +225,10 @@
             this.btnSend.Size = new System.Drawing.Size(316, 39);
             this.btnSend.TabIndex = 18;
             this.btnSend.TabStop = false;
-            this.btnSend.Text = "&Send to Purchase Order";
+            this.btnSend.Text = "&SEND TO PURCHASE ORDER";
             this.btnSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSend.Textcolor = System.Drawing.Color.White;
-            this.btnSend.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // btnEditPR
@@ -237,7 +237,7 @@
             this.btnEditPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnEditPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditPR.BorderRadius = 0;
-            this.btnEditPR.ButtonText = "&Edit";
+            this.btnEditPR.ButtonText = "EDIT";
             this.btnEditPR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditPR.DisabledColor = System.Drawing.Color.Gray;
             this.btnEditPR.Enabled = false;
@@ -265,10 +265,10 @@
             this.btnEditPR.Size = new System.Drawing.Size(316, 39);
             this.btnEditPR.TabIndex = 15;
             this.btnEditPR.TabStop = false;
-            this.btnEditPR.Text = "&Edit";
+            this.btnEditPR.Text = "EDIT";
             this.btnEditPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditPR.Textcolor = System.Drawing.Color.White;
-            this.btnEditPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditPR.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnDeletePR
             // 
@@ -276,7 +276,7 @@
             this.btnDeletePR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDeletePR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDeletePR.BorderRadius = 0;
-            this.btnDeletePR.ButtonText = "&Delete";
+            this.btnDeletePR.ButtonText = "DELETE";
             this.btnDeletePR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDeletePR.DisabledColor = System.Drawing.Color.Gray;
             this.btnDeletePR.Enabled = false;
@@ -304,10 +304,10 @@
             this.btnDeletePR.Size = new System.Drawing.Size(316, 39);
             this.btnDeletePR.TabIndex = 16;
             this.btnDeletePR.TabStop = false;
-            this.btnDeletePR.Text = "&Delete";
+            this.btnDeletePR.Text = "DELETE";
             this.btnDeletePR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDeletePR.Textcolor = System.Drawing.Color.White;
-            this.btnDeletePR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePR.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnAddPR
             // 
@@ -315,7 +315,7 @@
             this.btnAddPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnAddPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddPR.BorderRadius = 0;
-            this.btnAddPR.ButtonText = "&Add Purchase Request";
+            this.btnAddPR.ButtonText = "&ADD PURCHASE REQUEST";
             this.btnAddPR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddPR.DisabledColor = System.Drawing.Color.Gray;
             this.btnAddPR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -342,10 +342,10 @@
             this.btnAddPR.Size = new System.Drawing.Size(316, 39);
             this.btnAddPR.TabIndex = 17;
             this.btnAddPR.TabStop = false;
-            this.btnAddPR.Text = "&Add Purchase Request";
+            this.btnAddPR.Text = "&ADD PURCHASE REQUEST";
             this.btnAddPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddPR.Textcolor = System.Drawing.Color.White;
-            this.btnAddPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPR.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddPR.Click += new System.EventHandler(this.btnAddPR_Click);
             // 
             // dgv_PR

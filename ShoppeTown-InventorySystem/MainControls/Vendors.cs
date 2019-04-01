@@ -40,23 +40,23 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             dgv_Vendors.DataSource = md.dgv_VendorTable("").DataSource;
             dgv_Vendors.Columns[0].Visible = false;
-            dgv_Vendors.Columns[1].HeaderText = "Vendor Name";
-            dgv_Vendors.Columns[2].HeaderText = "Contact Person";
-            dgv_Vendors.Columns[3].HeaderText = "Address";
-            dgv_Vendors.Columns[4].HeaderText = "Tel no 1";
-            dgv_Vendors.Columns[5].HeaderText = "Tel no 2";
-            dgv_Vendors.Columns[6].HeaderText = "Mobile no 1";
-            dgv_Vendors.Columns[7].HeaderText = "Mobile no 2";
-            dgv_Vendors.Columns[8].HeaderText = "FAX no";
-            dgv_Vendors.Columns[9].HeaderText = "Email 1";
-            dgv_Vendors.Columns[10].HeaderText = "Email 2";
-            dgv_Vendors.Columns[11].HeaderText = "Website";
-            dgv_Vendors.Columns[12].HeaderText = "Category 1";
-            dgv_Vendors.Columns[13].HeaderText = "Sub Category 1";
-            dgv_Vendors.Columns[14].HeaderText = "Category 2";
-            dgv_Vendors.Columns[15].HeaderText = "Sub Category 2";
-            dgv_Vendors.Columns[16].HeaderText = "Category 3";
-            dgv_Vendors.Columns[17].HeaderText = "Sub Category 3";
+            dgv_Vendors.Columns[1].HeaderText = "VENDOR NAME";
+            dgv_Vendors.Columns[2].HeaderText = "CONTACT PERSON";
+            dgv_Vendors.Columns[3].HeaderText = "ADDRESS";
+            dgv_Vendors.Columns[4].HeaderText = "TEL #1";
+            dgv_Vendors.Columns[5].HeaderText = "TEL #2";
+            dgv_Vendors.Columns[6].HeaderText = "MOBILE #1";
+            dgv_Vendors.Columns[7].HeaderText = "MOBILE #2";
+            dgv_Vendors.Columns[8].HeaderText = "FAX #";
+            dgv_Vendors.Columns[9].HeaderText = "EMAIL #1";
+            dgv_Vendors.Columns[10].HeaderText = "EMAIL #2";
+            dgv_Vendors.Columns[11].HeaderText = "WEBSITE";
+            dgv_Vendors.Columns[12].HeaderText = "CATEGORY 1";
+            dgv_Vendors.Columns[13].HeaderText = "SUB CATEGORY 1";
+            dgv_Vendors.Columns[14].HeaderText = "CATEGORY 2";
+            dgv_Vendors.Columns[15].HeaderText = "SUB CATEGORY 2";
+            dgv_Vendors.Columns[16].HeaderText = "CATEGORY 3";
+            dgv_Vendors.Columns[17].HeaderText = "SUB CATEGORY 3";
 
         }
 
@@ -508,6 +508,16 @@ namespace ShoppeTown_InventorySystem.MainControls
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showDgv();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

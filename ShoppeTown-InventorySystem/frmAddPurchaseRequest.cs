@@ -36,9 +36,33 @@ namespace ShoppeTown_InventorySystem
 
         private void frmAddPurchaseRequest_Load(object sender, EventArgs e)
         {
-            tblRegPanel.Size = new Size(654, 27);
+            tblRegPanel.Size = new Size(660, 20);
 
             txtPRNo.Text = md.getPRNo().ToString();
+
+            numRow.Value = 1;
+            emptyComboBoxes();
+
+            cboBusinessType.Items.Add("UAC");
+            cboBusinessType.Items.Add("SPML");
+
+            string[] tos = new string[3];
+            tos[0] = "CONSTRUCTIONS";
+            tos[1] = "FIXED ASSET";
+            tos[2] = "CONSUMABLES";
+
+            cboTOS_1.Items.AddRange(tos);
+            cboTOS_2.Items.AddRange(tos);
+            cboTOS_3.Items.AddRange(tos);
+            cboTOS_4.Items.AddRange(tos);
+            cboTOS_5.Items.AddRange(tos);
+            cboTOS_6.Items.AddRange(tos);
+            cboTOS_7.Items.AddRange(tos);
+            cboTOS_8.Items.AddRange(tos);
+            cboTOS_9.Items.AddRange(tos);
+            cboTOS_10.Items.AddRange(tos);
+            cboTOS_11.Items.AddRange(tos);
+
 
         }
 
@@ -79,7 +103,10 @@ namespace ShoppeTown_InventorySystem
             cboUnit_9.Items.Clear();
             cboUnit_10.Items.Clear();
             cboUnit_11.Items.Clear();
+
+            cboBusinessType.Items.Clear(); 
         }
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -98,7 +125,7 @@ namespace ShoppeTown_InventorySystem
 
         private void numRow_ValueChanged(object sender, EventArgs e)
         {
-            tblRegPanel.Size = new Size(654, 27 + (25 * Convert.ToInt32(numRow.Value)));
+            tblRegPanel.Size = new Size(660, 20 + (28 * Convert.ToInt32(numRow.Value)));
 
         }
 
@@ -157,70 +184,70 @@ namespace ShoppeTown_InventorySystem
             info[0, 0] = cboTOS_1.Text;
             info[0, 1] = txtItem_1.Text;
             info[0, 2] = txtDesc_1.Text;
-            info[0, 3] = cboCategory_1.Text;
+            info[0, 3] = "";
             info[0, 4] = txtQuantity_1.Text;
             info[0, 5] = cboUnit_1.Text;
 
             info[1, 0] = cboTOS_2.Text;
             info[1, 1] = txtItem_2.Text;
             info[1, 2] = txtDesc_2.Text;
-            info[1, 3] = cboCategory_2.Text;
+            info[1, 3] = "";
             info[1, 4] = txtQuantity_2.Text;
             info[1, 5] = cboUnit_2.Text;
 
             info[2, 0] = cboTOS_3.Text;
             info[2, 1] = txtItem_3.Text;
             info[2, 2] = txtDesc_3.Text;
-            info[2, 3] = cboCategory_3.Text;
+            info[2, 3] = "";
             info[2, 4] = txtQuantity_3.Text;
             info[2, 5] = cboUnit_3.Text;
 
             info[3, 0] = cboTOS_4.Text;
             info[3, 1] = txtItem_4.Text;
             info[3, 2] = txtDesc_4.Text;
-            info[3, 3] = cboCategory_4.Text;
+            info[3, 3] = "";
             info[3, 4] = txtQuantity_4.Text;
             info[3, 5] = cboUnit_4.Text;
 
             info[4, 0] = cboTOS_5.Text;
             info[4, 1] = txtItem_5.Text;
             info[4, 2] = txtDesc_5.Text;
-            info[4, 3] = cboCategory_5.Text;
+            info[4, 3] = "";
             info[4, 4] = txtQuantity_5.Text;
             info[4, 5] = cboUnit_5.Text;
 
             info[5, 0] = cboTOS_6.Text;
             info[5, 1] = txtItem_6.Text;
             info[5, 2] = txtDesc_6.Text;
-            info[5, 3] = cboCategory_6.Text;
+            info[5, 3] = "";
             info[5, 4] = txtQuantity_6.Text;
             info[5, 5] = cboUnit_6.Text;
 
             info[6, 0] = cboTOS_7.Text;
             info[6, 1] = txtItem_7.Text;
             info[6, 2] = txtDesc_7.Text;
-            info[6, 3] = cboCategory_7.Text;
+            info[6, 3] = "";
             info[6, 4] = txtQuantity_7.Text;
             info[6, 5] = cboUnit_7.Text;
 
             info[7, 0] = cboTOS_8.Text;
             info[7, 1] = txtItem_8.Text;
             info[7, 2] = txtDesc_8.Text;
-            info[7, 3] = cboCategory_8.Text;
+            info[7, 3] = "";
             info[7, 4] = txtQuantity_8.Text;
             info[7, 5] = cboUnit_8.Text;
 
             info[8, 0] = cboTOS_9.Text;
             info[8, 1] = txtItem_9.Text;
             info[8, 2] = txtDesc_9.Text;
-            info[8, 3] = cboCategory_9.Text;
+            info[8, 3] = "";
             info[8, 4] = txtQuantity_9.Text;
             info[8, 5] = cboUnit_9.Text;
 
             info[9, 0] = cboTOS_10.Text;
             info[9, 1] = txtItem_10.Text;
             info[9, 2] = txtDesc_10.Text;
-            info[9, 3] = cboCategory_10.Text;
+            info[9, 3] = "";
             info[9, 4] = txtQuantity_10.Text;
             info[9, 5] = cboUnit_10.Text;
 

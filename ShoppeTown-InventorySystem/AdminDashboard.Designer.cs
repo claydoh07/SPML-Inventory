@@ -45,6 +45,7 @@
             this.btnPurchaseRequest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnDelivery = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRegister = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAccount = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fasm1 = new ShoppeTown_InventorySystem.MainControls.FASM();
             this.vendors1 = new ShoppeTown_InventorySystem.MainControls.Vendors();
@@ -117,10 +118,10 @@
             this.btnMaximize.IconRightVisible = true;
             this.btnMaximize.IconRightZoom = 0D;
             this.btnMaximize.IconVisible = true;
-            this.btnMaximize.IconZoom = 65D;
+            this.btnMaximize.IconZoom = 50D;
             this.btnMaximize.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnMaximize.IsTab = false;
-            this.btnMaximize.Location = new System.Drawing.Point(1187, -3);
+            this.btnMaximize.Location = new System.Drawing.Point(1192, -7);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
@@ -157,10 +158,10 @@
             this.btnMinimize.IconRightVisible = true;
             this.btnMinimize.IconRightZoom = 0D;
             this.btnMinimize.IconVisible = true;
-            this.btnMinimize.IconZoom = 65D;
+            this.btnMinimize.IconZoom = 50D;
             this.btnMinimize.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnMinimize.IsTab = false;
-            this.btnMinimize.Location = new System.Drawing.Point(1155, -3);
+            this.btnMinimize.Location = new System.Drawing.Point(1157, -7);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(49)))));
@@ -204,7 +205,7 @@
             this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashboard.BorderRadius = 0;
-            this.btnDashboard.ButtonText = "Dashboard";
+            this.btnDashboard.ButtonText = "DASHBOARD";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
             this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,10 +233,10 @@
             this.btnDashboard.Size = new System.Drawing.Size(182, 48);
             this.btnDashboard.TabIndex = 3;
             this.btnDashboard.TabStop = false;
-            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Text = "DASHBOARD";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDashboard.Textcolor = System.Drawing.Color.White;
-            this.btnDashboard.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnPurchaseOrder
@@ -244,7 +245,7 @@
             this.btnPurchaseOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPurchaseOrder.BorderRadius = 0;
-            this.btnPurchaseOrder.ButtonText = "Purchase Order";
+            this.btnPurchaseOrder.ButtonText = "PURCHASE ORDER";
             this.btnPurchaseOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseOrder.DisabledColor = System.Drawing.Color.Gray;
             this.btnPurchaseOrder.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -271,10 +272,10 @@
             this.btnPurchaseOrder.Size = new System.Drawing.Size(182, 48);
             this.btnPurchaseOrder.TabIndex = 3;
             this.btnPurchaseOrder.TabStop = false;
-            this.btnPurchaseOrder.Text = "Purchase Order";
+            this.btnPurchaseOrder.Text = "PURCHASE ORDER";
             this.btnPurchaseOrder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPurchaseOrder.Textcolor = System.Drawing.Color.White;
-            this.btnPurchaseOrder.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseOrder.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseOrder.Click += new System.EventHandler(this.btnPurchaseOrder_Click);
             // 
             // btnFASM
@@ -313,7 +314,7 @@
             this.btnFASM.Text = "FASM";
             this.btnFASM.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFASM.Textcolor = System.Drawing.Color.White;
-            this.btnFASM.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFASM.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFASM.Click += new System.EventHandler(this.btnFASM_Click);
             // 
             // btnRegistration
@@ -322,7 +323,7 @@
             this.btnRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegistration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegistration.BorderRadius = 0;
-            this.btnRegistration.ButtonText = "Item Code";
+            this.btnRegistration.ButtonText = "ITEM CODE";
             this.btnRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistration.DisabledColor = System.Drawing.Color.Gray;
             this.btnRegistration.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -349,10 +350,10 @@
             this.btnRegistration.Size = new System.Drawing.Size(182, 48);
             this.btnRegistration.TabIndex = 3;
             this.btnRegistration.TabStop = false;
-            this.btnRegistration.Text = "Item Code";
+            this.btnRegistration.Text = "ITEM CODE";
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistration.Textcolor = System.Drawing.Color.White;
-            this.btnRegistration.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistration.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
             // btnVendors
@@ -361,7 +362,7 @@
             this.btnVendors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnVendors.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnVendors.BorderRadius = 0;
-            this.btnVendors.ButtonText = "Vendors";
+            this.btnVendors.ButtonText = "VENDORS";
             this.btnVendors.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVendors.DisabledColor = System.Drawing.Color.Gray;
             this.btnVendors.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -388,10 +389,10 @@
             this.btnVendors.Size = new System.Drawing.Size(182, 48);
             this.btnVendors.TabIndex = 3;
             this.btnVendors.TabStop = false;
-            this.btnVendors.Text = "Vendors";
+            this.btnVendors.Text = "VENDORS";
             this.btnVendors.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVendors.Textcolor = System.Drawing.Color.White;
-            this.btnVendors.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendors.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendors.Click += new System.EventHandler(this.btnVendors_Click);
             // 
             // btnLogout
@@ -400,7 +401,7 @@
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogout.BorderRadius = 0;
-            this.btnLogout.ButtonText = "Logout";
+            this.btnLogout.ButtonText = "LOGOUT";
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,7 +418,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 385);
+            this.btnLogout.Location = new System.Drawing.Point(1, 439);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -427,10 +428,10 @@
             this.btnLogout.Size = new System.Drawing.Size(182, 48);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.TabStop = false;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "LOGOUT";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogout.Textcolor = System.Drawing.Color.White;
-            this.btnLogout.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnPurchaseRequest
@@ -439,7 +440,7 @@
             this.btnPurchaseRequest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseRequest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPurchaseRequest.BorderRadius = 0;
-            this.btnPurchaseRequest.ButtonText = "Purchase Request";
+            this.btnPurchaseRequest.ButtonText = "PURCHASE REQUEST";
             this.btnPurchaseRequest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseRequest.DisabledColor = System.Drawing.Color.Gray;
             this.btnPurchaseRequest.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -466,10 +467,10 @@
             this.btnPurchaseRequest.Size = new System.Drawing.Size(182, 48);
             this.btnPurchaseRequest.TabIndex = 4;
             this.btnPurchaseRequest.TabStop = false;
-            this.btnPurchaseRequest.Text = "Purchase Request";
+            this.btnPurchaseRequest.Text = "PURCHASE REQUEST";
             this.btnPurchaseRequest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPurchaseRequest.Textcolor = System.Drawing.Color.White;
-            this.btnPurchaseRequest.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseRequest.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchaseRequest.Click += new System.EventHandler(this.btnPurchaseRequest_Click);
             // 
             // pnlButtons
@@ -479,6 +480,7 @@
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnlButtons.Controls.Add(this.btnDelivery);
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
+            this.pnlButtons.Controls.Add(this.btnRegister);
             this.pnlButtons.Controls.Add(this.btnLogout);
             this.pnlButtons.Controls.Add(this.btnVendors);
             this.pnlButtons.Controls.Add(this.btnRegistration);
@@ -497,7 +499,7 @@
             this.btnDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDelivery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelivery.BorderRadius = 0;
-            this.btnDelivery.ButtonText = "Delivery";
+            this.btnDelivery.ButtonText = "DELIVERY";
             this.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelivery.DisabledColor = System.Drawing.Color.Gray;
             this.btnDelivery.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -524,11 +526,49 @@
             this.btnDelivery.Size = new System.Drawing.Size(182, 48);
             this.btnDelivery.TabIndex = 5;
             this.btnDelivery.TabStop = false;
-            this.btnDelivery.Text = "Delivery";
+            this.btnDelivery.Text = "DELIVERY";
             this.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelivery.Textcolor = System.Drawing.Color.White;
-            this.btnDelivery.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelivery.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegister.BorderRadius = 0;
+            this.btnRegister.ButtonText = "REGISTER";
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRegister.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRegister.Iconimage")));
+            this.btnRegister.Iconimage_right = null;
+            this.btnRegister.Iconimage_right_Selected = null;
+            this.btnRegister.Iconimage_Selected = null;
+            this.btnRegister.IconMarginLeft = 0;
+            this.btnRegister.IconMarginRight = 0;
+            this.btnRegister.IconRightVisible = true;
+            this.btnRegister.IconRightZoom = 0D;
+            this.btnRegister.IconVisible = true;
+            this.btnRegister.IconZoom = 50D;
+            this.btnRegister.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnRegister.IsTab = false;
+            this.btnRegister.Location = new System.Drawing.Point(1, 384);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnRegister.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.btnRegister.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnRegister.selected = false;
+            this.btnRegister.Size = new System.Drawing.Size(182, 48);
+            this.btnRegister.TabIndex = 3;
+            this.btnRegister.TabStop = false;
+            this.btnRegister.Text = "REGISTER";
+            this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegister.Textcolor = System.Drawing.Color.White;
+            this.btnRegister.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnAccount
             // 
@@ -536,7 +576,7 @@
             this.btnAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAccount.BorderRadius = 0;
-            this.btnAccount.ButtonText = "Account Setting";
+            this.btnAccount.ButtonText = "ACCOUNT SETTING";
             this.btnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccount.DisabledColor = System.Drawing.Color.Gray;
             this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -563,10 +603,10 @@
             this.btnAccount.Size = new System.Drawing.Size(182, 48);
             this.btnAccount.TabIndex = 3;
             this.btnAccount.TabStop = false;
-            this.btnAccount.Text = "Account Setting";
+            this.btnAccount.Text = "ACCOUNT SETTING";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccount.Textcolor = System.Drawing.Color.White;
-            this.btnAccount.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // fasm1
@@ -714,5 +754,6 @@
         private MainControls.Acct acct1;
         public Bunifu.Framework.UI.BunifuFlatButton btnMaximize;
         public Bunifu.Framework.UI.BunifuFlatButton btnMinimize;
+        public Bunifu.Framework.UI.BunifuFlatButton btnRegister;
     }
 }

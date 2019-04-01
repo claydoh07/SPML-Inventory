@@ -157,6 +157,7 @@
             // 
             // btnChange
             // 
+            this.btnChange.Enabled = false;
             this.btnChange.Location = new System.Drawing.Point(416, 291);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(75, 23);

@@ -696,6 +696,11 @@ namespace ShoppeTown_InventorySystem
             } 
         }
 
+        private void pnlPopUp_itemName_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         
     }
 }

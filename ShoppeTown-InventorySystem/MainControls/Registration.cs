@@ -24,13 +24,13 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             dgv_list.DataSource = md.dgv_showItemCode().DataSource;
             dgv_list.Columns[0].Visible = false;
-            dgv_list.Columns[1].HeaderText = "Item Code";
-            dgv_list.Columns[2].HeaderText = "Category";
-            dgv_list.Columns[3].HeaderText = "Sub-Category";
-            dgv_list.Columns[4].HeaderText = "Item Name";
-            dgv_list.Columns[5].HeaderText = "Brand";
-            dgv_list.Columns[6].HeaderText = "Model";
-            dgv_list.Columns[7].HeaderText = "Description";
+            dgv_list.Columns[1].HeaderText = "ITEM CODE";
+            dgv_list.Columns[2].HeaderText = "CATEGORY";
+            dgv_list.Columns[3].HeaderText = "SUB-CATEGORY";
+            dgv_list.Columns[4].HeaderText = "ITEM NAME";
+            dgv_list.Columns[5].HeaderText = "BRAND";
+            dgv_list.Columns[6].HeaderText = "MODEL";
+            dgv_list.Columns[7].HeaderText = "DESCRIPTION";
 
             this.dgv_list.Columns[0].Width = 0;
             this.dgv_list.Columns[1].Width = 20;
