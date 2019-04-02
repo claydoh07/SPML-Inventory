@@ -277,5 +277,10 @@ namespace ShoppeTown_InventorySystem
             else
                 this.WindowState = FormWindowState.Maximized;
         }
+
+        private void acct1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

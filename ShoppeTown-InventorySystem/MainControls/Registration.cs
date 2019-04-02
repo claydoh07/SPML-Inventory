@@ -42,8 +42,59 @@ namespace ShoppeTown_InventorySystem.MainControls
             this.dgv_list.Columns[7].Width = 300;
         }
 
+        public void showItemCode2(string ICat)
+        {
+            dgv_list.DataSource = md.dgv_ICshowItemCode(ICat).DataSource;
+            dgv_list.Columns[0].Visible = false;
+            dgv_list.Columns[1].HeaderText = "ITEM CODE";
+            dgv_list.Columns[2].HeaderText = "CATEGORY";
+            dgv_list.Columns[3].HeaderText = "SUB-CATEGORY";
+            dgv_list.Columns[4].HeaderText = "ITEM NAME";
+            dgv_list.Columns[5].HeaderText = "BRAND";
+            dgv_list.Columns[6].HeaderText = "MODEL";
+            dgv_list.Columns[7].HeaderText = "DESCRIPTION";
+
+            this.dgv_list.Columns[0].Width = 0;
+            this.dgv_list.Columns[1].Width = 20;
+            this.dgv_list.Columns[2].Width = 25;
+            this.dgv_list.Columns[3].Width = 20;
+            this.dgv_list.Columns[4].Width = 20;
+            this.dgv_list.Columns[5].Width = 20;
+            this.dgv_list.Columns[6].Width = 20;
+            this.dgv_list.Columns[7].Width = 300;
+        }
+
+        public void showItemCode3(string ICat, string ISCat)
+        {
+            dgv_list.DataSource = md.dgv_ISshowItemCode(ICat, ISCat).DataSource;
+            dgv_list.Columns[0].Visible = false;
+            dgv_list.Columns[1].HeaderText = "ITEM CODE";
+            dgv_list.Columns[2].HeaderText = "CATEGORY";
+            dgv_list.Columns[3].HeaderText = "SUB-CATEGORY";
+            dgv_list.Columns[4].HeaderText = "ITEM NAME";
+            dgv_list.Columns[5].HeaderText = "BRAND";
+            dgv_list.Columns[6].HeaderText = "MODEL";
+            dgv_list.Columns[7].HeaderText = "DESCRIPTION";
+
+            this.dgv_list.Columns[0].Width = 0;
+            this.dgv_list.Columns[1].Width = 20;
+            this.dgv_list.Columns[2].Width = 25;
+            this.dgv_list.Columns[3].Width = 20;
+            this.dgv_list.Columns[4].Width = 20;
+            this.dgv_list.Columns[5].Width = 20;
+            this.dgv_list.Columns[6].Width = 20;
+            this.dgv_list.Columns[7].Width = 300;
+        }
+
         private void Registration_Load(object sender, EventArgs e)
         {
+            //defaultSetting();
+
+            for (int x = 0; x < md.showCategory().Length; x++)//for listing ng mga category name
+            {
+                if (md.showCategory().GetValue(x).ToString() != "")
+                    cboCategoryName.Items.Add(md.showCategory().GetValue(x).ToString());
+            }
             showItemCode();
         }
         private void btnRegItemCode_Click(object sender, EventArgs e)
@@ -186,6 +237,36 @@ namespace ShoppeTown_InventorySystem.MainControls
                 // Call quit method.  
                 pnlEditItemCode.Visible = false;
             } 
+        }
+
+        private void cboCategoryName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            cboSubCat.Enabled = true;
+            cboSubCat.Items.Clear();
+           for (int x = 0; x < md.ICShowSubCategory(cboCategoryName.Text).Length; x++)//for listing ng mga category name
+            {
+                if (md.ICShowSubCategory(cboCategoryName.Text).GetValue(x).ToString() != "")
+                    cboSubCat.Items.Add(md.ICShowSubCategory(cboCategoryName.Text).GetValue(x).ToString());
+            }
+
+            showItemCode2(cboCategoryName.Text);
+
+        }
+
+        private void txtSearch_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboSubCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            showItemCode3(cboCategoryName.Text, cboSubCat.Text);
         }
     }
 }

@@ -153,3 +153,6 @@ C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySyste
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.Account.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Acct.resources
 C:\Users\Michael David\Documents\GitHub\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache
+D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.Account.resources
+D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAddPurchaseRequest.resources
+D:\ShoppeTown-InventoryManagementSystem\SPML-Inventory\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.MainControls.Acct.resources

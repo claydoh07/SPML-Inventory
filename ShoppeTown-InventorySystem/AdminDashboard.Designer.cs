@@ -45,7 +45,6 @@
             this.btnPurchaseRequest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.btnDelivery = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRegister = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAccount = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fasm1 = new ShoppeTown_InventorySystem.MainControls.FASM();
             this.vendors1 = new ShoppeTown_InventorySystem.MainControls.Vendors();
@@ -418,7 +417,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(1, 439);
+            this.btnLogout.Location = new System.Drawing.Point(0, 385);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -480,7 +479,6 @@
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnlButtons.Controls.Add(this.btnDelivery);
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
-            this.pnlButtons.Controls.Add(this.btnRegister);
             this.pnlButtons.Controls.Add(this.btnLogout);
             this.pnlButtons.Controls.Add(this.btnVendors);
             this.pnlButtons.Controls.Add(this.btnRegistration);
@@ -532,51 +530,13 @@
             this.btnDelivery.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
-            // btnRegister
-            // 
-            this.btnRegister.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegister.BorderRadius = 0;
-            this.btnRegister.ButtonText = "REGISTER";
-            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegister.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRegister.Iconimage")));
-            this.btnRegister.Iconimage_right = null;
-            this.btnRegister.Iconimage_right_Selected = null;
-            this.btnRegister.Iconimage_Selected = null;
-            this.btnRegister.IconMarginLeft = 0;
-            this.btnRegister.IconMarginRight = 0;
-            this.btnRegister.IconRightVisible = true;
-            this.btnRegister.IconRightZoom = 0D;
-            this.btnRegister.IconVisible = true;
-            this.btnRegister.IconZoom = 50D;
-            this.btnRegister.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegister.IsTab = false;
-            this.btnRegister.Location = new System.Drawing.Point(1, 384);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnRegister.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            this.btnRegister.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRegister.selected = false;
-            this.btnRegister.Size = new System.Drawing.Size(182, 48);
-            this.btnRegister.TabIndex = 3;
-            this.btnRegister.TabStop = false;
-            this.btnRegister.Text = "REGISTER";
-            this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegister.Textcolor = System.Drawing.Color.White;
-            this.btnRegister.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // btnAccount
             // 
             this.btnAccount.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.btnAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAccount.BorderRadius = 0;
-            this.btnAccount.ButtonText = "ACCOUNT SETTING";
+            this.btnAccount.ButtonText = "SETTINGS";
             this.btnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccount.DisabledColor = System.Drawing.Color.Gray;
             this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -603,7 +563,7 @@
             this.btnAccount.Size = new System.Drawing.Size(182, 48);
             this.btnAccount.TabIndex = 3;
             this.btnAccount.TabStop = false;
-            this.btnAccount.Text = "ACCOUNT SETTING";
+            this.btnAccount.Text = "SETTINGS";
             this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccount.Textcolor = System.Drawing.Color.White;
             this.btnAccount.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -696,6 +656,7 @@
             this.acct1.Size = new System.Drawing.Size(1045, 626);
             this.acct1.TabIndex = 14;
             this.acct1.Visible = false;
+            this.acct1.Load += new System.EventHandler(this.acct1_Load);
             // 
             // frmAdminDashboard
             // 
@@ -754,6 +715,5 @@
         private MainControls.Acct acct1;
         public Bunifu.Framework.UI.BunifuFlatButton btnMaximize;
         public Bunifu.Framework.UI.BunifuFlatButton btnMinimize;
-        public Bunifu.Framework.UI.BunifuFlatButton btnRegister;
     }
 }

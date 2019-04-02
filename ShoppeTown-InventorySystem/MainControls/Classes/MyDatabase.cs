@@ -1645,6 +1645,114 @@ namespace ShoppeTown_InventorySystem
                 con.Close();
             }
         }
+
+        public string[] ICShowSubCategory(string cat)
+        {
+            string[] cont = new string[100];
+            for (int x = 0; x < 100; x++)
+                cont[x] = "";
+
+            int num = 0;
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[num++] = dr1["subCategory_Name"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "select SubCategory");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+        }
+
+        public DataGridView dgv_ICshowItemCode(string cat)
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = @"SELECT `id`,
+                            `itemCode`,
+                            `itemCode_Category`,
+                            `itemCode_SubCategory`,
+                            `itemCode_ItemName`,
+                            `itemCode_Brand`,
+                            `itemCode_Model`,
+                            `itemCode_Description` FROM tbl_itemcode where itemCode_Category = @getCat;";
+
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@getCat", cat);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
+
+        public DataGridView dgv_ISshowItemCode(string cat, string subcat)
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = @"SELECT `id`,
+                            `itemCode`,
+                            `itemCode_Category`,
+                            `itemCode_SubCategory`,
+                            `itemCode_ItemName`,
+                            `itemCode_Brand`,
+                            `itemCode_Model`,
+                            `itemCode_Description` FROM tbl_itemcode where itemCode_Category = @getCat AND itemCode_SubCategory = @getSCat;";
+
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@getCat", cat);
+                com.Parameters.AddWithValue("@getSCat", subcat);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
     }
 }
  

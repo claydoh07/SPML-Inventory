@@ -519,5 +519,15 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
            
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

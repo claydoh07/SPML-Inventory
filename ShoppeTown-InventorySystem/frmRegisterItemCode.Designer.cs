@@ -48,6 +48,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.pnlPopUp_model = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtNewModel = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnSave_5 = new System.Windows.Forms.Button();
+            this.btnCancel5 = new System.Windows.Forms.Button();
+            this.pnlPopUp_itemName = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnSave_3 = new System.Windows.Forms.Button();
+            this.txtNewItemName = new System.Windows.Forms.TextBox();
+            this.btnCancel3 = new System.Windows.Forms.Button();
+            this.pnlPopUp_Category = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNewCode = new System.Windows.Forms.TextBox();
+            this.txtCategoryName = new System.Windows.Forms.TextBox();
+            this.btnSave_1 = new System.Windows.Forms.Button();
+            this.btnCancel1 = new System.Windows.Forms.Button();
             this.pnlPopUp_brand = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -79,35 +99,15 @@
             this.cboSubCat = new System.Windows.Forms.ComboBox();
             this.cboCategoryName = new System.Windows.Forms.ComboBox();
             this.txtDesc = new System.Windows.Forms.TextBox();
-            this.pnlPopUp_model = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtNewModel = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnSave_5 = new System.Windows.Forms.Button();
-            this.btnCancel5 = new System.Windows.Forms.Button();
-            this.pnlPopUp_itemName = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnSave_3 = new System.Windows.Forms.Button();
-            this.txtNewItemName = new System.Windows.Forms.TextBox();
-            this.btnCancel3 = new System.Windows.Forms.Button();
-            this.pnlPopUp_Category = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNewCode = new System.Windows.Forms.TextBox();
-            this.txtCategoryName = new System.Windows.Forms.TextBox();
-            this.btnSave_1 = new System.Windows.Forms.Button();
-            this.btnCancel1 = new System.Windows.Forms.Button();
             this.pnlRegisterItemCode.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pnlPopUp_brand.SuspendLayout();
-            this.pnlPopUp_subcategory.SuspendLayout();
-            this.pnlPopUp_description.SuspendLayout();
             this.pnlPopUp_model.SuspendLayout();
             this.pnlPopUp_itemName.SuspendLayout();
             this.pnlPopUp_Category.SuspendLayout();
+            this.pnlPopUp_brand.SuspendLayout();
+            this.pnlPopUp_subcategory.SuspendLayout();
+            this.pnlPopUp_description.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlRegisterItemCode
@@ -411,6 +411,235 @@
             this.label7.Size = new System.Drawing.Size(140, 17);
             this.label7.TabIndex = 10;
             this.label7.Text = "REGISTER ITEM CODE";
+            // 
+            // pnlPopUp_model
+            // 
+            this.pnlPopUp_model.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_model.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_model.Controls.Add(this.label13);
+            this.pnlPopUp_model.Controls.Add(this.txtNewModel);
+            this.pnlPopUp_model.Controls.Add(this.label14);
+            this.pnlPopUp_model.Controls.Add(this.btnSave_5);
+            this.pnlPopUp_model.Controls.Add(this.btnCancel5);
+            this.pnlPopUp_model.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlPopUp_model.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_model.Name = "pnlPopUp_model";
+            this.pnlPopUp_model.Size = new System.Drawing.Size(378, 178);
+            this.pnlPopUp_model.TabIndex = 253;
+            this.pnlPopUp_model.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(51, 48);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(117, 13);
+            this.label13.TabIndex = 248;
+            this.label13.Text = "ENTER MODEL NAME:";
+            // 
+            // txtNewModel
+            // 
+            this.txtNewModel.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNewModel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewModel.Location = new System.Drawing.Point(54, 68);
+            this.txtNewModel.Name = "txtNewModel";
+            this.txtNewModel.Size = new System.Drawing.Size(277, 22);
+            this.txtNewModel.TabIndex = 1;
+            this.txtNewModel.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(17, 14);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 13);
+            this.label14.TabIndex = 248;
+            this.label14.Text = "CREATE MODEL";
+            // 
+            // btnSave_5
+            // 
+            this.btnSave_5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_5.Location = new System.Drawing.Point(193, 101);
+            this.btnSave_5.Name = "btnSave_5";
+            this.btnSave_5.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_5.TabIndex = 246;
+            this.btnSave_5.Text = "SAVE";
+            this.btnSave_5.UseVisualStyleBackColor = true;
+            this.btnSave_5.Click += new System.EventHandler(this.btnSave_5_Click);
+            // 
+            // btnCancel5
+            // 
+            this.btnCancel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel5.Location = new System.Drawing.Point(265, 101);
+            this.btnCancel5.Name = "btnCancel5";
+            this.btnCancel5.Size = new System.Drawing.Size(66, 25);
+            this.btnCancel5.TabIndex = 246;
+            this.btnCancel5.Text = "CANCEL";
+            this.btnCancel5.UseVisualStyleBackColor = true;
+            this.btnCancel5.Visible = false;
+            this.btnCancel5.Click += new System.EventHandler(this.btnCancel5_Click);
+            // 
+            // pnlPopUp_itemName
+            // 
+            this.pnlPopUp_itemName.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_itemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_itemName.Controls.Add(this.label1);
+            this.pnlPopUp_itemName.Controls.Add(this.label10);
+            this.pnlPopUp_itemName.Controls.Add(this.btnSave_3);
+            this.pnlPopUp_itemName.Controls.Add(this.txtNewItemName);
+            this.pnlPopUp_itemName.Controls.Add(this.btnCancel3);
+            this.pnlPopUp_itemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlPopUp_itemName.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_itemName.Name = "pnlPopUp_itemName";
+            this.pnlPopUp_itemName.Size = new System.Drawing.Size(378, 178);
+            this.pnlPopUp_itemName.TabIndex = 251;
+            this.pnlPopUp_itemName.Visible = false;
+            this.pnlPopUp_itemName.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPopUp_itemName_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 248;
+            this.label1.Text = "ENTER ITEM NAME:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(17, 14);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(105, 13);
+            this.label10.TabIndex = 248;
+            this.label10.Text = "CREATE ITEM NAME";
+            // 
+            // btnSave_3
+            // 
+            this.btnSave_3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_3.Location = new System.Drawing.Point(191, 110);
+            this.btnSave_3.Name = "btnSave_3";
+            this.btnSave_3.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_3.TabIndex = 246;
+            this.btnSave_3.Text = "SAVE";
+            this.btnSave_3.UseVisualStyleBackColor = true;
+            this.btnSave_3.Click += new System.EventHandler(this.btnSave_3_Click);
+            // 
+            // txtNewItemName
+            // 
+            this.txtNewItemName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNewItemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewItemName.Location = new System.Drawing.Point(54, 72);
+            this.txtNewItemName.Name = "txtNewItemName";
+            this.txtNewItemName.Size = new System.Drawing.Size(277, 22);
+            this.txtNewItemName.TabIndex = 1;
+            this.txtNewItemName.Visible = false;
+            // 
+            // btnCancel3
+            // 
+            this.btnCancel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel3.Location = new System.Drawing.Point(265, 110);
+            this.btnCancel3.Name = "btnCancel3";
+            this.btnCancel3.Size = new System.Drawing.Size(66, 25);
+            this.btnCancel3.TabIndex = 246;
+            this.btnCancel3.Text = "CANCEL";
+            this.btnCancel3.UseVisualStyleBackColor = true;
+            this.btnCancel3.Visible = false;
+            this.btnCancel3.Click += new System.EventHandler(this.btnCancel3_Click);
+            // 
+            // pnlPopUp_Category
+            // 
+            this.pnlPopUp_Category.BackColor = System.Drawing.Color.White;
+            this.pnlPopUp_Category.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPopUp_Category.Controls.Add(this.label5);
+            this.pnlPopUp_Category.Controls.Add(this.label4);
+            this.pnlPopUp_Category.Controls.Add(this.label3);
+            this.pnlPopUp_Category.Controls.Add(this.txtNewCode);
+            this.pnlPopUp_Category.Controls.Add(this.txtCategoryName);
+            this.pnlPopUp_Category.Controls.Add(this.btnSave_1);
+            this.pnlPopUp_Category.Controls.Add(this.btnCancel1);
+            this.pnlPopUp_Category.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlPopUp_Category.Location = new System.Drawing.Point(146, 88);
+            this.pnlPopUp_Category.Name = "pnlPopUp_Category";
+            this.pnlPopUp_Category.Size = new System.Drawing.Size(378, 204);
+            this.pnlPopUp_Category.TabIndex = 249;
+            this.pnlPopUp_Category.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(40, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(132, 13);
+            this.label5.TabIndex = 248;
+            this.label5.Text = "ENTER CATEGORY NAME:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(43, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 13);
+            this.label4.TabIndex = 248;
+            this.label4.Text = "ENTER CATEGORY CODE:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(17, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 13);
+            this.label3.TabIndex = 248;
+            this.label3.Text = "CREATE CATEGORY";
+            // 
+            // txtNewCode
+            // 
+            this.txtNewCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNewCode.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewCode.Location = new System.Drawing.Point(46, 70);
+            this.txtNewCode.Name = "txtNewCode";
+            this.txtNewCode.Size = new System.Drawing.Size(150, 22);
+            this.txtNewCode.TabIndex = 1;
+            this.txtNewCode.Visible = false;
+            // 
+            // txtCategoryName
+            // 
+            this.txtCategoryName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCategoryName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryName.Location = new System.Drawing.Point(46, 116);
+            this.txtCategoryName.Name = "txtCategoryName";
+            this.txtCategoryName.Size = new System.Drawing.Size(277, 22);
+            this.txtCategoryName.TabIndex = 1;
+            // 
+            // btnSave_1
+            // 
+            this.btnSave_1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave_1.Location = new System.Drawing.Point(183, 160);
+            this.btnSave_1.Name = "btnSave_1";
+            this.btnSave_1.Size = new System.Drawing.Size(66, 25);
+            this.btnSave_1.TabIndex = 246;
+            this.btnSave_1.Text = "SAVE";
+            this.btnSave_1.UseVisualStyleBackColor = true;
+            this.btnSave_1.Click += new System.EventHandler(this.btnSave_1_Click);
+            // 
+            // btnCancel1
+            // 
+            this.btnCancel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel1.Location = new System.Drawing.Point(257, 160);
+            this.btnCancel1.Name = "btnCancel1";
+            this.btnCancel1.Size = new System.Drawing.Size(66, 25);
+            this.btnCancel1.TabIndex = 246;
+            this.btnCancel1.Text = "CANCEL";
+            this.btnCancel1.UseVisualStyleBackColor = true;
+            this.btnCancel1.Visible = false;
+            this.btnCancel1.Click += new System.EventHandler(this.btnCancel1_Click);
             // 
             // pnlPopUp_brand
             // 
@@ -758,235 +987,6 @@
             this.txtDesc.Size = new System.Drawing.Size(380, 80);
             this.txtDesc.TabIndex = 6;
             // 
-            // pnlPopUp_model
-            // 
-            this.pnlPopUp_model.BackColor = System.Drawing.Color.White;
-            this.pnlPopUp_model.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlPopUp_model.Controls.Add(this.label13);
-            this.pnlPopUp_model.Controls.Add(this.txtNewModel);
-            this.pnlPopUp_model.Controls.Add(this.label14);
-            this.pnlPopUp_model.Controls.Add(this.btnSave_5);
-            this.pnlPopUp_model.Controls.Add(this.btnCancel5);
-            this.pnlPopUp_model.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlPopUp_model.Location = new System.Drawing.Point(146, 88);
-            this.pnlPopUp_model.Name = "pnlPopUp_model";
-            this.pnlPopUp_model.Size = new System.Drawing.Size(378, 178);
-            this.pnlPopUp_model.TabIndex = 253;
-            this.pnlPopUp_model.Visible = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(51, 48);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 13);
-            this.label13.TabIndex = 248;
-            this.label13.Text = "ENTER MODEL NAME:";
-            // 
-            // txtNewModel
-            // 
-            this.txtNewModel.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNewModel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewModel.Location = new System.Drawing.Point(54, 68);
-            this.txtNewModel.Name = "txtNewModel";
-            this.txtNewModel.Size = new System.Drawing.Size(277, 22);
-            this.txtNewModel.TabIndex = 1;
-            this.txtNewModel.Visible = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(17, 14);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 13);
-            this.label14.TabIndex = 248;
-            this.label14.Text = "CREATE MODEL";
-            // 
-            // btnSave_5
-            // 
-            this.btnSave_5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave_5.Location = new System.Drawing.Point(193, 101);
-            this.btnSave_5.Name = "btnSave_5";
-            this.btnSave_5.Size = new System.Drawing.Size(66, 25);
-            this.btnSave_5.TabIndex = 246;
-            this.btnSave_5.Text = "SAVE";
-            this.btnSave_5.UseVisualStyleBackColor = true;
-            this.btnSave_5.Click += new System.EventHandler(this.btnSave_5_Click);
-            // 
-            // btnCancel5
-            // 
-            this.btnCancel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel5.Location = new System.Drawing.Point(265, 101);
-            this.btnCancel5.Name = "btnCancel5";
-            this.btnCancel5.Size = new System.Drawing.Size(66, 25);
-            this.btnCancel5.TabIndex = 246;
-            this.btnCancel5.Text = "CANCEL";
-            this.btnCancel5.UseVisualStyleBackColor = true;
-            this.btnCancel5.Visible = false;
-            this.btnCancel5.Click += new System.EventHandler(this.btnCancel5_Click);
-            // 
-            // pnlPopUp_itemName
-            // 
-            this.pnlPopUp_itemName.BackColor = System.Drawing.Color.White;
-            this.pnlPopUp_itemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlPopUp_itemName.Controls.Add(this.label1);
-            this.pnlPopUp_itemName.Controls.Add(this.label10);
-            this.pnlPopUp_itemName.Controls.Add(this.btnSave_3);
-            this.pnlPopUp_itemName.Controls.Add(this.txtNewItemName);
-            this.pnlPopUp_itemName.Controls.Add(this.btnCancel3);
-            this.pnlPopUp_itemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlPopUp_itemName.Location = new System.Drawing.Point(146, 88);
-            this.pnlPopUp_itemName.Name = "pnlPopUp_itemName";
-            this.pnlPopUp_itemName.Size = new System.Drawing.Size(378, 178);
-            this.pnlPopUp_itemName.TabIndex = 251;
-            this.pnlPopUp_itemName.Visible = false;
-            this.pnlPopUp_itemName.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPopUp_itemName_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
-            this.label1.TabIndex = 248;
-            this.label1.Text = "ENTER ITEM NAME:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(17, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 13);
-            this.label10.TabIndex = 248;
-            this.label10.Text = "CREATE ITEM NAME";
-            // 
-            // btnSave_3
-            // 
-            this.btnSave_3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave_3.Location = new System.Drawing.Point(191, 110);
-            this.btnSave_3.Name = "btnSave_3";
-            this.btnSave_3.Size = new System.Drawing.Size(66, 25);
-            this.btnSave_3.TabIndex = 246;
-            this.btnSave_3.Text = "SAVE";
-            this.btnSave_3.UseVisualStyleBackColor = true;
-            this.btnSave_3.Click += new System.EventHandler(this.btnSave_3_Click);
-            // 
-            // txtNewItemName
-            // 
-            this.txtNewItemName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNewItemName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewItemName.Location = new System.Drawing.Point(54, 72);
-            this.txtNewItemName.Name = "txtNewItemName";
-            this.txtNewItemName.Size = new System.Drawing.Size(277, 22);
-            this.txtNewItemName.TabIndex = 1;
-            this.txtNewItemName.Visible = false;
-            // 
-            // btnCancel3
-            // 
-            this.btnCancel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel3.Location = new System.Drawing.Point(265, 110);
-            this.btnCancel3.Name = "btnCancel3";
-            this.btnCancel3.Size = new System.Drawing.Size(66, 25);
-            this.btnCancel3.TabIndex = 246;
-            this.btnCancel3.Text = "CANCEL";
-            this.btnCancel3.UseVisualStyleBackColor = true;
-            this.btnCancel3.Visible = false;
-            this.btnCancel3.Click += new System.EventHandler(this.btnCancel3_Click);
-            // 
-            // pnlPopUp_Category
-            // 
-            this.pnlPopUp_Category.BackColor = System.Drawing.Color.White;
-            this.pnlPopUp_Category.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlPopUp_Category.Controls.Add(this.label5);
-            this.pnlPopUp_Category.Controls.Add(this.label4);
-            this.pnlPopUp_Category.Controls.Add(this.label3);
-            this.pnlPopUp_Category.Controls.Add(this.txtNewCode);
-            this.pnlPopUp_Category.Controls.Add(this.txtCategoryName);
-            this.pnlPopUp_Category.Controls.Add(this.btnSave_1);
-            this.pnlPopUp_Category.Controls.Add(this.btnCancel1);
-            this.pnlPopUp_Category.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlPopUp_Category.Location = new System.Drawing.Point(146, 88);
-            this.pnlPopUp_Category.Name = "pnlPopUp_Category";
-            this.pnlPopUp_Category.Size = new System.Drawing.Size(378, 204);
-            this.pnlPopUp_Category.TabIndex = 249;
-            this.pnlPopUp_Category.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 13);
-            this.label5.TabIndex = 248;
-            this.label5.Text = "ENTER CATEGORY NAME:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(43, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 13);
-            this.label4.TabIndex = 248;
-            this.label4.Text = "ENTER CATEGORY CODE:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 13);
-            this.label3.TabIndex = 248;
-            this.label3.Text = "CREATE CATEGORY";
-            // 
-            // txtNewCode
-            // 
-            this.txtNewCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNewCode.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewCode.Location = new System.Drawing.Point(46, 70);
-            this.txtNewCode.Name = "txtNewCode";
-            this.txtNewCode.Size = new System.Drawing.Size(150, 22);
-            this.txtNewCode.TabIndex = 1;
-            this.txtNewCode.Visible = false;
-            // 
-            // txtCategoryName
-            // 
-            this.txtCategoryName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCategoryName.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoryName.Location = new System.Drawing.Point(46, 116);
-            this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(277, 22);
-            this.txtCategoryName.TabIndex = 1;
-            // 
-            // btnSave_1
-            // 
-            this.btnSave_1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave_1.Location = new System.Drawing.Point(183, 160);
-            this.btnSave_1.Name = "btnSave_1";
-            this.btnSave_1.Size = new System.Drawing.Size(66, 25);
-            this.btnSave_1.TabIndex = 246;
-            this.btnSave_1.Text = "SAVE";
-            this.btnSave_1.UseVisualStyleBackColor = true;
-            this.btnSave_1.Click += new System.EventHandler(this.btnSave_1_Click);
-            // 
-            // btnCancel1
-            // 
-            this.btnCancel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel1.Location = new System.Drawing.Point(257, 160);
-            this.btnCancel1.Name = "btnCancel1";
-            this.btnCancel1.Size = new System.Drawing.Size(66, 25);
-            this.btnCancel1.TabIndex = 246;
-            this.btnCancel1.Text = "CANCEL";
-            this.btnCancel1.UseVisualStyleBackColor = true;
-            this.btnCancel1.Visible = false;
-            this.btnCancel1.Click += new System.EventHandler(this.btnCancel1_Click);
-            // 
             // frmRegisterItemCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1005,18 +1005,18 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pnlPopUp_brand.ResumeLayout(false);
-            this.pnlPopUp_brand.PerformLayout();
-            this.pnlPopUp_subcategory.ResumeLayout(false);
-            this.pnlPopUp_subcategory.PerformLayout();
-            this.pnlPopUp_description.ResumeLayout(false);
-            this.pnlPopUp_description.PerformLayout();
             this.pnlPopUp_model.ResumeLayout(false);
             this.pnlPopUp_model.PerformLayout();
             this.pnlPopUp_itemName.ResumeLayout(false);
             this.pnlPopUp_itemName.PerformLayout();
             this.pnlPopUp_Category.ResumeLayout(false);
             this.pnlPopUp_Category.PerformLayout();
+            this.pnlPopUp_brand.ResumeLayout(false);
+            this.pnlPopUp_brand.PerformLayout();
+            this.pnlPopUp_subcategory.ResumeLayout(false);
+            this.pnlPopUp_subcategory.PerformLayout();
+            this.pnlPopUp_description.ResumeLayout(false);
+            this.pnlPopUp_description.PerformLayout();
             this.ResumeLayout(false);
 
         }

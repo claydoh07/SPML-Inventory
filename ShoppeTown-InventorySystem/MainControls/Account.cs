@@ -30,5 +30,25 @@ namespace ShoppeTown_InventorySystem
             txtUsername.Text = md.ShowAccountInfor(AccountInfo.id).GetValue(6).ToString();
             txtpassword.Text = md.ShowAccountInfor(AccountInfo.id).GetValue(7).ToString();
         }
+
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserType_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

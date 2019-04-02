@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PR));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -46,17 +43,14 @@
             this.btnDeletePR = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAddPR = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dgv_PR = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PR)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSearch
             // 
-            this.btnSearch.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnSearch.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.BorderRadius = 0;
@@ -76,20 +70,21 @@
             this.btnSearch.IconZoom = 50D;
             this.btnSearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSearch.IsTab = false;
-            this.btnSearch.Location = new System.Drawing.Point(311, 20);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSearch.Location = new System.Drawing.Point(318, 24);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnSearch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnSearch.OnHovercolor = System.Drawing.Color.Green;
             this.btnSearch.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnSearch.selected = false;
-            this.btnSearch.Size = new System.Drawing.Size(40, 40);
+            this.btnSearch.Size = new System.Drawing.Size(39, 39);
             this.btnSearch.TabIndex = 10;
             this.btnSearch.TabStop = false;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearch.Textcolor = System.Drawing.Color.White;
             this.btnSearch.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -100,16 +95,17 @@
             this.txtSearch.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintText = "Search Here...";
             this.txtSearch.isPassword = false;
-            this.txtSearch.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.txtSearch.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.txtSearch.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.txtSearch.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Green;
             this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(11, 20);
+            this.txtSearch.Location = new System.Drawing.Point(18, 24);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(338, 39);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearch.OnValueChanged += new System.EventHandler(this.txtSearch_OnValueChanged);
             // 
             // bunifuFlatButton1
             // 
@@ -132,10 +128,10 @@
             this.bunifuFlatButton1.IconRightVisible = true;
             this.bunifuFlatButton1.IconRightZoom = 0D;
             this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 60D;
+            this.bunifuFlatButton1.IconZoom = 50D;
             this.bunifuFlatButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(563, 0);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(912, 0);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -159,10 +155,11 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bunifuFlatButton1);
-            this.panel1.Location = new System.Drawing.Point(356, 20);
+            this.panel1.Location = new System.Drawing.Point(10, 107);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 26);
+            this.panel1.Size = new System.Drawing.Size(1026, 26);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -181,20 +178,22 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.btnSend);
+            this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.btnEditPR);
+            this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.btnDeletePR);
             this.groupBox1.Controls.Add(this.btnAddPR);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 66);
+            this.groupBox1.Location = new System.Drawing.Point(11, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(340, 547);
+            this.groupBox1.Size = new System.Drawing.Size(1025, 77);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Manage";
             // 
             // btnSend
             // 
-            this.btnSend.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnSend.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.btnSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSend.BorderRadius = 0;
@@ -215,14 +214,14 @@
             this.btnSend.IconZoom = 50D;
             this.btnSend.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSend.IsTab = false;
-            this.btnSend.Location = new System.Drawing.Point(12, 76);
+            this.btnSend.Location = new System.Drawing.Point(532, 24);
             this.btnSend.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnSend.Name = "btnSend";
             this.btnSend.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnSend.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnSend.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnSend.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSend.selected = false;
-            this.btnSend.Size = new System.Drawing.Size(316, 39);
+            this.btnSend.Size = new System.Drawing.Size(157, 39);
             this.btnSend.TabIndex = 18;
             this.btnSend.TabStop = false;
             this.btnSend.Text = "&SEND TO PURCHASE ORDER";
@@ -233,7 +232,7 @@
             // 
             // btnEditPR
             // 
-            this.btnEditPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnEditPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.btnEditPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnEditPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditPR.BorderRadius = 0;
@@ -255,14 +254,14 @@
             this.btnEditPR.IconZoom = 50D;
             this.btnEditPR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnEditPR.IsTab = false;
-            this.btnEditPR.Location = new System.Drawing.Point(12, 125);
+            this.btnEditPR.Location = new System.Drawing.Point(695, 24);
             this.btnEditPR.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEditPR.Name = "btnEditPR";
             this.btnEditPR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnEditPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnEditPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnEditPR.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditPR.selected = false;
-            this.btnEditPR.Size = new System.Drawing.Size(316, 39);
+            this.btnEditPR.Size = new System.Drawing.Size(157, 39);
             this.btnEditPR.TabIndex = 15;
             this.btnEditPR.TabStop = false;
             this.btnEditPR.Text = "EDIT";
@@ -272,7 +271,7 @@
             // 
             // btnDeletePR
             // 
-            this.btnDeletePR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnDeletePR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.btnDeletePR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnDeletePR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDeletePR.BorderRadius = 0;
@@ -294,14 +293,14 @@
             this.btnDeletePR.IconZoom = 50D;
             this.btnDeletePR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDeletePR.IsTab = false;
-            this.btnDeletePR.Location = new System.Drawing.Point(12, 173);
+            this.btnDeletePR.Location = new System.Drawing.Point(858, 24);
             this.btnDeletePR.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.btnDeletePR.Name = "btnDeletePR";
             this.btnDeletePR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnDeletePR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnDeletePR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnDeletePR.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDeletePR.selected = false;
-            this.btnDeletePR.Size = new System.Drawing.Size(316, 39);
+            this.btnDeletePR.Size = new System.Drawing.Size(157, 39);
             this.btnDeletePR.TabIndex = 16;
             this.btnDeletePR.TabStop = false;
             this.btnDeletePR.Text = "DELETE";
@@ -311,7 +310,7 @@
             // 
             // btnAddPR
             // 
-            this.btnAddPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnAddPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.btnAddPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnAddPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddPR.BorderRadius = 0;
@@ -332,14 +331,14 @@
             this.btnAddPR.IconZoom = 50D;
             this.btnAddPR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnAddPR.IsTab = false;
-            this.btnAddPR.Location = new System.Drawing.Point(12, 25);
+            this.btnAddPR.Location = new System.Drawing.Point(369, 24);
             this.btnAddPR.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
             this.btnAddPR.Name = "btnAddPR";
             this.btnAddPR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnAddPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.btnAddPR.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddPR.selected = false;
-            this.btnAddPR.Size = new System.Drawing.Size(316, 39);
+            this.btnAddPR.Size = new System.Drawing.Size(157, 39);
             this.btnAddPR.TabIndex = 17;
             this.btnAddPR.TabStop = false;
             this.btnAddPR.Text = "&ADD PURCHASE REQUEST";
@@ -371,70 +370,37 @@
             this.dgv_PR.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_PR.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_PR.ColumnHeadersHeight = 25;
-            this.dgv_PR.ContextMenuStrip = this.contextMenuStrip1;
             this.dgv_PR.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_PR.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_PR.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dgv_PR.Location = new System.Drawing.Point(357, 44);
+            this.dgv_PR.Location = new System.Drawing.Point(11, 131);
             this.dgv_PR.MultiSelect = false;
             this.dgv_PR.Name = "dgv_PR";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_PR.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_PR.RowHeadersVisible = false;
             this.dgv_PR.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_PR.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_PR.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_PR.RowTemplate.Height = 10;
             this.dgv_PR.RowTemplate.ReadOnly = true;
             this.dgv_PR.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_PR.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_PR.Size = new System.Drawing.Size(676, 569);
+            this.dgv_PR.Size = new System.Drawing.Size(1025, 483);
             this.dgv_PR.TabIndex = 251;
             this.dgv_PR.DoubleClick += new System.EventHandler(this.dgv_PR_DoubleClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(114, 26);
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // PR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgv_PR);
@@ -445,7 +411,6 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PR)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -463,7 +428,5 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnEditPR;
         public Bunifu.Framework.UI.BunifuFlatButton btnSend;
         private System.Windows.Forms.DataGridView dgv_PR;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
     }
 }
