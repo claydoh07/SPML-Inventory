@@ -339,7 +339,7 @@
             this.btnRegistration.IconZoom = 50D;
             this.btnRegistration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegistration.IsTab = false;
-            this.btnRegistration.Location = new System.Drawing.Point(0, 49);
+            this.btnRegistration.Location = new System.Drawing.Point(0, 100);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegistration.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -378,7 +378,7 @@
             this.btnVendors.IconZoom = 50D;
             this.btnVendors.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnVendors.IsTab = false;
-            this.btnVendors.Location = new System.Drawing.Point(0, 97);
+            this.btnVendors.Location = new System.Drawing.Point(0, 51);
             this.btnVendors.Name = "btnVendors";
             this.btnVendors.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnVendors.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
@@ -439,7 +439,7 @@
             this.btnPurchaseRequest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnPurchaseRequest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPurchaseRequest.BorderRadius = 0;
-            this.btnPurchaseRequest.ButtonText = "PURCHASE REQUEST";
+            this.btnPurchaseRequest.ButtonText = "ORDERING";
             this.btnPurchaseRequest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPurchaseRequest.DisabledColor = System.Drawing.Color.Gray;
             this.btnPurchaseRequest.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -466,7 +466,7 @@
             this.btnPurchaseRequest.Size = new System.Drawing.Size(182, 48);
             this.btnPurchaseRequest.TabIndex = 4;
             this.btnPurchaseRequest.TabStop = false;
-            this.btnPurchaseRequest.Text = "PURCHASE REQUEST";
+            this.btnPurchaseRequest.Text = "ORDERING";
             this.btnPurchaseRequest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPurchaseRequest.Textcolor = System.Drawing.Color.White;
             this.btnPurchaseRequest.TextFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -80,7 +80,7 @@ namespace ShoppeTown_InventorySystem
         //Insert password and username
         public string Register(string usr, string pwd)
         {
-             try
+            try
             {
                 con.Open();
                 string SqlInsertRegister = "INSERT INTO tbl_users(" +
@@ -97,7 +97,7 @@ namespace ShoppeTown_InventorySystem
                 com.Parameters.AddWithValue("@usertype", RegisterAutoProperty.usertype);
                 com.Parameters.AddWithValue("@position", RegisterAutoProperty.position);
                 com.Parameters.AddWithValue("@department", RegisterAutoProperty.department);
-                
+
                 com.Parameters.AddWithValue("@created_at", DateTime.Now.ToString("yyyy'-'MM'-'dd' 'HH':'mm':'ss"));
                 com.Parameters.AddWithValue("@updated_at", DateTime.Now.ToString("yyyy'-'MM'-'dd' 'HH':'mm':'ss"));
                 com.ExecuteNonQuery();
@@ -130,7 +130,7 @@ namespace ShoppeTown_InventorySystem
                 "      fasm_desc like '%" + search + "%' or " +
                 "      fasm_brand like '%" + search + "%' or " +
                 "      fasm_model like '%" + search + "%';";
-                
+
                 MySqlCommand com = new MySqlCommand(sql, con);
                 com.ExecuteNonQuery();
                 con.Close();
@@ -173,7 +173,7 @@ namespace ShoppeTown_InventorySystem
                 "      fasm_transferred like '%" + search + "%' or " +
                 "      fasm_damaged like '%" + search + "%' or " +
                 "      fasm_stocks like '%" + search + "%';";
-                
+
                 MySqlCommand com = new MySqlCommand(sql, con);
                 com.ExecuteNonQuery();
                 con.Close();
@@ -219,7 +219,8 @@ namespace ShoppeTown_InventorySystem
                 DataSet ds = new DataSet();
                 adapter.Fill(ds);
                 dgv1.DataSource = ds.Tables[0];
-            }catch(MySqlException ex)
+            }
+            catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message, "dgv_SearchSections");
             }
@@ -263,10 +264,10 @@ namespace ShoppeTown_InventorySystem
         //Vendor Codes
         public string AddVendor(string cat1, string subcat1, string cat2, string subcat2, string cat3, string subcat3,
             string cat4, string subcat4, string cat5, string subcat5, string cat6, string subcat6, string cat7, string subcat7,
-            string compname, string contactperson, string compaddress, 
+            string compname, string contactperson, string compaddress,
             string tel1, string tel2,
-            string mob1, string mob2, 
-            string fax, string emailadd1, string emailadd2, 
+            string mob1, string mob2,
+            string fax, string emailadd1, string emailadd2,
             string website)
         {
             try
@@ -430,7 +431,7 @@ namespace ShoppeTown_InventorySystem
             try
             {
                 con.Open();
-               
+
 
                 string SqlDeleteVendor = "DELETE FROM tbl_vendor" +
                     " Where vendor_id = @id;";
@@ -1279,7 +1280,7 @@ namespace ShoppeTown_InventorySystem
                 con.Close();
             }
         }
-        
+
         public void UpdateItemCode(string id, string cat, string subName, string item, string brand, string model, string description)
         {
             try
@@ -1351,7 +1352,7 @@ namespace ShoppeTown_InventorySystem
             {
                 con.Open();
                 string sql = "SELECT * FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN;";
-                
+
                 MySqlCommand com = new MySqlCommand(sql, con);
                 com.Parameters.AddWithValue("@cN", cat);
                 com.ExecuteNonQuery();
@@ -1436,15 +1437,15 @@ namespace ShoppeTown_InventorySystem
             {
                 con.Close();
             }
-        } 
+        }
 
         public void PR_insert(string prNO, string requestor, string contactNumber, string dept, string projectName, string businessType, string date1, string date2, string cost, string purpose, string priority, string entry, string[,] info)
         {
-            for(int x = 0; x < Convert.ToInt32(entry); x++)
-            try
-            {
-                con.Open();
-                string sql1 = @"INSERT INTO tbl_purchase_request
+            for (int x = 0; x < Convert.ToInt32(entry); x++)
+                try
+                {
+                    con.Open();
+                    string sql1 = @"INSERT INTO tbl_purchase_request
                         (
                         `pr_no`,
                         `pr_requestor_name`,
@@ -1487,39 +1488,39 @@ namespace ShoppeTown_InventorySystem
                         @updated_at,
                         @created_at);
                         ";//inserting pr
-                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                    MySqlCommand com1 = new MySqlCommand(sql1, con);
 
-                com1.Parameters.AddWithValue("@pr_no", prNO);
-                com1.Parameters.AddWithValue("@pr_requestor_name", requestor);
-                com1.Parameters.AddWithValue("@contact_number", contactNumber);
-                com1.Parameters.AddWithValue("@department", dept);
-                com1.Parameters.AddWithValue("@project_name", projectName);
-                com1.Parameters.AddWithValue("@business_type", businessType);
-                com1.Parameters.AddWithValue("@requisition_date", date1);
-                com1.Parameters.AddWithValue("@required_date", date2);
-                com1.Parameters.AddWithValue("@cost_center", cost);
-                com1.Parameters.AddWithValue("@purpose", purpose);
-                com1.Parameters.AddWithValue("@priority", priority);
-                com1.Parameters.AddWithValue("@type_of_supply", info[x, 0]);
-                com1.Parameters.AddWithValue("@item", info[x, 1]);
-                com1.Parameters.AddWithValue("@description", info[x, 2]);
-                com1.Parameters.AddWithValue("@category", info[x, 3]);
-                com1.Parameters.AddWithValue("@quantity", info[x, 4]);
-                com1.Parameters.AddWithValue("@unit", info[x, 5]);
-                com1.Parameters.AddWithValue("@updated_at", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                com1.Parameters.AddWithValue("@created_at", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    com1.Parameters.AddWithValue("@pr_no", prNO);
+                    com1.Parameters.AddWithValue("@pr_requestor_name", requestor);
+                    com1.Parameters.AddWithValue("@contact_number", contactNumber);
+                    com1.Parameters.AddWithValue("@department", dept);
+                    com1.Parameters.AddWithValue("@project_name", projectName);
+                    com1.Parameters.AddWithValue("@business_type", businessType);
+                    com1.Parameters.AddWithValue("@requisition_date", date1);
+                    com1.Parameters.AddWithValue("@required_date", date2);
+                    com1.Parameters.AddWithValue("@cost_center", cost);
+                    com1.Parameters.AddWithValue("@purpose", purpose);
+                    com1.Parameters.AddWithValue("@priority", priority);
+                    com1.Parameters.AddWithValue("@type_of_supply", info[x, 0]);
+                    com1.Parameters.AddWithValue("@item", info[x, 1]);
+                    com1.Parameters.AddWithValue("@description", info[x, 2]);
+                    com1.Parameters.AddWithValue("@category", info[x, 3]);
+                    com1.Parameters.AddWithValue("@quantity", info[x, 4]);
+                    com1.Parameters.AddWithValue("@unit", info[x, 5]);
+                    com1.Parameters.AddWithValue("@updated_at", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    com1.Parameters.AddWithValue("@created_at", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
 
-                com1.ExecuteNonQuery();
-                con.Close();
-            }
-            catch (MySqlException sq)
-            {
-                MessageBox.Show(sq.Message, "PR_insert");
-            }
-            finally
-            {
-                con.Close();
-            }
+                    com1.ExecuteNonQuery();
+                    con.Close();
+                }
+                catch (MySqlException sq)
+                {
+                    MessageBox.Show(sq.Message, "PR_insert");
+                }
+                finally
+                {
+                    con.Close();
+                }
         }
 
         public DataGridView dgv_showPR()
@@ -1573,7 +1574,7 @@ namespace ShoppeTown_InventorySystem
         public string[] ShowAccountInfor(string id)
         {
             string[] cont = new string[200];
-           
+
             try
             {
                 con.Open();
@@ -1607,7 +1608,7 @@ namespace ShoppeTown_InventorySystem
             return cont;
         }
 
-        public void Account_update(string id, string fname, string mname, string lname, string pos, string dept, string user, string pass )
+        public void Account_update(string id, string fname, string mname, string lname, string pos, string dept, string user, string pass)
         {
             try
             {
@@ -1734,6 +1735,58 @@ namespace ShoppeTown_InventorySystem
                 MySqlCommand com = new MySqlCommand(sql, con);
                 com.Parameters.AddWithValue("@getCat", cat);
                 com.Parameters.AddWithValue("@getSCat", subcat);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
+
+        public DataGridView dgv_Acct(int code)
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            { 
+                string sql = "";
+                con.Open();
+                if (code == 1)
+                {
+                    sql = "SELECT * FROM tbl_category;";
+                }
+                else if (code == 2)
+                {
+                    sql = "SELECT * FROM tbl_subcategory;";
+                }
+                else if (code == 3)
+                {
+                    sql = "SELECT * FROM tbl_item;";
+                }
+                else if (code == 4)
+                {
+                    sql = "SELECT * FROM tbl_brand;";
+                }
+                else if (code == 5)
+                {
+                    sql = "SELECT * FROM tbl_model;";
+                }
+                else if (code == 6)
+                {
+                    sql = "SELECT * FROM tbl_description;";
+                }
+                MySqlCommand com = new MySqlCommand(sql, con);
                 com.ExecuteNonQuery();
                 con.Close();
 

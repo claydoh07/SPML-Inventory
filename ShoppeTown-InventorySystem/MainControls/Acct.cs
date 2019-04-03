@@ -71,5 +71,47 @@ namespace ShoppeTown_InventorySystem.MainControls
             btnSave.Text = "EDIT";
             showMyAccountInfor();
         }
+
+        
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCat_Click(object sender, EventArgs e)
+        {
+            dgv_Acct.DataSource = md.dgv_Acct(1).DataSource;
+        }
+
+        private void btnSubCat_Click(object sender, EventArgs e)
+        {
+            dgv_Acct.DataSource = md.dgv_Acct(2).DataSource;
+        }
+
+        private void btnItem_Click(object sender, EventArgs e)
+        {
+            dgv_Acct.DataSource = md.dgv_Acct(3).DataSource;
+        }
+
+        private void btnBrand_Click(object sender, EventArgs e)
+        {
+            dgv_Acct.DataSource = md.dgv_Acct(4).DataSource;
+        }
+
+        private void btnModel_Click(object sender, EventArgs e)
+        {
+            dgv_Acct.DataSource = md.dgv_Acct(5).DataSource;
+        }
+
+        private void btnDescription_Click(object sender, EventArgs e)
+        {
+            dgv_Acct.DataSource = md.dgv_Acct(6).DataSource;
+        }
     }
 }
